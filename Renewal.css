@@ -913,10 +913,6 @@ iframe{
 .col-s-8{
     grid-column: auto/span 8;
 }
-.treat1 {
-    display:flex;
-    flex-direction: column-reverse;
-}
 .grid-1{
     display:grid;
     justify-content: center;
@@ -1588,6 +1584,10 @@ button[type="submit"] {
 .type-1 img{
     height:auto;
     width:auto;
+}
+	.treat1 {
+    display:flex;
+    flex-direction: column-reverse;
 }
 .treat img{
     padding: 1rem;
