@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
+	<link href="Renewal.css" rel="stylesheet" type="text/css"/>
+	<title> Renewal Aesthetics </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <!-- First Section-->
+    <div class="aboutmain__">
+        <header>
+            <img loading="lazy"onclick="redirectToHome()" class="Logo" src="Renewal%20Logo-01.png"/>
+            <div class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="aboutren.html">ABOUT RENEWAL</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a class="no-a" href="treatmentsren.html">TREATMENTS</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
+                        <a href="treatmentsren.html#microneedling">Micro-needling</a>
+                        <a href="treatmentsren.html#invasive-treatments">Invasive Treatments</a>
+                        <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                   <a class="no-a" href="productsren.html">PRODUCTS</a>
+                      
+                   <!--<div class="dropdown-content">
+                    <a onclick="OpenProduct(2)" href="productsren.html#biobaby">BioBaby</a>
+                    <a onclick="OpenProduct(4)" href="productsren.html#dermalogica">Dermalogica</a>
+                    <a onclick="OpenProduct(1)" href="productsren.html#biomedical">BioMedical Emporium</a>
+                    <a onclick="OpenProduct(3)" href="productsren.html#lamelle">Lamelle</a>
+                    <a onclick="OpenProduct(5)" href="productsren.html#mesoestetic">Mesoestetic</a>
+                    <a onclick="OpenProduct(6)" href="productsren.html#skinrepublic">Skin Republic</a>
+                </div>-->
+                </div>
+                <a href="gallery.html">GALLERY</a>
+                <a href="newsren.html">NEWS</a>
+                <a href="contactren.html">CONTACT US</a>
+                
+                            
+                <button class="booking__btn1" onclick="redirectToBookApt()"><p>BOOK NOW</p></button>
+            </div>
+    
+            <div  class="dropdown-3 ">
+                <!-- Button one -->
+                <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button" aria-controls="primary-navigation" aria-expanded="false" style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
+                    <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
+                        <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+                        </rect>
+                        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+                        </rect>
+                        <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+                        </rect>
+                    </svg>
+                </button>
+        <div class="dropdown-content" >
+            <a href="index.html">HOME</a>
+            <a class="dropdown-content1" href="aboutren.html">ABOUT RENEWAL</a>
+            <div class="dropdown">
+                <button class="dropbtn row">
+                    <a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
+                </button>
+                <div class="menu-items">
+                        <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
+                        <a href="treatmentsren.html#microneedling">Micro-needling</a>
+                        <a href="treatmentsren.html#invasive-treatments">Invasive Treatments</a>
+                        <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                </div>
+            </div>
+            <div class="dropdown">
+               
+                    <a class="no-a hamburger dropdown-content1" href="productsren.html">PRODUCTS</a>
+               
+               <!-- <div class="menu-items">
+                    <a onclick="OpenProduct(2)" href="productsren.html#biobaby">BioBaby</a>
+                    <a onclick="OpenProduct(4)" href="productsren.html#dermalogica">Dermalogica</a>
+                    <a onclick="OpenProduct(1)" href="productsren.html#biomedical">BioMedical Emporium</a>
+                    <a onclick="OpenProduct(3)" href="productsren.html#lamelle">Lamelle</a>
+                    <a onclick="OpenProduct(5)" href="productsren.html#mesoestetic">Mesoestetic</a>
+                    <a onclick="OpenProduct(6)" href="productsren.html#skinrepublic">Skin Republic</a>
+                </div>-->
+            </div>
+            <div class="dropdown-content1">
+                <a href="contactren.html">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+        </header>
+    </div>
+    <div class="about-img"> 
+        <h2> Book A Consultation</h2>
+    </div>
+<div class="bookapt">
+    <div class="glass-effect1">
+    <div class="book-form">
+    <form action="submit.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="fullname" name="name" required>
+        <br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="number">Cell Number:</label>
+        <input type="number" id="number" name="number" required>
+        <br>
+        <br>
+        <div class="flex1">
+            <div>
+                <label for="date">Date of Consultation:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="time">Available Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+        </div>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your skin concerns and the service you would like to have."required></textarea>
+        
+        <input type="submit" value="BOOK NOW">
+      </form>
+    </div>
+    </div>  
+
+
+
+
+
+
+
+
+</div>
+    <!-- Footer-->
+    <footer>
+        <div class="row end">
+            <div class="col-3"> 
+                <h3> OUR LOCATION </h3>
+                <br>
+                <p> Kalafhi Executive Suite, </p>
+                <p> Plot 319 Extension 5,</p>
+                <p> Gaborone, Botswana</p>
+                <br>
+            </div>
+            <div class=" col-3">
+                <h3> WORKING HOURS</h3>
+                <br> 
+                <h4> Monday: 08:00 - 17:30</h4>
+                <h4> Tuesday: 08:00 - 17:30</h4>
+                <h4> Wednesday: 08:00 - 17:30</h4>
+                <h4> Thursday: 08:00 - 17:30</h4>
+                <h4> Friday: 08:00 - 17:30</h4>
+                <h4> Saturday: 09:00 - 15:00</h4>
+                <h4> Closed on Sundays and Public Holidays</h4>
+                <br>
+            </div>
+            <div class="col-3 quicklinks">
+                <h3> QUICK LINKS</h3>
+                <br>
+                    <p> <a onclick="redirectToHome()"> Home</a> </p>
+                    <p> <a onclick="redirectToAbout()"> About Us</a> </p>
+                    <p> <a onclick="redirectToTreatments()"> Treatments</a> </p>
+                    <p> <a onclick="redirectToProducts()"> Products </a></p>
+                    <p> <a onclick="redirectToNews()"> News</a> </p>
+                <br>
+            </div>
+            <div class="col-3">
+                <div class="">
+                    <h3> CONTACT US </h3>
+                    <br> 
+                    <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+    (+267) 390 6944</p>
+                    <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+    (+267) 73 275 990</p>
+                </div>
+                <br>
+                <ul class="social-list">
+                    <li class="odd-fa-f-radius">
+                        <a  target="_blank" href="https://www.facebook.com/RenewalAestheticclinic">
+                            <i class="fab fa-facebook-f" src="facebook-f.svg"></i>
+                        </a>
+                    </li>
+        
+                    <li class="odd-fa-insta-radius">
+                        <a target="_blank"  href="https://www.instagram.com/renewalaestheticsclinic/">
+                            <i class="fab fa-instagram" src="instagram.svg"></i>
+                        </a>
+                    </li>
+        
+                    <li class="odd-fa-youtube-radius">
+                        <a target="_blank" href="https://www.youtube.com/@renewalaesthetics3627">
+                        <i class="fab fa-youtube" src="youtube.svg"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+        <button id="scroll-to-top-btn">
+            <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top" src="up-long.svg">
+        </button>
+    
+         <script>
+     
+     
+    // Show scroll-to-top button after scrolling halfway through the page
+    window.onscroll = function() {
+    var btn = document.getElementById("scroll-to-top-btn");
+    if (document.body.scrollTop > (document.body.scrollHeight / 5) || document.documentElement.scrollTop > (document.documentElement.scrollHeight / 5)) {
+    btn.style.display = "block";
+    } else {
+    btn.style.display = "none";
+    }
+    };
+    
+    // Scroll to top when button is clicked
+    document.getElementById("scroll-to-top-btn").addEventListener("click", function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    });
+    
+    
+        function redirectToHome() {
+        window.location.href = "index.html";
+    }  
+            function redirectToAbout() {
+        window.location.href = "aboutren.html";
+    }
+            function redirectToTreatments() {
+        window.location.href = "treatmentsren.html";
+    }
+            function redirectToProducts() {
+        window.location.href = "productsren.html";
+    }
+            function redirectToNews() {
+        window.location.href = "newsren.html";
+    }
+            function redirectToGallery() {
+        window.location.href = "galleryren.html";
+    }
+            function redirectToContact() {
+        window.location.href = "contactren.html";
+    }
+    function redirectToBookApt() {
+        window.location.href = "bookapt.html";
+    }
+        
+            
+            
+       //Navbar settings for mobile starts// 
+                    // Get the dropdown and sub-dropdown buttons
+            const dropdownBtn = document.querySelector('.dropdown-3 .button-one');
+            const subDropdownBtns = document.querySelectorAll('.dropdown .dropbtn');
+    
+            // Add click event listener to the dropdown button
+            dropdownBtn.addEventListener('click', () => {
+              // Toggle active class on the dropdown
+              dropdownBtn.parentNode.classList.toggle('active');
+            });
+    
+            // Add click event listener to the sub-dropdown buttons
+            subDropdownBtns.forEach((btn) => {
+              btn.addEventListener('click', () => {
+                // Toggle active class on the sub-dropdown
+                btn.parentNode.classList.toggle('active');
+              });
+            });
+            
+            
+            const buttons = document.querySelectorAll("button");
+    
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const currentState = button.getAttribute("data-state");
+    
+                if (!currentState || currentState === "closed") {
+                    button.setAttribute("data-state", "opened");
+                    button.setAttribute("aria-expanded", "true");
+                } else {
+                    button.setAttribute("data-state", "closed");
+                    button.setAttribute("aria-expanded", "false");
+                }
+            });
+        });
+            
+         //Navbar settings for mobile ends//    
+                
+            
+            
+        </script>
+    </body>
+    </html>
