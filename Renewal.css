@@ -1131,7 +1131,7 @@
   }
   .prod-details:hover{
       box-shadow: 2px 2px 5px rgb(97, 96, 96);
-      border-radius: 1rem;
+ 
   }
   .prod-details img{
       height:200px;
