@@ -1131,6 +1131,7 @@
   }
   .prod-details:hover{
       box-shadow: 2px 2px 5px rgb(97, 96, 96);
+      border-radius: 1rem;
   }
   .prod-details img{
       height:200px;
@@ -1141,7 +1142,7 @@
   /*Gallery page*/
   .gallery{
       text-align:center;
-      background-image: url(comingsoonbackground.png);
+      background-image: url('BackgroundImages/comingsoonbackground.png');
       background-position: center;
       background-size: cover;
       height:auto;
