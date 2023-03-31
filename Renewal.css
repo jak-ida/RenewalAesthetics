@@ -323,7 +323,7 @@
     }
   .main__{
       min-height:100vh;
-      background-image: url('renewalmain1.jpg');
+      background-image: url('BackgroundImages/renewalmain1.jpg');
       background-position: center;
       background-size: cover;
       z-index:-2;
@@ -387,7 +387,7 @@
   
   /* Second Section*/
   .main__quote{
-      background-image: url('goldbg2.jpg');
+      background-image: url('BackgroundImages/goldbg2.jpg');
       background-position:center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -418,7 +418,7 @@
       align-items: center;
   }
   .thirdpg1{
-      background-image: url('backgrr2.png');
+      background-image: url('BackgroundImages/backgrr2.png');
       background-position:center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -513,7 +513,7 @@
   
   /* Fifth Section*/
   .fifthpg{
-      background-image: url('backgrr1.png');
+      background-image: url('BackgroundImages/backgrr1.png');
       background-position: center;
       background-size: cover;
       height:auto;
@@ -700,12 +700,12 @@
   
   .about-images{
       height:60px;
-      background-image: url('gold.jpg');
+      background-image: url('BackgroundImages/gold.jpg');
       background-position:bottom;
       background-size: cover;
   }
   .about__background1{
-      background-image: url('abt%20background1.png');
+      background-image: url('BackgroundImages/abt%20background1.png');
       color:black;
       display: grid;
       align-content: center;
@@ -768,7 +768,7 @@
   /* About - Second Section */
   
   .about_brief1{
-      background-image: url('backgroundddd.png');
+      background-image: url('BackgroundImages/backgroundddd.png');
       min-height:25vh;
       height:auto;
       background-repeat: no-repeat;
@@ -808,7 +808,7 @@
       padding:1.4vh 0vw 0vh 10vw;
   }
   .contact_pg{
-      background-image:url(contback2.png);
+      background-image:url('BackgroundImages/contback2.png');
       height:auto;
       background-position: center;
       background-repeat: no-repeat;
@@ -925,7 +925,7 @@
       padding:5vh 0vw 1vh 10vw;
       font-size: 2rem;
       color:white;
-      background-image:url(contback2.png);
+      background-image:url('BackgroundImages/contback2.png');
       height:auto;
       background-position: center;
       background-repeat: no-repeat;
@@ -1039,7 +1039,7 @@
       padding:5vh 0vw 1vh 10vw;
       font-size: 2rem;
       color:black;
-      background-color: url(contback2.png);
+      background-color: url('BackgroundImages/contback2.png');
       height:auto;
       background-position: center;
       background-repeat: no-repeat;
@@ -1108,7 +1108,7 @@
       margin:auto auto;
   }
   .prod-info-1:hover{
-      background-image: url(contback2.png);
+      background-image: url('BackgroundImages/contback2.png');
       border-radius: 0.5rem;
       border:1px solid gold;
       padding:0rem 1.2rem;
@@ -1201,7 +1201,7 @@
   
   /*News Page*/
   .news{
-      background-image: url(comingsoonbackground.png);
+      background-image: url('BackgroundImages/comingsoonbackground.png');
       background-position: center;
       background-size: cover;
       height:auto;
@@ -1294,7 +1294,7 @@
       display:grid;
       grid-auto-flow: dense;
       grid-gap:2px;
-      background-image: url(apt\ background.webp);
+      background-image: url('BackgroundImages/apt\ background.webp');
       background-position: center;
       background-size: cover;
       color:white;
