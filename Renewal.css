@@ -1786,7 +1786,12 @@
     display: flex;
 
   }
-  
+  .news-img{
+    width:auto;
+  }
+    .news-button{
+    width:auto;
+  }
   
   /*Gallery Page*/
   .gallery h1{
