@@ -236,7 +236,9 @@
   /* Drop Down Icon */
   
   /* 3dot drop down */
-  
+  .active-pg{
+    color:gold!important;
+  }
   .hamburger{
       display:none;
       visibility: hidden;
