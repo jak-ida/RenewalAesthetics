@@ -239,6 +239,10 @@
   .active-pg{
     color:gold!important;
   }
+.active-pg1{
+    color:black!important;
+  ackground-color:gold!important;
+  }
   .hamburger{
       display:none;
       visibility: hidden;
