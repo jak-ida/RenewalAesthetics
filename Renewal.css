@@ -61,6 +61,26 @@ html{
   #root, #__next {
     isolation: isolate;
   }
+
+/* Define the keyframes */
+@keyframes myAnimation {
+    0% { font-size:3.5rem; margin-left:75px;}
+    100% { font-size: 4.5rem; margin-left:0px;}
+  }
+  
+  @keyframes myAnimation1 {
+    0% { font-size:70%; margin-left:100px;}
+    100% { font-size: 100%; margin-left:0px;}
+  }
+  /* Apply the animation to an element */
+  .main-transition {
+    animation-name: myAnimation;
+    animation-duration: 1.8s;
+  }
+  .main-transition1 {
+    animation-name: myAnimation1;
+    animation-duration: 1.8s;
+  }
   /* Columns */
   .row {
       display: grid;
