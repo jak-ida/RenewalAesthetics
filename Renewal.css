@@ -1,5 +1,7 @@
   /* CSS Reset*/
-
+html{
+    scroll-behavior: smooth;
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -32,7 +34,6 @@
   body {
     line-height:1.6;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Montserrat', sans-serif!important;
   }
   /*
     6. Improve media defaults
@@ -65,6 +66,15 @@
       grid-template-columns: repeat(12, 1fr);
       grid-gap: 0px;
   } 
+  .active-pg{
+    color:gold!important;
+  }
+
+  .active-pg1{
+    color:black!important;
+    background-color: gold!important;
+  }
+
   .col-1{
       grid-column: auto/span 1;
   
@@ -75,6 +85,10 @@
       grid-column: auto/span 3;
   
   }
+  .col-s-3{
+    grid-column: auto/span 3;
+
+}
   .col-4{
       grid-column: auto/span 4;
   
@@ -177,7 +191,30 @@
   i{
       color:black;
   }
-  
+  .hide{
+    display:none!important;
+    visibility: hidden;
+  }
+.fade{
+    display:flex;
+    visibility: visible;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+    
+ @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+
   /* The dropdown container */
   .dropdown {
       float: left;
@@ -237,13 +274,7 @@
   /* Drop Down Icon */
   
   /* 3dot drop down */
-  .active-pg{
-    color:gold!important;
-  }
-.active-pg1{
-    color:black!important;
-  ackground-color:gold!important;
-  }
+  
   .hamburger{
       display:none;
       visibility: hidden;
@@ -359,7 +390,6 @@
       line-height: 4rem;
       font-weight: lighter;
       font-style: italic; 
-    font-family:'TimeNewRoman', serif!important;
   }
   .main__intro1{
       font-size:4.5rem;
@@ -368,7 +398,6 @@
       font-weight: bolder;
       line-height: 4rem;
       font-weight: lighter;
-     font-family:'TimeNewRoman', serif!important;
   }
   .main__all{
       margin-left:6rem;
@@ -1140,7 +1169,7 @@
   }
   .prod-details:hover{
       box-shadow: 2px 2px 5px rgb(97, 96, 96);
- 
+      border-radius: 1rem;
   }
   .prod-details img{
       height:200px;
@@ -1291,6 +1320,7 @@
       cursor: pointer;
       padding: 0.5rem;
       border-radius: 0.5rem;
+      
     }
     
     #scroll-to-top-btn:hover {
@@ -1524,7 +1554,11 @@
   .col-3{
       grid-column: auto/span 12;
   
-  }    
+  }  
+  .col-s-3{
+    grid-column: auto/span 12;
+
+}  
   .col-5{
       grid-column: auto/span 12;
   
@@ -1795,12 +1829,7 @@
     display: flex;
 
   }
-  .news-img{
-    width:auto;
-  }
-    .news-button{
-    width:auto;
-  }
+  
   
   /*Gallery Page*/
   .gallery h1{
@@ -1897,7 +1926,10 @@
   } 
   .col-3{
       grid-column: auto/span 6;
-  }    
+  }  
+  .col-s-3{
+    grid-column: auto/span 12;
+}    
   .col-5{
       grid-column: auto/span 12;
   
@@ -2226,10 +2258,33 @@
                   opacity: 0;
               }
           }
-  
-  
-  
-  
+        
+        .gallery-menu{
+            
+            color:black;
+            height:auto;
+            font-size: 1.2rem;
+            display: flex;
+            line-height: 2.5rem;
+           
+        }
+        .gallery-menu ul{
+            padding:2px;
+        }
+        .gallery-menu li{
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap:0.5rem;
+            background-color: tan;
+            padding: 0.2rem 0.5rem;
+            margin:0.2rem;
+            flex:1;
+        }
+        .gallery-menu li:hover{
+            color:black;
+            background-color: gold!important;
+        }
+          
   
           .gallery-container {
               display: flex;
@@ -2237,12 +2292,12 @@
               justify-content: space-between;
               background-color: tan;
               box-shadow: 0 0 3px 0 rgba(44, 44, 44, 0.3);
-              width: 90%;
+              width: 95%;
               margin: 0 auto;
               padding: 10px;
           }
           .gallery-item {
-              flex-basis: 32.7%;
+              flex-basis: 32.7%!important;
               margin-bottom: 0.6rem;
               opacity: .85;
               cursor: pointer;
