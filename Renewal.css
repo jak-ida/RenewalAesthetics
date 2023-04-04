@@ -34,6 +34,7 @@ html{
   body {
     line-height:1.6;
     -webkit-font-smoothing: antialiased;
+    font-family:'Montserrat', sans-serif;
   }
   /*
     6. Improve media defaults
@@ -136,7 +137,7 @@ html{
   }
   .navbar {
       overflow: hidden;
-      font-family: Arial;
+      
       display: flex;
       align-items: center;
   }
