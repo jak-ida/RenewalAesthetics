@@ -391,6 +391,7 @@ html{
       line-height: 4rem;
       font-weight: lighter;
       font-style: italic; 
+      font-family:'Times New Roman', serif;
   }
   .main__intro1{
       font-size:4.5rem;
@@ -399,6 +400,7 @@ html{
       font-weight: bolder;
       line-height: 4rem;
       font-weight: lighter;
+    font-family:'Times New Roman', serif;
   }
   .main__all{
       margin-left:6rem;
