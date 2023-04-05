@@ -2072,8 +2072,8 @@ html{
       margin-left:2rem;
   }
    @keyframes myAnimation {
-    0% { font-size:1.5rem; margin-left:65px;}
-    100% { font-size: 3rem; margin-left:0px;}
+    0% { font-size:2.5rem; margin-left:65px;}
+    100% { font-size: 4.5rem; margin-left:0px;}
   }
   
   @keyframes myAnimation1 {
