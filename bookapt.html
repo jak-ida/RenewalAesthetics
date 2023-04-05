@@ -66,28 +66,16 @@
                 <button class="dropbtn row">
                     <a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
                 </button>
-                <div class="menu-items">
-                        <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
-                        <a href="treatmentsren.html#microneedling">Micro-needling</a>
-                        <a href="treatmentsren.html#invasive-treatments">Invasive Treatments</a>
-                        <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
-                </div>
             </div>
             <div class="dropdown">
                
                     <a class="no-a hamburger dropdown-content1" href="productsren.html">PRODUCTS</a>
                
-               <!-- <div class="menu-items">
-                    <a onclick="OpenProduct(2)" href="productsren.html#biobaby">BioBaby</a>
-                    <a onclick="OpenProduct(4)" href="productsren.html#dermalogica">Dermalogica</a>
-                    <a onclick="OpenProduct(1)" href="productsren.html#biomedical">BioMedical Emporium</a>
-                    <a onclick="OpenProduct(3)" href="productsren.html#lamelle">Lamelle</a>
-                    <a onclick="OpenProduct(5)" href="productsren.html#mesoestetic">Mesoestetic</a>
-                    <a onclick="OpenProduct(6)" href="productsren.html#skinrepublic">Skin Republic</a>
-                </div>-->
             </div>
             <div class="dropdown-content1">
-                <a href="contactren.html">CONTACT US</a>
+                <a href="gallery.html"> GALLERY</a>
+                <a href="newsen.html"> NEWS</a>
+                <a href="contactren.html"> CONTACT US</a>
             </div>
         </div>
     </div>
@@ -209,27 +197,31 @@
         <button id="scroll-to-top-btn">
             <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top" src="up-long.svg">
         </button>
+        <div id="snackbar">
+            <div class="">
+                <i class="fas fa-circle-check" style="padding:4px 10px;color:white;"></i>
+                <span id="snackmessage">
+                    Some text some message..
+                </span>
+            </div>
+        </div>
     
-         <script>
-     
-     
-    // Show scroll-to-top button after scrolling halfway through the page
-    window.onscroll = function() {
-    var btn = document.getElementById("scroll-to-top-btn");
-    if (document.body.scrollTop > (document.body.scrollHeight / 5) || document.documentElement.scrollTop > (document.documentElement.scrollHeight / 5)) {
-    btn.style.display = "block";
-    } else {
-    btn.style.display = "none";
-    }
-    };
+        <div id="Negative-snackbar" style=" background-color: red;">
+            <div class="">
+                <i class="fas fa-circle-xmark" style="padding:4px 10px; color:white;"></i>
+                <span id="snackmessage">
+                    Please Fill All Details
+                </span>
+            </div>
+        </div>
     
-    // Scroll to top when button is clicked
-    document.getElementById("scroll-to-top-btn").addEventListener("click", function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    });
+        
+        
+        
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="crypto-js.js"></script>
     
-    
+     <script> 
         function redirectToHome() {
         window.location.href = "index.html";
     }  
@@ -251,9 +243,9 @@
             function redirectToContact() {
         window.location.href = "contactren.html";
     }
-    function redirectToBookApt() {
-        window.location.href = "bookapt.html";
-    }
+         function redirectToBookApt() {
+            window.location.href = "bookapt.html";
+        }
         
             
             
@@ -295,8 +287,136 @@
             
          //Navbar settings for mobile ends//    
                 
+                
+                
+                
+                
+        function SendComment(){
             
+            var firstname = document.getElementById("first-name").value;
+            var lastname = document.getElementById("last-name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var message = document.getElementById("message").value;
             
+            if(firstname == "" || lastname == ""|| email == "" || phone == "" || message == ""){
+            
+                 document.getElementById("snackmessage").innerHTML = "Please Fill All Details And Try Again";
+    
+                // Get the snackbar DIV
+                var x = document.getElementById("Negative-snackbar");
+    
+                // Add the "show" class to DIV
+                x.className = "show";
+    
+                // After 3 seconds, remove the show class from DIV
+                setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
+            
+            }
+            else{
+                
+                document.getElementById("ContactSubmit").disabled = true;
+                    
+                var key = CryptoJS.enc.Utf8.parse('8080808080808080');
+                var iv = CryptoJS.enc.Utf8.parse('8080808080808080');
+    
+                var encryptedfirstname = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(firstname), key,
+                  {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7 
+                  });
+    
+                var encryptedlastname = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(lastname), key,
+                  {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7 
+                  });
+    
+                var encryptedemail = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(email), key,
+                  {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7 
+                  });
+    
+                var encryptedphone = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(phone), key,
+                  {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7 
+                  });
+    
+                var encryptedmessage = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(message), key,
+                  {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7 
+                  });
+    
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                    // Typical action to be performed when the document is ready:
+                    var res = JSON.parse(xhttp.responseText);
+    
+                    //alert(res[0].emailStatus);
+                  }
+                };
+    
+                xhttp.open("GET", "https://kalafhi-web-as.duckdns.org:224/Renewalserv/SendEmail?Firstname=" + encryptedfirstname + "&Lastname=" + encryptedlastname + "&Email=" + encryptedemail + "&Phone=" + encryptedphone + "&Message=" + encryptedmessage, true);
+                xhttp.send();
+    
+    
+                document.getElementById("snackmessage").innerHTML = "Message Successfully Sent";
+    
+                // Get the snackbar DIV
+                var x = document.getElementById("snackbar");
+    
+                // Add the "show" class to DIV
+                x.className = "show";
+    
+                // After 3 seconds, remove the show class from DIV
+                setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
+    
+                document.getElementById("ContactSubmit").disabled = false;
+    
+            }
+        }
+                
+                
+                
+    
         </script>
     </body>
     </html>
+    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+    
