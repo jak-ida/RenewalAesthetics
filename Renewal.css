@@ -1376,7 +1376,7 @@ html{
       width:90%;
       margin:auto auto;
   }
-  .book-form input[type="submit"]{
+  .book-form input[type="button"]{
   display: block!important;
       background-color: transparent;
       border:2px solid white;
@@ -1393,7 +1393,7 @@ html{
       font-weight: bold;
   padding:0.5rem 3rem;
   }
-  .book-form input[type="submit"]:hover{
+  .book-form input[type="button"]:hover{
       background-color: hsla(0, 4%, 26%, 0.4);  
       color:gold;
       border:2px solid gold;
@@ -1912,7 +1912,7 @@ html{
       width:95%;
       margin-bottom:0.5rem;
   }
-  .book-form input[type="submit"]{
+  .book-form input[type="button"]{
   float:none;
   margin:auto auto;
   margin-top:1rem;
