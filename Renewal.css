@@ -448,7 +448,7 @@ html{
   
   /* Second Section*/
   .main__quote{
-      background-image: url('BackgroundImages/goldsilk.jpg');
+      background-image: url('BackgroundImages/goldsilkgold.jpg');
       background-position:center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1358,7 +1358,7 @@ html{
       display:grid;
       grid-auto-flow: dense;
       grid-gap:2px;
-      background-image: url('BackgroundImages/apt\ background.webp');
+      background-image: url('BackgroundImages/contback2.png');
       background-position: center;
       background-size: cover;
       color:white;
