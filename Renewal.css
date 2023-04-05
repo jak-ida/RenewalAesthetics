@@ -1809,7 +1809,7 @@ html{
   }
   .prod-2 p{
      padding:2rem 0;
-     width:85%;
+     width:100%;
   }
   .prod-2 img{
       height:auto;
@@ -2152,6 +2152,7 @@ html{
   }
   .prod-2 p{
       padding:2rem 0;
+    width:100%;
    }
   .prod-2 img{
       height:auto;
