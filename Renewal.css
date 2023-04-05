@@ -1930,7 +1930,7 @@ input[type="text"],
   }
   .flex1{
     gap:0.5rem;
-    margin-top:1rem;
+    margin-bottom:1rem;
   }
   
   
@@ -2214,7 +2214,7 @@ input[type="text"],
   }
   .flex1{
     gap:0.5rem;
-    margin-top:1rem;
+    margin-bottom:1rem;
   }
     .glass-effect1{
     width:90%;
