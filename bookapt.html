@@ -86,7 +86,17 @@
     <form>
         <div class="form-row">
             <p>Please leave your details in the form below and we’ll be in touch to arrange a convenient time for you to talk to one of our practitioners.</p>
-            <div class="form-group">
+            <div class="flex1">
+            <div>
+                <label for="date">Date of Consultation:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="time">Available Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+        </div>
+		<div class="form-group">
                 <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
             </div>
             <div class="form-group">
@@ -101,16 +111,7 @@
                 <input type="number" id="phone" name="phone" placeholder="Phone Number" required>
             </div>
         </div>
-        <div class="flex1">
-            <div>
-                <label for="date">Date of Consultation:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div>
-                <label for="time">Available Time:</label>
-                <input type="time" id="time" name="time" required>
-            </div>
-        </div>
+        
         
         <textarea id="message" name="message" placeholder="Any additional information: e.g. Skin concerns and the service you would like to have."required></textarea>
         
