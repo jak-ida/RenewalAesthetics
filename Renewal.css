@@ -2382,11 +2382,11 @@ input[type="text"],
             background-color: tan;
             padding: 0.2rem 0.5rem;
             margin:0.2rem;
-          color:white
+          color:white;
             flex:1;
         }
         .gallery-menu li:hover{
-            color:white!important;
+            color:black!important;
             background-color: tan!important;
         }
           
