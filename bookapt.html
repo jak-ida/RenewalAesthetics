@@ -300,9 +300,16 @@
             var lastname = document.getElementById("last-name").value;
             var email = document.getElementById("email").value;
             var phone = document.getElementById("phone").value;
-            var message = document.getElementById("message").value;
+	    var date = document.getElementById("date").value;
+            var time = document.getElementById("time").value;
+	    var body = document.getElementById("message").value; 
+	    var newMessage = "A booking has been requested with the following details: <br/> <br/> Date: " + date + " <br/> <br/> Time: " + time + " <br/> <br/> Message: " + body + ". <br/> <br/>";
+		
+	    var message = newMessage;
+	
+		
             
-            if(firstname == "" || lastname == ""|| email == "" || phone == "" || message == ""){
+            if(firstname == "" || lastname == ""|| email == "" || phone == "" || body == "" || date == "" || time == "" ){
             
                  document.getElementById("snackmessage").innerHTML = "Please Fill All Details And Try Again";
     
