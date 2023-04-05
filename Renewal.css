@@ -899,7 +899,9 @@ html{
       display: block;
       margin-bottom: 0.2rem;
   }
-  input[type="text"],
+  input[type="date"],
+input[type="time"],
+input[type="text"],
   input[type="email"],
   input[type="number"],
   textarea {
