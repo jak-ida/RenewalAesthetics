@@ -1,5 +1,5 @@
   /* CSS Reset*/
-html{
+  html{
     scroll-behavior: smooth;
 }
 /*
@@ -88,12 +88,12 @@ html{
       grid-gap: 0px;
   } 
   .active-pg{
-    color:gold!important;
+    color:tan!important;
   }
 
   .active-pg1{
     color:black!important;
-    background-color: gold!important;
+    background-color: tan!important;
   }
 
   .col-1{
@@ -174,7 +174,7 @@ html{
   }
   
   .navbar a:hover{
-      color:gold;
+      color:tan;
   }
   
   button a{
@@ -283,7 +283,7 @@ html{
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: gold;
+    background-color: tan;
       color:black;
   }
   
@@ -374,8 +374,8 @@ html{
       
     }
   .booking__btn1:hover{
-      border:2px solid gold;
-      color:gold;
+      border:2px solid tan;
+      color:tan;
       cursor: pointer;
       background-color: hsla(0, 4%, 26%, 0.4);
       
@@ -398,8 +398,8 @@ html{
       font-weight: bold;
       }
   .booking__btn2:hover{
-      border:2px solid gold;
-      color:gold;
+      border:2px solid tan;
+      color:tan;
       cursor: pointer;
       background-color: black;
       }
@@ -416,7 +416,7 @@ html{
   .main__intro1{
       font-size:4.5rem;
       width:50%;
-      color:goldenrod;
+      color:tan;
       font-weight: bolder;
       line-height: 4rem;
       font-weight: lighter;
@@ -448,7 +448,7 @@ html{
   
   /* Second Section*/
   .main__quote{
-      background-image: url('BackgroundImages/goldsilkgold.jpg');
+      background-image: url('BackgroundImages/tansilktan.jpg');
       background-position:center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -479,10 +479,7 @@ html{
       align-items: center;
   }
   .thirdpg1{
-      background-image: url('BackgroundImages/backgrr2.png');
-      background-position:center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      background-color:black;
   }
   .thirdpg__div{  
       display:grid; 
@@ -516,8 +513,8 @@ html{
   }
   .thirdpg__button:hover{
       background-color: black;  
-      color:gold;
-      border:2px solid gold;
+      color:tan;
+      border:2px solid tan;
       cursor:pointer;
   }
   
@@ -567,16 +564,14 @@ html{
   }
   .fourthpg__button:hover{
       background-color: black;  
-      color:gold;
-      border:2px solid gold;
+      color:tan;
+      border:2px solid tan;
       cursor:pointer;
   }
   
   /* Fifth Section*/
   .fifthpg{
-      background-image: url('BackgroundImages/backgrr1.png');
-      background-position: center;
-      background-size: cover;
+      background-color:black;
       height:auto;
       display:flex;
       flex-direction: column;
@@ -604,7 +599,7 @@ html{
       display: grid;
       align-content: center;   
       padding:2rem;
-       box-shadow: 5px 5px 8px goldenrod;
+       box-shadow: 5px 5px 8px tan;
   }
   .fifth_hr{
       width:40%;
@@ -646,8 +641,8 @@ html{
   }
   .fifthpg__button:hover{
      background-color:black;  
-      color:gold;
-      border:2px solid gold;
+      color:tan;
+      border:2px solid tan;
       cursor:pointer;
   }
   .col-lg-4{
@@ -661,7 +656,7 @@ html{
       margin: auto auto;
       margin-top:1rem;
       margin-bottom:1rem;
-      border: 1px solid goldenrod;
+      border: 1px solid tan;
   }
   .mainpage__f-sect{
       display:grid;
@@ -701,7 +696,7 @@ html{
   }
   .quicklinks a:hover{
       text-decoration: underline;
-      color:gold;
+      color:tan;
       font-weight: bold;
     cursor:pointer;
       
@@ -762,7 +757,7 @@ html{
   
   .about-images{
       height:60px;
-      background-image: url('BackgroundImages/gold.jpg');
+      background-image: url('BackgroundImages/tan.jpg');
       background-position:bottom;
       background-size: cover;
   }
@@ -794,7 +789,7 @@ html{
       padding:0.5rem;
   }
   .hr_about{
-      border:2px solid goldenrod;
+      border:2px solid tan;
       margin-top:1rem; 
       margin-bottom:1rem;
   }
@@ -935,8 +930,8 @@ input[type="text"],
   }
   .form button:hover {
      background-color: hsla(0, 4%, 26%, 0.4);  
-      color:gold;
-      border:2px solid gold;
+      color:tan;
+      border:2px solid tan;
       cursor:pointer;
   }
   
@@ -1003,7 +998,7 @@ input[type="text"],
   }
   .treat-2{
       border:5px solid white;
-      border-top-color:goldenrod;  
+      border-top-color:tan;  
       padding:2rem;
   }
   .treat h3{ 
@@ -1048,15 +1043,15 @@ input[type="text"],
   
   .hr-treats hr{
       margin-top:1rem;
-      border:2px solid goldenrod;
+      border:2px solid tan;
   }
   .hr-treats-1 hr{
-      border:2px solid goldenrod;
+      border:2px solid tan;
       width:70%;
       margin:auto auto;
   }
   .type-1 h2{
-      color: goldenrod;
+      color: tan;
   }
   .type{
       padding:.75rem;
@@ -1135,8 +1130,7 @@ input[type="text"],
       background-color: black;
       color:white;
       min-height:100px;
-      align-content: center;
-      padding:1rem;
+      padding:0.5rem 1rem 1rem;
   }
   .prod-info-1 img{
       padding-top:1rem;
@@ -1155,7 +1149,7 @@ input[type="text"],
   }
   .prod-info2 h4{
       text-align: center!important;
-      padding:0.2rem;
+      padding:0.2rem 0.3rem;
       color:white;
       background-color: black
   }
@@ -1164,7 +1158,9 @@ input[type="text"],
       padding:1rem 0.25rem;
   }
   .prod-info-1{
+    display:grid;
       text-align: justify;
+      align-items: center;
   }
   .prod-info-1 img{
       height:100px;
@@ -1172,11 +1168,12 @@ input[type="text"],
       margin:auto auto;
   }
   .prod-info-1:hover{
-      background-image: url('BackgroundImages/contback2.png');
+      
+    align-items: center;
       border-radius: 0.5rem;
-      border:1px solid gold;
+      border:1px solid tan;
       padding:0rem 1.2rem;
-      box-shadow: 2px 2px 5px gold;
+      box-shadow: 2px 2px 5px tan;
       gap:0.2rem;
       transition: 0.15s;
   }
@@ -1210,7 +1207,7 @@ input[type="text"],
       background-position: center;
       background-size: cover;
       height:auto;
-      color:darkgoldenrod;
+      color:darktan;
       display:grid;
       align-items: center;
       padding:2rem;
@@ -1220,7 +1217,7 @@ input[type="text"],
   
   .gal-title{
       font-size: 1.5rem;
-      color:goldenrod;
+      color:tan;
       padding: 1.2vh 0vw 1vh 10vw;
   }
   .row-g {
@@ -1280,7 +1277,7 @@ input[type="text"],
     color:white;
     padding: 1vh 0vw 1vh 10vw;
     background-color: black;
-    border-bottom:5px solid goldenrod;
+    border-bottom:5px solid tan;
   }
   .news-img{
     height:auto;
@@ -1350,7 +1347,7 @@ input[type="text"],
     }
     
     #scroll-to-top-btn:hover {
-      background-color: gold;
+      background-color: tan;
     }
     
   
@@ -1397,8 +1394,8 @@ input[type="text"],
   }
   .book-form input[type="button"]:hover{
       background-color: hsla(0, 4%, 26%, 0.4);  
-      color:gold;
-      border:2px solid gold;
+      color:tan;
+      border:2px solid tan;
       cursor:pointer;
       }
   .glass-effect1 { 
@@ -2368,7 +2365,7 @@ input[type="text"],
         }
         .gallery-menu li:hover{
             color:black;
-            background-color: gold!important;
+            background-color: tan!important;
         }
           
   
