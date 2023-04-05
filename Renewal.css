@@ -1683,6 +1683,15 @@ html{
   .main__quote h1{
       font-size: 90%;
   }
+   @keyframes myAnimation {
+    0% { font-size:1.5rem; margin-left:35px;}
+    100% { font-size: 3rem; margin-left:0px;}
+  }
+  
+  @keyframes myAnimation1 {
+    0% { font-size:70%; margin-left:35px;}
+    100% { font-size: 100%; margin-left:0px;}
+  }
   .main__intro, .main__intro1{
       font-size: 3rem;
       width:80%;
@@ -2051,6 +2060,15 @@ html{
   }
   .main__all{
       margin-left:2rem;
+  }
+   @keyframes myAnimation {
+    0% { font-size:1.5rem; margin-left:65px;}
+    100% { font-size: 3rem; margin-left:0px;}
+  }
+  
+  @keyframes myAnimation1 {
+    0% { font-size:70%; margin-left:65px;}
+    100% { font-size: 100%; margin-left:0px;}
   }
   .main__intro1, .main__intro{
       width:70%
