@@ -1835,9 +1835,12 @@ html{
   .type-1 img{
       height:auto;
       width:auto;
+    padding:0.5rem;
   }
   .treat img{
       padding: 1rem;
+    width:auto;
+    height:auto;
   }
   .type-22{
       padding-left:12vw;
