@@ -1364,6 +1364,13 @@ html{
       color:white;
       font-size: large;
   }
+  .form-row p{
+    text-align:center;
+    margin-bottom:1.5rem;
+  }
+  .book-form textarea{
+    margin-top:1rem;
+  }
   .book-form{
       justify-content: space-around;
       width:90%;
@@ -1402,12 +1409,19 @@ html{
       margin: auto auto;
       width:80%;
   }
+  .book-form input {
+    margin-bottom:0.5rem;
+  }
   .flex1{
       display:flex;
       flex-direction: row;
       flex-wrap:wrap;
       gap:2rem;
   }
+  
+  
+  
+  
   
   
   
@@ -1870,7 +1884,7 @@ html{
   .gallery h4{
       font-size: 1rem;
   }
-  /*Book Apt*/
+ /*Book Apt*/
   .bookapt{
       padding:0.5rem;
       margin:auto auto;
@@ -1884,15 +1898,16 @@ html{
   margin:auto auto;
   margin-top:1rem;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  .book-form textarea{
+    margin-top:1rem;
+  }
+  .form-row{
+    margin-bottom:0rem;
+  }
+  .flex1{
+    gap:0.5rem;
+    margin-top:1rem;
+  }
   
   
   
@@ -2159,8 +2174,14 @@ html{
 
     text-align:center;
   }
-  
-  
+  /* Book Appointment Page*/
+  .form-row{
+    margin-bottom:0rem;
+  }
+  .flex1{
+    gap:0.5rem;
+    margin-top:1rem;
+  }
   
   
   
