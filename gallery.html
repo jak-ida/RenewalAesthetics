@@ -485,15 +485,15 @@ var currentfd ='1';
         var object = container.querySelectorAll('li');
         for (var i = 1; i <= object.length; i++){
            document.getElementById('event-' + i).style.backgroundColor = 'tan';
+           
         }
         
         var res = instance.style.backgroundColor;
         if(res == 'black'){
                 instance.style.backgroundColor = 'tan';
-		instance.style.color = 'black';
+                
             } else if(res == 'tan'){
                 instance.style.backgroundColor = 'black';
-		instance.style.color = 'white';
             }
                     switchGallery(instance.id);
     }
