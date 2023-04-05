@@ -546,6 +546,9 @@
   .fourthpg__p{
       margin-bottom:2%;
       text-align: justify;
+    hyphens:auto;
+    -webkit-hyphens:auto;
+    word-spacing:-0.05em;
   }
   .fourthpg__button{
       border:2px solid hsl(0, 4%, 26%);
@@ -730,6 +733,10 @@
       border-top-color:white;
       padding:2rem;
       text-align: justify;
+    hyphens:auto;
+    -webkit-hyphens:auto;
+    word-spacing:-0.05em;
+    
   
   }
   .about_brief p{
@@ -786,6 +793,9 @@
   .about__background2 p{
       font-size:large;
       text-align: justify;
+    hyphens:auto;
+    -webkit-hyphens:auto;
+    word-spacing:-0.05em;
       padding:0.5rem;
   }
   .hr_about{
@@ -995,6 +1005,9 @@ input[type="text"],
       width:80%;
       font-size: large;
       text-align:justify;
+    hyphens:auto;
+    -webkit-hyphens:auto;
+    word-spacing:-0.05em;
   }
   .treat-2{
       border:5px solid white;
@@ -1039,6 +1052,9 @@ input[type="text"],
   }
   .type p{
       text-align: justify;
+    hyphens:auto;
+    -webkit-hyphens:auto;
+    word-spacing:-0.05em;
   }
   
   .hr-treats hr{
@@ -1123,6 +1139,9 @@ input[type="text"],
       margin:auto auto;
       font-size: large;
       text-align: justify;
+    hyphens:auto;
+    -webkit-hyphens:auto;
+    word-spacing:-0.05em;
   }
   .prod-info{
       display:flex;
@@ -1160,6 +1179,9 @@ input[type="text"],
   .prod-info-1{
     display:grid;
       text-align: justify;
+    hyphens:auto;
+    -webkit-hyphens:auto;
+    word-spacing:-0.05em;
       align-items: center;
   }
   .prod-info-1 img{
