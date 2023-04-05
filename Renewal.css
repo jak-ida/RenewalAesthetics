@@ -1879,6 +1879,16 @@ html{
   .news-img{
     width:auto;
   }
+    .news-sub{
+    padding:0.5rem;
+
+  }
+    .news-button{
+      width:90%;
+    }
+    .news-sub{
+      padding:0rem;
+    }
   
   /*Gallery Page*/
   .gallery h1{
