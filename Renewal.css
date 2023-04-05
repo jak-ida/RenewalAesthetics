@@ -1419,6 +1419,7 @@ input[type="text"],
       flex-direction: row;
       flex-wrap:wrap;
       gap:2rem;
+    margin-bottom:1rem;
   }
   
   
