@@ -85,7 +85,7 @@
     <div class="row">
     <div class="gallery-menu col-s-3">
             <ul id="event-num">
-                <li style="background-color: gold;" id="event-1" onclick="eventHighlight(this)"> Renewal Luncheon </li>
+                <li style="background-color: black;" id="event-1" onclick="eventHighlight(this)"> Renewal Luncheon </li>
                 <li style="background-color: tan;" id="event-2" onclick="eventHighlight(this)"> Consumer Fair </li>
                 <li style="background-color: tan;" id="event-3" onclick="eventHighlight(this)"> Our New Offices</li>
                 <li style="background-color: tan;" id="event-4" onclick="eventHighlight(this)"> Event 1</li>
@@ -488,10 +488,12 @@ var currentfd ='1';
         }
         
         var res = instance.style.backgroundColor;
-        if(res == 'gold'){
+        if(res == 'black'){
                 instance.style.backgroundColor = 'tan';
+		instance.style.color = 'black';
             } else if(res == 'tan'){
-                instance.style.backgroundColor = 'gold';
+                instance.style.backgroundColor = 'black';
+		instance.style.color = 'white';
             }
                     switchGallery(instance.id);
     }
