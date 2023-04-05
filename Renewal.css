@@ -1853,7 +1853,9 @@ html{
     display: flex;
 
   }
-  
+  .news-img{
+    width:auto;
+  }
   
   /*Gallery Page*/
   .gallery h1{
