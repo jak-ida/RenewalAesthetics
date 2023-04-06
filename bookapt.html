@@ -318,9 +318,7 @@
             
             }
             else{
-                
-                document.getElementById("ContactSubmit").disabled = true;
-                    
+		    
                 var key = CryptoJS.enc.Utf8.parse('8080808080808080');
                 var iv = CryptoJS.enc.Utf8.parse('8080808080808080');
     
@@ -389,7 +387,6 @@
                 // After 3 seconds, remove the show class from DIV
                 setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
     
-                document.getElementById("ContactSubmit").disabled = false;
     
             }
         }
