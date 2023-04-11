@@ -429,7 +429,7 @@
       padding:5px;
       height:60px;
       width:100%;
-      background-color: hsla(0, 4%, 26%, 0.4);
+      background-color: black;
       display:inline-flex;
       justify-content:space-between;
       align-items:center;
@@ -520,6 +520,7 @@
   /* Fourth Section*/
   .fourthpg{
       height:auto;
+      padding:3rem 0;
       background-color: white;  
   }
   .fourth-pg-1{
