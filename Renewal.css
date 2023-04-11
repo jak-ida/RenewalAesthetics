@@ -1147,9 +1147,7 @@ input[type="text"],
       min-height:100px;
       padding:0.5rem 1rem 1rem;
   }
-  .prod-info-1 img{
-      padding-top:1rem;
-  }
+  
   .col{
       flex: 1 0 0%;
     }
@@ -1181,8 +1179,11 @@ input[type="text"],
       align-items: center;
   }
   .prod-info-1 img{
-      height:100px;
-      width:auto;
+    padding-top:0.5rem;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+      height:auto;
+      width:160px;
       margin:auto auto;
   }
   .prod-info-1:hover{
