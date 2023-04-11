@@ -495,7 +495,6 @@
       color:white;
       padding:1rem;
       text-align:center; 
-      font-size: large;
   }
   .treat-images{
       gap:2rem;
@@ -744,22 +743,18 @@
       width:80%;
       margin:auto auto;
       z-index:2;
-      font-size: large;
   }
   .about_brief_p1 p{
       color:white;
       width:95%;
       margin:auto auto;
-      font-size: large;
       z-index:2;
       
   }
   
   .about_brief-img{
-      height:auto;
-      width:100%;
+      width:auto;
       padding:1rem;
-      
   }
   
   .about-images{
@@ -769,15 +764,18 @@
       background-size: cover;
   }
   .about__background1{
-      background-image: url('BackgroundImages/abt%20background1.png');
+      background-color:tan;
       color:black;
       display: grid;
       align-content: center;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
       padding:1.5rem;
   }
+  .about__background{
+    color:black;
+    display: grid;
+    align-content: center;
+    padding:1.5rem;
+}
   
   
   .about__background2{
@@ -791,7 +789,7 @@
   
   }
   .about__background2 p{
-      font-size:large;
+      font-size:1rem;
       text-align: justify;
     hyphens:auto;
     -webkit-hyphens:auto;
@@ -804,19 +802,19 @@
       margin-bottom:1rem;
   }
   .about__image1{
-  width:50%;
+  width:70%;
   margin:auto auto;
   
   }
   .about__image2{
-  width:65%;
+  width:85%;
   margin:auto auto;
    position:relative;
       left:-5rem;
   }
   
   .about__image3{
-      width:50%;
+      width:60%;
       margin:auto auto;
       position:relative;
       right:8rem;
@@ -824,7 +822,7 @@
       
       
   }.about__image4{
-      width:50%;
+      width:60%;
       margin:auto auto;
       position:relative;
       left:5rem;
@@ -1003,7 +1001,6 @@ input[type="text"],
   .treat-1 p{ 
       margin:auto;
       width:80%;
-      font-size: large;
       text-align:justify;
     hyphens:auto;
     -webkit-hyphens:auto;
@@ -1030,7 +1027,6 @@ input[type="text"],
   }
   .treat p{ 
       width:80%; 
-      font-size: large;
       margin:auto auto;
       text-align: justify; 
   }
@@ -1046,8 +1042,9 @@ input[type="text"],
       border-radius: 1rem;
   }
   .treat img{
-      height:400px;
+      height:auto;
       width:auto;
+      padding:1.5rem;
       
   }
   .type p{
@@ -1137,7 +1134,6 @@ input[type="text"],
   .prod-2 p{
       width:70%;
       margin:auto auto;
-      font-size: large;
       text-align: justify;
     hyphens:auto;
     -webkit-hyphens:auto;
@@ -1383,7 +1379,6 @@ input[type="text"],
       background-position: center;
       background-size: cover;
       color:white;
-      font-size: large;
   }
   .form-row p{
     text-align:center;
