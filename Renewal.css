@@ -454,13 +454,12 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
       color:black;
-      min-height:150px;
-      height:150px;
-      font-family:serif;
+      min-height:120px;
+      height:120px;
       text-align: center;
       display: grid;
       align-content: center;
-      font-size: 1.75rem!important;
+      font-size: 1.5rem;
   }
   .main__quotehr{
       border:2px solid black;
@@ -1697,7 +1696,7 @@ input[type="text"],
   .logo{
       left:-10px;
   }
-  .main__quote h1{
+  .main__quote h2{
       font-size: 90%;
   }
    @keyframes myAnimation {
