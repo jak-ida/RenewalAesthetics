@@ -1995,7 +1995,10 @@ margin-bottom:1rem;
     margin-bottom:1rem;
   }
     .form button{
-    width:auto;
+      width:auto;
+      margin:auto auto;
+      margin-top:1rem;
+      float:none;
     }
   
   
@@ -2195,6 +2198,9 @@ margin-bottom:1rem;
   }
     .form button{
     width:auto;
+      margin:auto auto;
+      margin-top:1rem;
+      float:none;
     }
   .form-group {
       display: inline-block;
