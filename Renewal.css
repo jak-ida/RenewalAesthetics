@@ -984,6 +984,11 @@ input[type="text"],
       justify-content: center;
       align-content: center;
   }
+.treat{
+  margin-top:6rem;
+  margin-bottom:6rem;
+}
+  
   .treat-1 h2{ 
       padding:5vh 0vw 1vh 10vw;
       font-size: 2rem;
@@ -1005,7 +1010,7 @@ input[type="text"],
   .treat-2{
       border:5px solid white;
       border-top-color:tan;  
-      padding:2rem;
+      padding:4rem 2rem;
   }
   .treat h3{ 
       width:80%;
@@ -1065,15 +1070,18 @@ input[type="text"],
   .type{
       padding:.75rem;
       text-align:left;
+    margin-top:0.5rem;
   }
   .type h4{
       padding:.75rem;
       text-align:center;
   }
   .type-1{
-      padding:2rem;
+      padding:2rem 5rem;
       gap:2rem;
       text-align:center;
+    margin-top:4rem;
+    margin-bottom:4rem;
   }
   .type-1 img{
       margin: auto auto;
