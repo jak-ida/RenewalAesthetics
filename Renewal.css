@@ -1860,7 +1860,7 @@ margin-bottom:1rem;
       width: 100%;
   }
   .cont-cent1-details{
-      width:60%;
+      width:auto;
       padding-left:1rem;
   }
   
@@ -2234,7 +2234,7 @@ margin-bottom:1rem;
       width: 100%;
   }
   .cont-cent1-details{
-      width:60%;
+      width:auto;
       padding-left:1rem;
   }
   /*Products Page*/
