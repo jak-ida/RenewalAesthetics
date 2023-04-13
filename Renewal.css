@@ -448,11 +448,7 @@
   
   /* Second Section*/
   .main__quote{
-      background-image: url('BackgroundImages/goldsilkgold.jpg');
-      background-position:center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-color:tan;
       color:black;
       min-height:120px;
       height:120px;
