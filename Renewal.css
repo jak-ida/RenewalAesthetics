@@ -445,11 +445,7 @@
   
   /* Second Section*/
   .main__quote{
-      background-image: url('BackgroundImages/goldsilkgold.jpg');
-      background-position:center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-color:tan;
       color:black;
       min-height:120px;
       height:120px;
@@ -464,7 +460,7 @@
       margin:auto auto;
   }
   .main__quote h1{
-      padding:0.5rem;
+      padding:0.7rem;
   }
   /* Third Section*/
   .thirdpg{
@@ -480,6 +476,7 @@
   .thirdpg__div{  
       display:grid; 
        gap:2rem;
+    padding:4rem 0;
   }
   .thirdpg h2{
       font-size:2.3rem;
@@ -517,7 +514,7 @@
   /* Fourth Section*/
   .fourthpg{
       height:auto;
-      padding:3rem 0;
+      padding:4rem 0;
       background-color: white;  
   }
   .fourth-pg-1{
@@ -580,8 +577,7 @@
       align-content: center;
       gap:1rem;
       color:white;
-      padding:2rem;
-      padding-top:2.5rem;
+      padding: 2.5rem 2rem 2rem;
   }
   .fifth_box{
       height:150px;
@@ -661,7 +657,7 @@
       display:grid;
       align-content: center;
       height:auto;
-      padding:1rem;
+      padding:1.5rem 1rem;
       background: white;
       
   }
@@ -671,6 +667,7 @@
       font-size: 1.2rem;
       width:90%;
       margin: auto auto;
+    padding:1rem 0;
   }
   
   
@@ -739,7 +736,7 @@
       color:white;
       width:80%;
       margin:auto auto;
-      z-index:2;
+    line-height:1.7rem;
   }
   .about_brief_p1 p{
       color:white;
@@ -792,7 +789,11 @@
     -webkit-hyphens:auto;
     word-spacing:-0.05em;
       padding:0.5rem;
+    line-height:1.7rem;
   }
+.about__name1{
+margin-bottom:1rem;
+}
   .hr_about{
       border:2px solid tan;
       margin-top:1rem; 
@@ -856,7 +857,7 @@
         background-color:white;
   }
   .map-background-bleed{
-    background-color: black;
+    background-color: tan;
     color:white;
     padding:4rem;
   }
@@ -899,7 +900,7 @@
     width: 100%;
   }
   .p-4{
-    padding:4rem;
+    padding:3rem 4rem;
   }
   .form{
       padding:2rem 7rem;
@@ -911,8 +912,8 @@
       
   }
   input[type="date"],
-input[type="time"],
-input[type="text"],
+  input[type="time"],
+  input[type="text"],
   input[type="email"],
   input[type="number"],
   textarea {
@@ -1005,6 +1006,9 @@ input[type="text"],
       justify-content: center;
       align-content: center;
   }
+.treat{
+  padding:1.5rem 2rem;
+
   .treat-1 h2{ 
       padding:5vh 0vw 1vh 10vw;
       font-size: 2rem;
@@ -1026,7 +1030,7 @@ input[type="text"],
   .treat-2{
       border:5px solid white;
       border-top-color:tan;  
-      padding:2rem;
+      padding:4rem 2rem;
   }
   .treat h3{ 
       width:80%;
@@ -1092,7 +1096,7 @@ input[type="text"],
       text-align:center;
   }
   .type-1{
-      padding:2rem;
+      padding:4rem 2rem;
       gap:2rem;
       text-align:center;
   }
@@ -1162,7 +1166,7 @@ input[type="text"],
       background-color: black;
       color:white;
       min-height:100px;
-      padding:0.5rem 1rem 1rem;
+      padding:0.5rem 1rem 2rem;
   }
   
   .col{
@@ -1173,7 +1177,7 @@ input[type="text"],
     }
     .prod-info2 h1 {
       text-align: center!important;
-      padding:1rem 1rem 0rem 1rem;
+      padding-top:3rem;
       color:white;
       background-color: black
   }
@@ -1389,11 +1393,10 @@ input[type="text"],
   
   /*Book An Appointment Page*/
   .bookapt{
-      padding:2rem;
+      padding:1.5rem 2rem 3rem;
       display:grid;
       grid-auto-flow: dense;
       grid-gap:2px;
-      /* background-image: url('BackgroundImages/contback2.png'); */
       background-color: white;
       background-position: center;
       background-size: cover;
@@ -1737,6 +1740,7 @@ input[type="text"],
   }
   .main__quote h2{
       font-size: 90%;
+    padding:0.2rem 0rem;
   }
    @keyframes myAnimation {
     0% { font-size:1.5rem; margin-left:35px;}
