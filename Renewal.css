@@ -479,6 +479,7 @@
   .thirdpg__div{  
       display:grid; 
        gap:2rem;
+    padding: 2rem 0rem;
   }
   .thirdpg h2{
       font-size:2.3rem;
@@ -660,7 +661,7 @@
       display:grid;
       align-content: center;
       height:auto;
-      padding:1rem;
+      padding: 2rem 1rem;
       background: white;
       
   }
@@ -708,6 +709,9 @@
       background-color: black;
       z-index:-2;
   }
+.aobut__name1{
+      padding-bottom: 1rem;
+}
   .about-img h2{
       font-size: 2rem;
       color:white;
@@ -791,6 +795,7 @@
     -webkit-hyphens:auto;
     word-spacing:-0.05em;
       padding:0.5rem;
+    line-height: 1.7rem;
   }
   .hr_about{
       border:2px solid tan;
@@ -992,12 +997,9 @@ input[type="text"],
   .treat-1 h2{ 
       padding:5vh 0vw 1vh 10vw;
       font-size: 2rem;
-      color:white;
-      background-image:url('BackgroundImages/contback2.png');
+      color:tan;
+      background-color:white;
       height:auto;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
   }
   .treat-1 p{ 
       margin:auto;
@@ -1010,7 +1012,7 @@ input[type="text"],
   .treat-2{
       border:5px solid white;
       border-top-color:tan;  
-      padding:4rem 2rem;
+      padding: 4rem 2rem 2rem;
   }
   .treat h3{ 
       width:80%;
