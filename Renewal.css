@@ -1968,6 +1968,15 @@ margin-bottom:1rem;
   .gallery h4{
       font-size: 1rem;
   }
+  .gallery-menu li{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    background-color: tan;
+    padding: 0.2rem 0.5rem;
+    margin:0.2rem;
+  color:white;
+}
  /*Book Apt*/
   .bookapt{
       padding:0.5rem;
@@ -2301,9 +2310,16 @@ margin-bottom:1rem;
     min-height:9rem;
   }
   
-  
-  
-  
+  /* Gallery*/
+  .gallery-menu li{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    background-color: tan;
+    padding: 0.2rem 0.5rem;
+    margin:0.2rem;
+  color:white;
+}
   
   
   
@@ -2435,16 +2451,14 @@ margin-bottom:1rem;
             padding:2px;
         }
         .gallery-menu li{
-            display: inline-flex;
-            flex-wrap: wrap;
+            display:grid;
             gap:0.5rem;
             background-color: tan;
             padding: 0.2rem 0.5rem;
             margin:0.2rem;
           color:white;
-            flex:1;
         }
-        .gallery-menu li:hover{
+        .  li:hover{
             color:black!important;
             background-color: tan!important;
         }
