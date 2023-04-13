@@ -1990,6 +1990,7 @@ margin-bottom:1rem;
   float:none;
   margin:auto auto;
   margin-top:1rem;
+    width:auto;
   }
   .book-form textarea{
     margin-top:1rem;
@@ -2278,7 +2279,12 @@ margin-bottom:1rem;
   
   
   
-  
+  .book-form input[type="button"]{
+    float:none;
+    margin:auto auto;
+    margin-top:1rem;
+    width:auto;
+  }
   
   /*news page*/
   .reverse{
