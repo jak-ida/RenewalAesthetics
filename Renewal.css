@@ -1823,6 +1823,9 @@ input[type="text"],
   
   
   /*Contact Page*/
+    .cont-center{
+    padding:0rem;
+    }
   .contact-img h2{
       padding-left:4rem;
       transition:0.2s
@@ -1987,7 +1990,9 @@ input[type="text"],
     gap:0.5rem;
     margin-bottom:1rem;
   }
-  
+    .form button{
+    width:auto;
+    }
   
   
   
@@ -2184,10 +2189,16 @@ input[type="text"],
       padding:2rem 0rem;
       width:auto;
   }
+    .form button{
+    width:auto;
+    }
   .form-group {
       display: inline-block;
       width: 100%;
-  }   
+  }
+    .cont-center{
+    padding:0rem;
+    }
   /* .contact-1 {
       padding: 1rem 1rem;
   } */
