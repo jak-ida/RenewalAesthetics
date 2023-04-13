@@ -157,7 +157,6 @@
   }
   .navbar {
       overflow: hidden;
-      
       display: flex;
       align-items: center;
   }
@@ -256,8 +255,6 @@
   }
    .dropdown:hover .dropbtn {
       color:black;
-      /*font-size:20px;
-      transition-duration:.5s;*/
       text-decoration: none;
   }
   
@@ -856,25 +853,32 @@
   
   /* Contact Us Page*/
   .contact-1{
-      padding:1rem 2rem;
-        color:white;
+      /* padding:1rem 2rem; */
+        background-color:white;
   }
-  .glass-effect { 
+  .map-background-bleed{
+    background-color: black;
+    color:white;
+    padding:4rem;
+  }
+ 
+  /* .glass-effect { 
       background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.3)); 
       -webkit-backdrop-filter: blur(30px); 
      
      
       border-radius: 32px;
-      padding:1.5rem 4rem;
+      padding:1.5rem 4rem; 
       margin: 0 2rem 5rem 2rem;
-  }
+  }*/
   .contact-img h2{
       font-size: 2rem;
       color:white;
       padding:1.4vh 0vw 0vh 10vw;
   }
   .contact_pg{
-      background-image:url('BackgroundImages/contback2.png');
+      /* background-image:url('BackgroundImages/contback2.png'); */
+      background-color: #000;
       height:auto;
       background-position: center;
       background-repeat: no-repeat;
@@ -889,19 +893,23 @@
   }
   .form-group {
     display: inline-block;
-    width: 48%;
+    width:100%;
+    margin-top:.5rem;
   }
   .full-width {
     width: 100%;
   }
-  
+  .p-4{
+    padding:4rem;
+  }
   .form{
-      padding:2rem 3rem;
-      width:50vw;
+      padding:2rem 7rem;
+      width:100%;
   }
   .form-group label {
       display: block;
       margin-bottom: 0.2rem;
+      
   }
   input[type="date"],
 input[type="time"],
@@ -909,20 +917,28 @@ input[type="text"],
   input[type="email"],
   input[type="number"],
   textarea {
-      width: 100%;
+      /* width: 100%;
       padding: 0.5rem;
       border: 1px solid #ccc;
       border-radius: 0.2rem;
       box-sizing: border-box;
       margin-bottom: 0.2rem;
-      box-shadow: 2px 2px 8px lightgray;
+      box-shadow: 2px 2px 8px lightgray; */
+      width: 100%;
+    padding: 0.5rem;
+    border: #ccc;
+    border-bottom: 1px solid black;
+    /* border-radius: 0.2rem; */
+    outline: white!important;
+    box-sizing: border-box;
+    margin-bottom: 0.2rem;
   }
   textarea {
-      height: 15rem;
+      /* height: 15rem; */
   }
   .form button {
       display: block!important;
-      background-color: transparent;
+      background-color: black;
       border:2px solid white;
       color:white;
       padding:0.5rem 1rem;
@@ -938,9 +954,9 @@ input[type="text"],
       font-weight: bold;
   }
   .form button:hover {
-     background-color: hsla(0, 4%, 26%, 0.4);  
-      color:tan;
-      border:2px solid tan;
+     background-color: white;  
+      color:black;
+      border:2px solid black;
       cursor:pointer;
   }
   
@@ -953,7 +969,8 @@ input[type="text"],
   
   
   .cont-center{
-      width:90%;
+      /* width:90%; */
+      padding: 0 7rem;
       margin:auto auto;
   }
   .cont-center1-h3 {
@@ -1576,7 +1593,7 @@ input[type="text"],
   
   
   
-  @media screen and (max-width:400px){
+ @media screen and (max-width:400px){
       .fifth_box{
           height:125px;
           width:175px;
@@ -1809,12 +1826,12 @@ input[type="text"],
       gap:0rem;
   }
       
-  .contact-1 {
+  /* .contact-1 {
       padding: 1rem 1rem;
-  }
+  } */
   .glass-effect { 
-      border-radius: 0.75rem;
-      padding:1.5rem 1rem;
+      /* border-radius: 0.75rem;
+      padding:1.5rem 1rem; */
       margin: 0;
   }
   button[type="submit"] {
@@ -1946,7 +1963,9 @@ input[type="text"],
   }
   .book-form textarea{
     margin-top:1rem;
+    min-height:9rem;
   }
+  
   .form-row{
     margin-bottom:0rem;
   }
@@ -2155,14 +2174,14 @@ input[type="text"],
       display: inline-block;
       width: 100%;
   }   
-  .contact-1 {
+  /* .contact-1 {
       padding: 1rem 1rem;
-  }
-  .glass-effect { 
-      border-radius: 1rem;
+  } */
+  /* .glass-effect { 
+       border-radius: 1rem;
       padding:1.75rem 1.25rem;
       margin: 0;
-  }
+  } */
   .map-div{
       padding-bottom: 2rem;
   }
@@ -2242,7 +2261,10 @@ input[type="text"],
     width:90%;
     margin-bottom:0.5rem;
 }
-  
+.book-form textarea{
+    margin-top:1rem;
+    min-height:9rem;
+  }
   
   
   
