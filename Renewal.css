@@ -445,7 +445,11 @@
   
   /* Second Section*/
   .main__quote{
-      background-color:tan;
+      background-image: url('BackgroundImages/goldsilkgold.jpg');
+      background-position:center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color:black;
       min-height:120px;
       height:120px;
@@ -476,7 +480,6 @@
   .thirdpg__div{  
       display:grid; 
        gap:2rem;
-    padding: 2rem 0rem;
   }
   .thirdpg h2{
       font-size:2.3rem;
@@ -658,7 +661,7 @@
       display:grid;
       align-content: center;
       height:auto;
-      padding: 2rem 1rem;
+      padding:1rem;
       background: white;
       
   }
@@ -706,9 +709,6 @@
       background-color: black;
       z-index:-2;
   }
-.aobut__name1{
-      padding-bottom: 1rem;
-}
   .about-img h2{
       font-size: 2rem;
       color:white;
@@ -792,7 +792,6 @@
     -webkit-hyphens:auto;
     word-spacing:-0.05em;
       padding:0.5rem;
-    line-height: 1.7rem;
   }
   .hr_about{
       border:2px solid tan;
@@ -1006,17 +1005,15 @@ input[type="text"],
       justify-content: center;
       align-content: center;
   }
-.treat{
-  margin-top:6rem;
-  margin-bottom:6rem;
-}
-  
   .treat-1 h2{ 
       padding:5vh 0vw 1vh 10vw;
       font-size: 2rem;
-      color:tan;
-      background-color:white;
+      color:white;
+      background-image:url('BackgroundImages/contback2.png');
       height:auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
   .treat-1 p{ 
       margin:auto;
@@ -1029,7 +1026,7 @@ input[type="text"],
   .treat-2{
       border:5px solid white;
       border-top-color:tan;  
-      padding: 4rem 2rem 2rem;
+      padding:2rem;
   }
   .treat h3{ 
       width:80%;
@@ -1089,18 +1086,15 @@ input[type="text"],
   .type{
       padding:.75rem;
       text-align:left;
-    margin-top:0.5rem;
   }
   .type h4{
       padding:.75rem;
       text-align:center;
   }
   .type-1{
-      padding:2rem 5rem;
+      padding:2rem;
       gap:2rem;
       text-align:center;
-    margin-top:4rem;
-    margin-bottom:4rem;
   }
   .type-1 img{
       margin: auto auto;
@@ -1399,14 +1393,15 @@ input[type="text"],
       display:grid;
       grid-auto-flow: dense;
       grid-gap:2px;
-      background-image: url('BackgroundImages/contback2.png');
+      /* background-image: url('BackgroundImages/contback2.png'); */
+      background-color: white;
       background-position: center;
       background-size: cover;
-      color:white;
+      color:black;
   }
   .form-row p{
     text-align:center;
-    margin-bottom:1.5rem;
+    margin-bottom:2rem;
   }
   .book-form textarea{
     margin-top:1rem;
@@ -1417,7 +1412,7 @@ input[type="text"],
       margin:auto auto;
   }
   .book-form input[type="button"]{
-  display: block!important;
+  /* display: block!important;
       background-color: transparent;
       border:2px solid white;
       color:white;
@@ -1431,18 +1426,37 @@ input[type="text"],
       cursor: pointer;
       float:right;
       font-weight: bold;
-  padding:0.5rem 3rem;
+  padding:0.5rem 3rem; */
+  display: block!important;
+  background-color: black;
+  border:2px solid white;
+  color:white;
+  padding:0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:.75rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  float:right;
+  width:30%;
+  font-weight: bold;
+
   }
   .book-form input[type="button"]:hover{
-      background-color: hsla(0, 4%, 26%, 0.4);  
+      /* background-color: hsla(0, 4%, 26%, 0.4);  
       color:tan;
       border:2px solid tan;
-      cursor:pointer;
+      cursor:pointer; */
+      color: black;
+      background-color: white;
+      border: 1px solid black;
       }
   .glass-effect1 { 
-      background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); 
+      /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); 
       -webkit-backdrop-filter: blur(30px); 
-     
+      */
      
       border-radius: 1rem;
       padding:1.5rem 1rem;
@@ -1593,7 +1607,7 @@ input[type="text"],
   
   
   
- @media screen and (max-width:400px){
+  @media screen and (max-width:400px){
       .fifth_box{
           height:125px;
           width:175px;
