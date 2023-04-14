@@ -1128,11 +1128,7 @@ margin-bottom:1rem;
       padding:1vh 0vw 1vh 10vw;
       font-size: 2rem;
       color:black;
-      background-color: url('BackgroundImages/contback2.png');
       height:auto;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
   }
   .prod-2{
       display: grid;
