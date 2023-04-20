@@ -1,227 +1,255 @@
 <!doctype html>
 <html lang="en">
-<head> 
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
-	<link href="Renewal.css" rel="stylesheet" type="text/css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap" rel="stylesheet">
-	<title> Renewal Aesthetics </title>
-	 <link rel="icon" href="Renewal Logo-02.png"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head> 
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
+    <link href="Renewal.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title> Renewal Aesthetics </title>
+    <link rel="icon" href="Renewal Logo-02.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 <body>
     <!--First Section-->
     <div class="aboutmain__">
-     <header>
-         <img  onclick="redirectToHome()" class="Logo" src="MainImages/Renewal%20Logo-01.png"/>
-		<div class="navbar">
-            <a href="index.html">HOME</a>
-            <a href="aboutren.html">ABOUT RENEWAL</a>
-            <div class="dropdown">
-                <button class="dropbtn"><a class="no-a" href="treatmentsren.html">TREATMENTS</a>
+        <header>
+            <img onclick="redirectToHome()" class="Logo" src="MainImages/Renewal%20Logo-01.png" />
+            <div class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="aboutren.html">ABOUT RENEWAL</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a class="no-a" href="treatmentsren.html">TREATMENTS</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
+                        <a href="treatmentsren.html#microneedling">Micro-needling</a>
+                        <a href="treatmentsren.html#invasive-treatments">Invasive Treatments</a>
+                        <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="no-a" href="productsren.html">PRODUCTS</a>
+
+                    <div class="dropdown-content">
+                        <a href="productsren.html#product-4">Dermalogica</a>
+                        <a href="productsren.html#product-1">BioMedical Emporium</a>
+                        <a href="productsren.html#product-3">Lamelle</a>
+                        <a href="productsren.html#product-5">Mesoestetic</a>
+                        <a href="productsren.html#product-6">Skin Republic</a>
+                        <a href="productsren.html#product-2">Other Products</a>
+                    </div>
+                </div>
+                <a href="gallery.html" class="active-pg">GALLERY</a>
+                <a href="newsren.html">NEWS</a>
+                <a href="contactren.html">CONTACT US</a>
+
+
+                <button class="booking__btn1" onclick="redirectToBookApt()">
+                    <p>BOOK NOW</p>
+                </button>
+            </div>
+
+            <div class="dropdown-3 ">
+                <!-- Button one -->
+                <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button"
+                    aria-controls="primary-navigation" aria-expanded="false"
+                    style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
+                    <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
+                        <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+                        </rect>
+                        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+                        </rect>
+                        <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+                        </rect>
+                    </svg>
                 </button>
                 <div class="dropdown-content">
-                     <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
-                    <a href="treatmentsren.html#microneedling">Micro-needling</a>
-                    <a href="treatmentsren.html#invasive-treatments">Invasive Treatments</a>
-                    <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a class="no-a" href="productsren.html">PRODUCTS</a>
-            
-                <div class="dropdown-content">
-                     <a href="productsren.html#product-4">Dermalogica</a>
-                    <a href="productsren.html#product-1">BioMedical Emporium</a>
-                    <a href="productsren.html#product-3">Lamelle</a>
-                    <a href="productsren.html#product-5">Mesoestetic</a>
-                    <a href="productsren.html#product-6">Skin Republic</a>
-                    <a href="productsren.html#product-2">Other Products</a>
-                </div>
-            </div>
-            <a href="gallery.html" class="active-pg">GALLERY</a>
-            <a href="newsren.html">NEWS</a>
-            <a href="contactren.html">CONTACT US</a>
-            
-                        
-            <button class="booking__btn1" onclick="redirectToBookApt()"><p>BOOK NOW</p></button>
-        </div>
-  
-         <div  class="dropdown-3 ">
-            <!-- Button one -->
-            <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button" aria-controls="primary-navigation" aria-expanded="false" style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
-                <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
-                    <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
-                    </rect>
-                    <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
-                    </rect>
-                    <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
-                    </rect>
-                </svg>
-            </button>
-    <div class="dropdown-content" >
-        <a href="index.html">HOME</a>
-        <a class="dropdown-content1" href="aboutren.html">ABOUT RENEWAL</a>
-       
-	    <a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
+                    <a href="index.html">HOME</a>
+                    <a class="dropdown-content1" href="aboutren.html">ABOUT RENEWAL</a>
 
-		<a class="dropdown-content1" href="productsren.html">PRODUCTS</a>
-        <a class="dropdown-content1 active-pg1" href="gallery.html">GALLERY</a>
-        <a class="dropdown-content1" href="newsren.html">NEWS</a>
-		<a href="contactren.html" class="dropdown-content1" >CONTACT US</a>
-	    <a href="bookapt.html" class="dropdown-content1"> BOOK NOW</a>
-    </div>
-</div>
-</header>
+                    <a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
+
+                    <a class="dropdown-content1" href="productsren.html">PRODUCTS</a>
+                    <a class="dropdown-content1 active-pg1" href="gallery.html">GALLERY</a>
+                    <a class="dropdown-content1" href="newsren.html">NEWS</a>
+                    <a href="contactren.html" class="dropdown-content1">CONTACT US</a>
+                    <a href="bookapt.html" class="dropdown-content1"> BOOK NOW</a>
+                </div>
             </div>
-        <div class="gal-title"> 
-            <h2> Gallery</h2>
-        </div>
-        
-        <div class="gallery">
-   
-    <div class="row">
-    <div class="gallery-menu col-s-3">
-            <ul id="event-num">
-                <li style="background-color: black;" id="event-1" onclick="eventHighlight(this)"> Renewal Luncheon </li>
-                <li style="background-color: tan;" id="event-2" onclick="eventHighlight(this)"> Our New Offices</li>
-                <li style="background-color: tan;" id="event-3" onclick="eventHighlight(this)"> Consumer Fair </li>
-                <!--<li style="background-color: tan;" id="event-4" onclick="eventHighlight(this)"> Event 1</li>
+        </header>
+    </div>
+    <div class="gal-title">
+        <h2> Gallery</h2>
+    </div>
+
+    <div class="gallery">
+
+        <div class="row">
+            <div class="gallery-menu col-s-3">
+                <ul id="event-num">
+                    <li style="background-color: black;" id="event-1" onclick="eventHighlight(this)"> Renewal Luncheon
+                    </li>
+                    <li style="background-color: tan;" id="event-2" onclick="eventHighlight(this)">Facilities &amp;
+                        Staff </li>
+                    <li style="background-color: tan;" id="event-3" onclick="eventHighlight(this)"> Consumer Fair </li>
+                    <!--<li style="background-color: tan;" id="event-4" onclick="eventHighlight(this)"> Event 1</li>
                 <li style="background-color: tan;" id="event-5" onclick="eventHighlight(this)"> Event 1</li>
                 <li style="background-color: tan;" id="event-5" onclick="eventHighlight(this)"> Event 1</li>
                 <li style="background-color: tan;" id="event-5" onclick="eventHighlight(this)"> Event 1</li>-->
-            </ul>
-    </div>
-    <div class=" col-9 ">
-        <!-- Renewal Luncheon-->
-	    <div class="gallery-container fade" id="section-1">
-            <div class="gallery-item" data-index="1">
-                <img src="Gallery/Image24.jpg">
+                </ul>
+            </div>
+            <div class=" col-9 ">
+                <!-- Renewal Luncheon-->
+                <div class="gallery-container fade" id="section-1">
+                    <div class="gallery-item" data-index="1">
+                        <img src="Gallery/IMG_7167.jpg ">
+                    </div>
+                    <div class="gallery-item" data-index="2">
+                        <img src="Gallery/IMG_7220.jpg ">
+                    </div>
+                    <div class="gallery-item" data-index="3">
+                        <img src="Gallery/IMG_7229.jpg ">
+                    </div>
+                    <div class="gallery-item" data-index="4">
+                        <img src="Gallery/IMG_7301.jpg ">
+                    </div>
+                    <div class="gallery-item" data-index="5">
+                        <img src="Gallery/IMG_7399.jpg ">
+                    </div>
+                    <div class="gallery-item" data-index="6">
+                        <img src="Gallery/IMG_7438.jpg ">
+                    </div>
+                    <div class="gallery-item" data-index="7">
+                        <img src="Gallery/IMG_7463.jpg ">
+                    </div>
+                    <div class="gallery-item" data-index="8">
+                        <img src="Gallery/IMG_74466.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="9">
+                        <img src="Gallery/IMG_7562.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="10">
+                        <img src="Gallery/IMG_7624.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="11">
+                        <img src="Gallery/IMG_7648.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="12">
+                        <img src="Gallery/IMG_7641.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="13">
+                        <img src="Gallery/IMG_7702.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="14">
+                        <img src="Gallery/IMG_7746.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="15">
+                        <img src="Gallery/IMG_7776.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="16">
+                        <img src="Gallery/IMG_7798.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="17">
+                        <img src="Gallery/IMG_7904.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="18">
+                        <img src="Gallery/IMG_7916.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="29">
+                        <img src="Gallery/IMG_7936.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="20">
+                        <img src="Gallery/IMG_7982.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="21">
+                        <img src="Gallery/IMG_7996.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="22">
+                        <img src="Gallery/IMG_8048.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="23">
+                        <img src="Gallery/IMG_8140.jpg">
+                    </div>
                 </div>
-                <div class="gallery-item" data-index="2">
-                <img src="Gallery/Image20.jpg">
+                <!-- Facilities & Staff-->
+                <div class="gallery-container hide" id="section-2">
+
+                    <div class="gallery-item" data-index="24">
+                        <img src="Gallery/AE_010.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="25">
+                        <img src="Gallery/AE_012.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="26">
+                        <img src="Gallery/AE_013.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="27">
+                        <img src="Gallery/AE_015.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="28">
+                        <img src="Gallery/AE_016.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="29">
+                        <img src="Gallery/AE_017.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="30">
+                        <img src="Gallery/AE_024.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="31">
+                        <img src="Gallery/RNW_001.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="32">
+                        <img src="Gallery/RNW_003.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="33">
+                        <img src="Gallery/RNW_010.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="34">
+                        <img src="Gallery/RNW_012.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="35">
+                        <img src="Gallery/RNW_014.jpg">
+                    </div>
                 </div>
-                <div class="gallery-item" data-index="3">
-                <img src="Gallery/Image21.jpg">
+                <!-- Consumer Fair-->
+                <div class="gallery-container hide" id="section-3">
+                    <div class="gallery-item" data-index="36">
+                        <img src="Gallery/image1.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="37">
+                        <img src="Gallery/image2.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="38">
+                        <img src="Gallery/image3.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="39">
+                        <img src="Gallery/image4.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="40">
+                        <img src="Gallery/image5.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="41">
+                        <img src="Gallery/image6.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="42">
+                        <img src="Gallery/image7.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="43">
+                        <img src="Gallery/image8.jpg">
+                    </div>
+                    <div class="gallery-item" data-index="44">
+                        <img src="Gallery/image9.jpg">
+                    </div>
                 </div>
-                <div class="gallery-item" data-index="4">
-                <img src="Gallery/Image22.jpg">
-                </div>
-                <div class="gallery-item" data-index="5">
-                <img src="Gallery/Image19.jpg">
-                </div>
-                <div class="gallery-item" data-index="6">
-                <img src="Gallery/Image23.jpg">
-                </div>
-                <div class="gallery-item" data-index="7">
-                <img src="Gallery/Image25.jpg">
-                </div>
-                <div class="gallery-item" data-index="8">
-                <img src="Gallery/Image26.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image27.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image27.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image27.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image27.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image27.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image27.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image27.jpg">
-                </div>
-        </div>
-        <!-- Our New Offices-->
-        <div  class="gallery-container hide" id="section-2">
-            <div class="gallery-item" data-index="1">
-                <img src="Gallery/Image17.jpg">
-                </div>
-                <div class="gallery-item" data-index="2">
-                <img src="Gallery/Image18.jpg">
-                </div>
-                <div class="gallery-item" data-index="3">
-                <img src="Gallery/Image11.jpg">
-                </div>
-                <div class="gallery-item" data-index="4">
-                <img src="Gallery/Image14.jpg">
-                </div>
-                <div class="gallery-item" data-index="5">
-                <img src="Gallery/Image15.jpg">
-                </div>
-                <div class="gallery-item" data-index="6">
-                <img src="Gallery/Image16.jpg">
-                </div>
-                <div class="gallery-item" data-index="7">
-                <img src="Gallery/Image10.jpg">
-                </div>
-                <div class="gallery-item" data-index="8">
-                <img src="Gallery/Image12.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image13.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image13.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image13.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image13.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image13.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image13.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/Image13.jpg">
-                </div>
-        </div>
-        <!-- Consumer Fair-->
-        <div class="gallery-container hide" id="section-3">
-            <div class="gallery-item" data-index="1">
-                <img src="Gallery/image1.jpg">
-                </div>
-                <div class="gallery-item" data-index="2">
-                <img src="Gallery/image2.jpg">
-                </div>
-                <div class="gallery-item" data-index="3">
-                <img src="Gallery/image3.jpg">
-                </div>
-                <div class="gallery-item" data-index="4">
-                <img src="Gallery/image4.jpg">
-                </div>
-                <div class="gallery-item" data-index="5">
-                <img src="Gallery/image5.jpg">
-                </div>
-                <div class="gallery-item" data-index="6">
-                <img src="Gallery/image6.jpg">
-                </div>
-                <div class="gallery-item" data-index="7">
-                <img src="Gallery/image7.jpg">
-                </div>
-                <div class="gallery-item" data-index="8">
-                <img src="Gallery/image8.jpg">
-                </div>
-                <div class="gallery-item" data-index="9">
-                <img src="Gallery/image9.jpg">
-                </div>
-        </div>
-        <!--
+                <!--
         <div  class="gallery-container hide" id="section-4">
             <div class="gallery-item" data-index="1">
                 <img src="Product Images/stock image products.jpg">
@@ -326,283 +354,286 @@
             <img src="Gallery/image10.jpg">
         </div>
 -->
-	</div>
-</div>
-</div>
-  <!-- Footer-->
-  <footer>
-    <div class="row end">
-        <div class="col-3"> 
-            <h3> OUR LOCATION </h3>
-            <br>
-            <p> Kalafhi Executive Suite, </p>
-            <p> Plot 319 Extension 5,</p>
-            <p> Gaborone, Botswana</p>
-            <br>
+            </div>
         </div>
-        <div class=" col-3">
-            <h3> WORKING HOURS</h3>
-            <br> 
-            <h4> Monday: 08:00 - 17:00</h4>
-            <h4> Tuesday: 08:00 - 17:00</h4>
-            <h4> Wednesday: 08:00 - 17:00</h4>
-            <h4> Thursday: 08:00 - 17:00</h4>
-            <h4> Friday: 08:00 - 17:00</h4>
-            <h4> Saturday: 09:00 - 13:00</h4>
-            <h4> Closed on Sundays and Public Holidays</h4>
-            <br>
-        </div>
-        <div class="col-3 quicklinks">
-            <h3> QUICK LINKS</h3>
-            <br>
+    </div>
+    <!-- Footer-->
+    <footer>
+        <div class="row end">
+            <div class="col-3">
+                <h3> OUR LOCATION </h3>
+                <br>
+                <p> Kalafhi Executive Suite, </p>
+                <p> Plot 319 Extension 5,</p>
+                <p> Gaborone, Botswana</p>
+                <br>
+            </div>
+            <div class=" col-3">
+                <h3> WORKING HOURS</h3>
+                <br>
+                <h4> Monday: 08:00 - 17:00</h4>
+                <h4> Tuesday: 08:00 - 17:00</h4>
+                <h4> Wednesday: 08:00 - 17:00</h4>
+                <h4> Thursday: 08:00 - 17:00</h4>
+                <h4> Friday: 08:00 - 17:00</h4>
+                <h4> Saturday: 09:00 - 13:00</h4>
+                <h4> Closed on Sundays and Public Holidays</h4>
+                <br>
+            </div>
+            <div class="col-3 quicklinks">
+                <h3> QUICK LINKS</h3>
+                <br>
                 <p> <a onclick="redirectToHome()"> Home</a> </p>
                 <p> <a onclick="redirectToAbout()"> About Us</a> </p>
                 <p> <a onclick="redirectToTreatments()"> Treatments</a> </p>
                 <p> <a onclick="redirectToProducts()"> Products </a></p>
                 <p> <a onclick="redirectToNews()"> News</a> </p>
-            <br>
-        </div>
-        <div class="col-3">
-            <div class="">
-                <h3> CONTACT US </h3>
-                <br> 
-                <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
-(+267) 390 6944</p>
-                <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
-(+267) 73 275 990</p>
+                <br>
             </div>
-            <br>
-            <ul class="social-list">
-                <li class="odd-fa-f-radius">
-                    <a  target="_blank" href="https://www.facebook.com/RenewalAestheticclinic">
-                        <i class="fab fa-facebook-f" src="facebook-f.svg"></i>
-                    </a>
-                </li>
-    
-                <li class="odd-fa-insta-radius">
-                    <a target="_blank"  href="https://www.instagram.com/renewalaestheticsclinic/">
-                        <i class="fab fa-instagram" src="instagram.svg"></i>
-                    </a>
-                </li>
-    
-                <li class="odd-fa-youtube-radius"><a target="_blank" href="https://www.youtube.com/@renewalaesthetics3627">
-                    <i class="fab fa-youtube" src="youtube.svg"></i></a></li>
-            </ul>
+            <div class="col-3">
+                <div class="">
+                    <h3> CONTACT US </h3>
+                    <br>
+                    <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+                        (+267) 390 6944</p>
+                    <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+                        (+267) 73 275 990</p>
+                </div>
+                <br>
+                <ul class="social-list">
+                    <li class="odd-fa-f-radius">
+                        <a target="_blank" href="https://www.facebook.com/RenewalAestheticclinic">
+                            <i class="fab fa-facebook-f" src="facebook-f.svg"></i>
+                        </a>
+                    </li>
+
+                    <li class="odd-fa-insta-radius">
+                        <a target="_blank" href="https://www.instagram.com/renewalaestheticsclinic/">
+                            <i class="fab fa-instagram" src="instagram.svg"></i>
+                        </a>
+                    </li>
+
+                    <li class="odd-fa-youtube-radius"><a target="_blank"
+                            href="https://www.youtube.com/@renewalaesthetics3627">
+                            <i class="fab fa-youtube" src="youtube.svg"></i></a></li>
+                </ul>
+            </div>
         </div>
-    </div>
     </footer>
     <button id="scroll-to-top-btn">
-        <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top" src="up-long.svg">
+        <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top"
+            src="up-long.svg">
     </button>
-    
-    
-    
+
+
+
     <script>
-    // Show scroll-to-top button after scrolling halfway through the page
-window.onscroll = function() {
-  var btn = document.getElementById("scroll-to-top-btn");
-  if (document.body.scrollTop > (document.body.scrollHeight / 5) || document.documentElement.scrollTop > (document.documentElement.scrollHeight / 5)) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-};
+        // Show scroll-to-top button after scrolling halfway through the page
+        window.onscroll = function () {
+            var btn = document.getElementById("scroll-to-top-btn");
+            if (document.body.scrollTop > (document.body.scrollHeight / 5) || document.documentElement.scrollTop > (document.documentElement.scrollHeight / 5)) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
 
-// Scroll to top when button is clicked
-document.getElementById("scroll-to-top-btn").addEventListener("click", function() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+        // Scroll to top when button is clicked
+        document.getElementById("scroll-to-top-btn").addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
 
-});
-
-
-    
+        });
 
 
 
-    function redirectToHome() {
-    window.location.href = "index.html";
-}  
+
+
+
+        function redirectToHome() {
+            window.location.href = "index.html";
+        }
         function redirectToAbout() {
-    window.location.href = "aboutren.html";
-}
+            window.location.href = "aboutren.html";
+        }
         function redirectToTreatments() {
-    window.location.href = "treatmentsren.html";
-}
+            window.location.href = "treatmentsren.html";
+        }
         function redirectToProducts() {
-    window.location.href = "productsren.html";
-}
+            window.location.href = "productsren.html";
+        }
         function redirectToNews() {
-    window.location.href = "newsren.html";
-}
+            window.location.href = "newsren.html";
+        }
         function redirectToGallery() {
-    window.location.href = "galleryren.html";
-}
+            window.location.href = "galleryren.html";
+        }
         function redirectToContact() {
-    window.location.href = "contactren.html";
-}
-function redirectToBookApt() {
-        window.location.href = "bookapt.html";
-    }
-    
-        
-        
-   //Navbar settings for mobile starts// 
-                // Get the dropdown and sub-dropdown buttons
+            window.location.href = "contactren.html";
+        }
+        function redirectToBookApt() {
+            window.location.href = "bookapt.html";
+        }
+
+
+
+        //Navbar settings for mobile starts// 
+        // Get the dropdown and sub-dropdown buttons
         const dropdownBtn = document.querySelector('.dropdown-3 .button-one');
         const subDropdownBtns = document.querySelectorAll('.dropdown .dropbtn');
 
         // Add click event listener to the dropdown button
         dropdownBtn.addEventListener('click', () => {
-          // Toggle active class on the dropdown
-          dropdownBtn.parentNode.classList.toggle('active');
+            // Toggle active class on the dropdown
+            dropdownBtn.parentNode.classList.toggle('active');
         });
 
         // Add click event listener to the sub-dropdown buttons
         subDropdownBtns.forEach((btn) => {
-          btn.addEventListener('click', () => {
-            // Toggle active class on the sub-dropdown
-            btn.parentNode.classList.toggle('active');
-          });
+            btn.addEventListener('click', () => {
+                // Toggle active class on the sub-dropdown
+                btn.parentNode.classList.toggle('active');
+            });
         });
-        
-        
+
+
         const buttons = document.querySelectorAll("button");
 
-    buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-            const currentState = button.getAttribute("data-state");
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const currentState = button.getAttribute("data-state");
 
-            if (!currentState || currentState === "closed") {
-                button.setAttribute("data-state", "opened");
-                button.setAttribute("aria-expanded", "true");
-            } else {
-                button.setAttribute("data-state", "closed");
-                button.setAttribute("aria-expanded", "false");
-            }
+                if (!currentState || currentState === "closed") {
+                    button.setAttribute("data-state", "opened");
+                    button.setAttribute("aria-expanded", "true");
+                } else {
+                    button.setAttribute("data-state", "closed");
+                    button.setAttribute("aria-expanded", "false");
+                }
+            });
         });
-    });
-        
-     //Navbar settings for mobile ends//    
-            
-        
-        
-    </script>
-	<script>
-var currentfd ='1';
 
-        function switchGallery(a){
-        var b = a[a.length-1];
-        
-        var currentsection = '#section-' + b;
-        var currentfdsection = '#section-' + currentfd;
+     //Navbar settings for mobile ends//    
+
+
+
+    </script>
+    <script>
+        var currentfd = '1';
+
+        function switchGallery(a) {
+            var b = a[a.length - 1];
+
+            var currentsection = '#section-' + b;
+            var currentfdsection = '#section-' + currentfd;
             var x = document.getElementById('section-' + currentfd).classList;
-         
+
             var check = x.contains("fade");
 
-            if(check == true){                
+            if (check == true) {
 
-                 $(currentfdsection).removeClass('fade');
+                $(currentfdsection).removeClass('fade');
 
-                 $(currentfdsection).addClass('hide');
-                
+                $(currentfdsection).addClass('hide');
+
                 // document.getElementById("section-"+currentfd).classList.remove("fade");
                 // document.getElementById("section-"+currentfd).classList.add("hide");
 
-                
+
                 // document.getElementById("section-"+b).classList.remove("hide");
                 // document.getElementById("section-"+b).classList.add("fade");
 
-                
-                 $(currentsection).removeClass('hide');
 
-                 $(currentsection).addClass('fade');
+                $(currentsection).removeClass('hide');
+
+                $(currentsection).addClass('fade');
                 currentfd = b;
             }
         }
 
-    function eventHighlight(instance){
-        var container = document.getElementById('event-num');
-        
-        var object = container.querySelectorAll('li');
-        for (var i = 1; i <= object.length; i++){
-           document.getElementById('event-' + i).style.backgroundColor = 'tan';
-           
-        }
-        
-        var res = instance.style.backgroundColor;
-        if(res == 'black'){
+        function eventHighlight(instance) {
+            var container = document.getElementById('event-num');
+
+            var object = container.querySelectorAll('li');
+            for (var i = 1; i <= object.length; i++) {
+                document.getElementById('event-' + i).style.backgroundColor = 'tan';
+
+            }
+
+            var res = instance.style.backgroundColor;
+            if (res == 'black') {
                 instance.style.backgroundColor = 'tan';
-                
-            } else if(res == 'tan'){
+
+            } else if (res == 'tan') {
                 instance.style.backgroundColor = 'black';
             }
-                    switchGallery(instance.id);
-    }
+            switchGallery(instance.id);
+        }
 
-const galleryItem = document.getElementsByClassName("gallery-item");
-const lightBoxContainer = document.createElement("div");
-const lightBoxContent = document.createElement("div");
-const lightBoxImg = document.createElement("img");
-const lightBoxPrev = document.createElement("div");
-const lightBoxNext = document.createElement("div");
+        const galleryItem = document.getElementsByClassName("gallery-item");
+        const lightBoxContainer = document.createElement("div");
+        const lightBoxContent = document.createElement("div");
+        const lightBoxImg = document.createElement("img");
+        const lightBoxPrev = document.createElement("div");
+        const lightBoxNext = document.createElement("div");
 
-lightBoxContainer.classList.add("lightbox");
-lightBoxContent.classList.add("lightbox-content");
-lightBoxPrev.classList.add("fa", "fa-angle-left", "lightbox-prev");
-lightBoxNext.classList.add("fa", "fa-angle-right", "lightbox-next");
+        lightBoxContainer.classList.add("lightbox");
+        lightBoxContent.classList.add("lightbox-content");
+        lightBoxPrev.classList.add("fa", "fa-angle-left", "lightbox-prev");
+        lightBoxNext.classList.add("fa", "fa-angle-right", "lightbox-next");
 
-lightBoxContainer.appendChild(lightBoxContent);
-lightBoxContent.appendChild(lightBoxImg);
-lightBoxContent.appendChild(lightBoxPrev);
-lightBoxContent.appendChild(lightBoxNext);
+        lightBoxContainer.appendChild(lightBoxContent);
+        lightBoxContent.appendChild(lightBoxImg);
+        lightBoxContent.appendChild(lightBoxPrev);
+        lightBoxContent.appendChild(lightBoxNext);
 
-document.body.appendChild(lightBoxContainer);
+        document.body.appendChild(lightBoxContainer);
 
-let index = 1;
+        let index = 1;
 
-function showLightBox(n) {
-    if (n > galleryItem.length) {
-        index = 1;
-    } else if (n < 1) {
-        index = galleryItem.length;
-    }
-    let imageLocation = galleryItem[index-1].children[0].getAttribute("src");
-    lightBoxImg.setAttribute("src", imageLocation);
-}
+        function showLightBox(n) {
+            if (n > galleryItem.length) {
+                index = 1;
+            } else if (n < 1) {
+                index = galleryItem.length;
+            }
+            let imageLocation = galleryItem[index - 1].children[0].getAttribute("src");
+            lightBoxImg.setAttribute("src", imageLocation);
+        }
 
-function currentImage() {
-    lightBoxContainer.style.display = "block";
+        function currentImage() {
+            lightBoxContainer.style.display = "block";
 
-    let imageIndex = parseInt(this.getAttribute("data-index"));
-    showLightBox(index = imageIndex);
-}
-for (let i = 0; i < galleryItem.length; i++) {
-    galleryItem[i].addEventListener("click", currentImage);
-}
+            let imageIndex = parseInt(this.getAttribute("data-index"));
+            showLightBox(index = imageIndex);
+        }
+        for (let i = 0; i < galleryItem.length; i++) {
+            galleryItem[i].addEventListener("click", currentImage);
+        }
 
-function slideImage(n) {
-    showLightBox(index += n);
-}
-function prevImage() {
-    slideImage(-1);
-}
-function nextImage() {
-    slideImage(1);
-}
-lightBoxPrev.addEventListener("click", prevImage);
-lightBoxNext.addEventListener("click", nextImage);
+        function slideImage(n) {
+            showLightBox(index += n);
+        }
+        function prevImage() {
+            slideImage(-1);
+        }
+        function nextImage() {
+            slideImage(1);
+        }
+        lightBoxPrev.addEventListener("click", prevImage);
+        lightBoxNext.addEventListener("click", nextImage);
 
-function closeLightBox() {
-    if (this === event.target) {
-        lightBoxContainer.style.display = "none";
-    }
-}
-lightBoxContainer.addEventListener("click", closeLightBox);
-</script> 
+        function closeLightBox() {
+            if (this === event.target) {
+                lightBoxContainer.style.display = "none";
+            }
+        }
+        lightBoxContainer.addEventListener("click", closeLightBox);
+    </script>
 
 
-<script src="jquery-3.6.4.min.js"></script>
-<script async src="embeded.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script async src="embeded.js"></script>
 </body>
+
 </html>
