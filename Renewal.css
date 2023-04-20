@@ -700,7 +700,110 @@
   
   
   /* About Page */
-  /* About - First Section */
+.vision{
+    background-color:black;
+    color:tan;
+    padding:1rem 2rem 5rem;
+
+}
+.vision1{
+    background-color:black;
+    color:white;
+    padding:2rem 4rem 4rem;
+    width:70%;
+    margin:auto;
+    border:3px solid black;
+    border-top-color: tan;
+    border-bottom-color: tan;
+
+}
+.vision p, .mission p{
+    font-size: large;
+    padding-top:1rem;
+    text-align: justify;
+    hyphens: auto;
+}
+.mission{
+    background-color:black;
+    color:white;
+    padding:5rem 2rem 1rem;
+}
+.mission1{
+    background-color:black;
+    color:white;
+    padding:2rem 4rem 4rem;
+    width:70%;
+    margin:auto;
+    border:3px solid black;
+    border-bottom-color: tan;
+    border-top-color: tan;
+}
+.vision h3, .mission h3{
+    font-size: 1.5rem;
+    padding-bottom:0.5rem;
+}
+.services-info1{
+    padding:4rem 5rem 5rem;
+    display:grid;
+    align-items: center;
+}
+.services-info1 p{
+    text-align: center;
+    padding-bottom:1rem;
+    width:85%;
+    margin: auto;
+}
+.services-info-img{
+    display: grid;
+    align-items: center;
+}
+.services-info{
+    padding: 2rem 0rem 4rem;
+    display: grid;
+    align-content: center;
+}
+.services-info1 h3{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.services-info p{
+    padding:0.5rem;
+    display:grid;
+    align-items: center;
+    text-align: justify;
+    width:80%;
+    margin:auto;
+}
+.values-table{
+    display: grid;
+    align-items: center;
+}
+.values-table1{
+    padding:3rem 6rem 7rem;
+    border-bottom: 3px solid tan;
+}
+.values-table h3{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.values-table p{
+    padding-top:1rem;
+    color:black;
+    width:85%;
+    margin:auto;
+    text-align: justify;
+    hyphens: auto;
+}
+.values-table h5{
+    text-align: center;
+    font-size:1rem;
+    color:tan;
+    padding-top:1.5rem;
+}
+
+  
   .aboutmain__{
       height:3.8rem;
       background-color: black;
