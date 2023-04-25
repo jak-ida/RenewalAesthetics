@@ -1312,6 +1312,50 @@ margin-bottom:1rem;
     display:grid;
     align-content: center;
 }
+.FAQ_section{
+    background-color: tan;
+    color:white;
+    text-align: center;
+    padding:1rem 0rem;
+}
+.FAQ_questions{
+    padding:4rem;
+}
+.FAQ-header{
+    border:2px solid black;
+    color:black;
+    background-color: tan;
+    padding:0.5rem 1rem;
+    margin:0.5rem;
+    border-radius: 0.5rem;
+}
+.FAQ-header:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.FAQ-header1{
+    padding:1rem;
+    margin-bottom:1rem;
+}
+.FAQ-sub-head{
+    border-radius: 0.5rem;
+    color:tan;
+    padding:0.5rem;
+    margin:0.5rem;
+    border:1px solid tan;
+}
+.FAQ-answer{
+    padding:0.5rem;
+    width:85%;
+    margin:auto;
+    margin-bottom:1.8rem;
+}
+.FAQ-sub-head:hover{
+    background-color: tan;
+    color:white;
+    cursor: pointer;
+}
+
 
   /* Products Page*/
   .prod-1 h2{
