@@ -1121,6 +1121,10 @@ margin-bottom:1rem;
       justify-content: center;
       align-content: center;
   }
+  .grid-1-img{
+    padding-bottom:2rem;
+    margin:auto;
+  }
 .treat{
   padding:0.5rem 0rem 0.5rem 1rem;
 }
@@ -1239,6 +1243,7 @@ margin-bottom:1rem;
       color: tan;
       padding:1rem;
   }
+ 
   .type{
     text-align: left;
     margin: auto;
@@ -1348,7 +1353,7 @@ margin-bottom:1rem;
     cursor: pointer;
 }
 .FAQ-header1{
-    padding:1rem;
+    padding:0.2rem 1rem 1rem;
     margin-bottom:1rem;
 }
 .FAQ-sub-head{
@@ -1879,6 +1884,24 @@ margin-bottom:1rem;
   @media screen and (max-width:500px){
       
   /* General*/
+  .type{
+    padding-left: 2rem;
+  }
+  .treat_button{
+    margin-right:2rem;
+  }
+  .col-s-4{
+    grid-column: auto/span 12;
+  }
+  .FAQ_questions{
+    padding:1rem;
+  }
+  .FAQ_section h2{
+    font-size: 1.5rem;
+  }
+  .treat11{
+    padding:2rem 2rem 4rem;
+  }
   
   .fifth_box{
       left:30%;
@@ -2127,10 +2150,10 @@ margin-bottom:1rem;
       grid-column: auto/span 8;
   }
   .col-s-4{
-      grid-column: auto/span 4;
+      grid-column: auto/span 12;
   }
   .col-s-8{
-      grid-column: auto/span 8;
+      grid-column: auto/span 12;
   }
   .type-1{
       gap:0rem;
@@ -2146,9 +2169,9 @@ margin-bottom:1rem;
     height:auto;
   }
   .type-22{
-      padding-left:12vw;
+      padding-left:2vw;
   }.type-2{
-      padding-left:12vw;
+      padding-left:2vw;
   }
   .treat1 {
       display:flex;
@@ -2156,7 +2179,7 @@ margin-bottom:1rem;
   }
   
   .treat-2{
-      padding:0.5rem;
+      padding: 1.5rem 0.5rem;
   }
 
   /*News Page*/
@@ -2252,6 +2275,9 @@ margin-bottom:1rem;
       margin:auto auto;
       margin-top:1rem;
       float:none;
+    }
+    .treat {
+        padding: 0.5rem;
     }
   
   
@@ -2500,7 +2526,7 @@ margin-bottom:1rem;
       grid-column: auto/span 10;
   }
   .col-s-4{
-      grid-column: auto/span 2;
+      grid-column: auto/span 4;
   }
   .col-s-8{
       grid-column: auto/span 10;
@@ -2508,6 +2534,7 @@ margin-bottom:1rem;
   .treat img{
       padding:1rem;
   }
+  
   .type-22{
       padding-left:6vw;
   }
