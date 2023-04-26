@@ -106,8 +106,8 @@
       grid-column: auto/span 3;
   
   }
-  .col-s-3{
-    grid-column: auto/span 3;
+  .col-s-2{
+    grid-column: auto/span 2;
 
 }
   .col-4{
@@ -447,13 +447,17 @@
   .main__quote{
       background-color:tan;
       color:black;
-      min-height:120px;
-      height:120px;
+      min-height:130px;
+      height:130px;
       text-align: center;
       display: grid;
       align-content: center;
       font-size: 1.5rem;
   }
+  .main__quote h2{
+    padding:0.3rem 0rem;
+  }
+
   .main__quotehr{
       border:2px solid black;
       width:45%;
@@ -701,20 +705,18 @@
   
   /* About Page */
 .vision{
-    background-color:black;
-    color:tan;
+    background-color:white;
+    color:black;
     padding:1rem 2rem 5rem;
 
 }
 .vision1{
-    background-color:black;
-    color:white;
+    background-color:white;
     padding:2rem 4rem 4rem;
     width:70%;
     margin:auto;
-    border:3px solid black;
-    border-top-color: tan;
-    border-bottom-color: tan;
+    border-bottom:3px solid black;
+    border-top: 3px solid black;
 
 }
 .vision p, .mission p{
@@ -724,19 +726,17 @@
     hyphens: auto;
 }
 .mission{
-    background-color:black;
-    color:white;
+    background-color:white;
+    color:black;
     padding:5rem 2rem 1rem;
 }
 .mission1{
-    background-color:black;
-    color:white;
+    background-color:white;
     padding:2rem 4rem 4rem;
     width:70%;
     margin:auto;
-    border:3px solid black;
-    border-bottom-color: tan;
-    border-top-color: tan;
+    border-bottom:3px solid black;
+    border-top: 3px solid black;
 }
 .vision h3, .mission h3{
     font-size: 1.5rem;
@@ -761,6 +761,8 @@
     padding: 2rem 0rem 4rem;
     display: grid;
     align-content: center;
+    align-items: center;
+   
 }
 .services-info1 h3{
     font-size: 2rem;
@@ -778,15 +780,17 @@
 .values-table{
     display: grid;
     align-items: center;
+    background-color: tan;
 }
 .values-table1{
     padding:3rem 6rem 7rem;
-    border-bottom: 3px solid tan;
+    background-color: tan;
 }
 .values-table h3{
     font-size: 2rem;
     padding-bottom: 1rem;
     text-align: center;
+    color:white;
 }
 .values-table p{
     padding-top:1rem;
@@ -799,7 +803,7 @@
 .values-table h5{
     text-align: center;
     font-size:1rem;
-    color:tan;
+    color:white;
     padding-top:1.5rem;
 }
 
@@ -840,26 +844,36 @@
       width:80%;
       margin:auto auto;
     line-height:1.7rem;
+    padding-bottom:0.8rem;
   }
   .about_brief_p1 p{
       color:white;
       width:95%;
       margin:auto auto;
       z-index:2;
+      padding-bottom:0.8rem;
       
   }
   
   .about_brief-img{
-      width:auto;
-      padding:1rem;
+      width:90%;
+      margin:auto;
+      padding:0.5rem;
   }
   
-  .about-images{
-      height:60px;
-      background-image: url('BackgroundImages/tan.jpg');
-      background-position:bottom;
-      background-size: cover;
-  }
+  .about_brief-img1{
+    width:90%;
+    margin:auto;
+    padding:0.5rem;
+    height:110%;
+}
+.about_brief-img2{
+
+    margin:auto;
+    padding:0.5rem;
+    height:110%;
+}
+  
   .about__background1{
       background-color:tan;
       color:black;
@@ -956,8 +970,8 @@ margin-bottom:1rem;
   
   /* Contact Us Page*/
   .contact-1{
-      /* padding:1rem 2rem; */
         background-color:white;
+        border-top: 5px solid tan;
   }
   .map-background-bleed{
     background-color: tan;
@@ -976,12 +990,12 @@ margin-bottom:1rem;
   }*/
   .contact-img h2{
       font-size: 2rem;
-      color:white;
-      padding:1.4vh 0vw 0vh 10vw;
+      color:tan;
+      padding:1vh 0vw 1vh 10vw;
   }
   .contact_pg{
       /* background-image:url('BackgroundImages/contback2.png'); */
-      background-color: #000;
+      background-color: white;
       height:auto;
       background-position: center;
       background-repeat: no-repeat;
@@ -1138,7 +1152,6 @@ margin-bottom:1rem;
       padding:1vh 0vw 1vh 10vw;
       font-size: 2rem;
       color:tan;
-      height:auto;
   }
   .treat-1 p{ 
       margin:auto;
@@ -1161,7 +1174,7 @@ margin-bottom:1rem;
       
   }
   .treat11{
-    padding:2rem 4rem 6rem;
+    padding:2rem 4rem 4rem;
     height:auto;
   }
   .treat-mainbtn{
@@ -1317,9 +1330,10 @@ margin-bottom:1rem;
     color:white;
     text-align: center;
     padding:1rem 0rem;
+    font-size: 1.5rem;
 }
 .FAQ_questions{
-    padding: 1rem 4rem 4rem;
+    padding:4rem;
 }
 .FAQ-header{
     border:2px solid black;
@@ -1362,7 +1376,6 @@ margin-bottom:1rem;
       padding:1vh 0vw 1vh 10vw;
       font-size: 2rem;
       color:black;
-      height:auto;
   }
   .prod-2{
       display: grid;
@@ -1468,12 +1481,13 @@ margin-bottom:1rem;
   }
   /*Gallery page*/
   .gallery{
+    border-top: 5px solid tan;
       text-align:center;
       background-image: url('BackgroundImages/comingsoonbackground.png');
       background-position: center;
       background-size: cover;
       height:auto;
-      color:darktan;
+      color:tan;
       display:grid;
       align-items: center;
       padding:2rem;
@@ -1481,10 +1495,10 @@ margin-bottom:1rem;
   
   
   
-  .gal-title{
-      font-size: 1.5rem;
+  .gal-title h2{
+      font-size: 2rem;
       color:tan;
-      padding: 1.2vh 0vw 1vh 10vw;
+      padding: 1vh 0vw 1vh 10vw;
   }
   .row-g {
       display: flex;
@@ -1537,13 +1551,13 @@ margin-bottom:1rem;
       display:grid;
       align-items: center;
       padding:1rem 1rem;
+      border-top: 5px solid white;
   }
-  .news-title{
-    font-size: 1.5rem;
+  .news-title h2{
+    font-size: 2rem;
     color:white;
     padding: 1vh 0vw 1vh 10vw;
     background-color: black;
-    border-bottom:5px solid tan;
   }
   .news-img{
     height:auto;
@@ -2059,6 +2073,7 @@ margin-bottom:1rem;
   .contact-img h2{
       padding-left:4rem;
       transition:0.2s
+    
   }
       .form{
       padding:2rem 0rem;
@@ -2674,7 +2689,8 @@ margin-bottom:1rem;
           }
         
         .gallery-menu{
-           
+           margin-top:5%;
+           justify-content: center;
             height:auto;
             font-size: 1.2rem;
             display: flex;
@@ -2738,10 +2754,10 @@ margin-bottom:1rem;
               left: 0;
           }
           .lightbox-content {
-              position: relative;
-              width: 70%;
-              height: 70%;
-              margin: 5% auto;
+            position: relative;
+            width: 60%;
+            height: auto;
+            margin: 5% auto;
           }
           .lightbox-content img {
               border-radius: 7px;
