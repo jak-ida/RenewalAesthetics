@@ -24,8 +24,17 @@
             <img onclick="redirectToHome()" class="Logo" src="MainImages/Renewal%20Logo-01.png" />
             <div class="navbar">
                 <a href="index.html">HOME</a>
-               <a href="aboutren.html">ABOUT RENEWAL</a>
-                    <a href="treatmentsren.html">TREATMENTS</a>
+                <a href="aboutren.html">ABOUT RENEWAL</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a class="no-a" href="treatmentsren.html">TREATMENTS</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
+                        <a href="treatmentsren.html#microneedling">Micro-needling</a>
+                        <a href="treatmentsren.html#invasive-treatments">Injectables</a>
+                        <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                    </div>
+                </div>
                 <div class="dropdown">
                     <a class="no-a" href="productsren.html">PRODUCTS</a>
 
@@ -39,8 +48,14 @@
                     </div>
                 </div>
                 <a href="gallery.html">GALLERY</a>
-                <a href="newsren.html" class="active-pg">NEWS</a>
-                <a href="events.html">EVENTS</a>
+                <div class="dropdown">
+
+                    <a class="no-a active-pg" href="newsren.html">NEWS</a>
+                    <div class="dropdown-content">
+                        <a href="events.html">EVENTS</a>
+                    </div>
+                </div>
+
                 <a href="contactren.html">CONTACT US</a>
 
 
@@ -150,10 +165,44 @@
                     <hr>
                 </div>
                 <p id="news-date-2" class="news-date"> 1 March 2023</p>
-                <p id="news-body-2">As the world continues to move at breakneck speed, taking a moment for oneself has
-                    become a luxury that few can afford. That's why Renewal Aesthetics Clinic is proud to present the
-                    Renewal Luncheon - an exclusive event designed for powerful individuals who are movers and shakers
-                    in their respective fields.</p>
+                <div id="news-body-2">
+                    <p>As the world continues to move at breakneck speed, taking a moment for oneself has
+                        become a luxury that few can afford. That's why Renewal Aesthetics Clinic is proud to present
+                        the Renewal Luncheon - an exclusive event designed for powerful individuals who are movers and
+                        shakers in their respective fields.</p>
+                    <div class="invisible">
+                        <p>The Renewal Luncheon is all about self-care - a concept that is often overlooked in the
+                            hustle
+                            and bustle of everyday life. It targets individuals who understand the importance of taking
+                            time
+                            for themselves, enhancing their well-being, and unmasking their best selves.</p>
+
+                        <p>Attendees are treated to an experience that is akin to the Met Gala or the Grammys, with
+                            extravagant outfits and fine dining Michelin-star-worthy cuisine. They are also pampered
+                            with
+                            massages and other luxurious treatments that leave them feeling revitalized, refreshed, and
+                            ready to take on the world.</p>
+
+                        <p>The Renewal Luncheon is a celebration of self-love, self-respect, and self-worth. As the
+                            Renewal
+                            slogan suggests, it's all about enhancing, restoring, and unmasking your best self. It
+                            encourages attendees to be confident, happy, bold, and comfortable in their own skin,
+                            helping
+                            them look at themselves, love themselves, and not be afraid to go out without makeup.</p>
+
+                        <p>The Renewal Luncheon is not just an event - it's a lifestyle. It's a reminder that
+                            high-powered
+                            individuals can take a moment for themselves, recharge, and prioritize their own self-care.
+                            The
+                            Renewal Aesthetics Clinic is committed to helping individuals be their best selves, and the
+                            Renewal Luncheon is just one way they do so.</p>
+
+                        <p>Overall, the Renewal Luncheon is the most sought-after event for powerful individuals who
+                            understand the importance of self-care. It's an exclusive experience that leaves attendees
+                            feeling refreshed, revitalized, and ready to take on the world. </p>
+
+                    </div>
+                </div>
                 <button class="news-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                     onclick="ModalDisplay('2')"> Read More </button>
             </div>
@@ -179,18 +228,7 @@
                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="invisible">
-                        <p>The Renewal Luncheon is all about self-care - a concept that is often overlooked in the hustle and bustle of everyday life. It targets individuals who understand the importance of taking time for themselves, enhancing their well-being, and unmasking their best selves.</p>
 
-            <p>Attendees are treated to an experience that is akin to the Met Gala or the Grammys, with extravagant outfits and fine dining Michelin-star-worthy cuisine. They are also pampered with massages and other luxurious treatments that leave them feeling revitalized, refreshed, and ready to take on the world.</p>
-
-            <p>The Renewal Luncheon is a celebration of self-love, self-respect, and self-worth. As the Renewal slogan suggests, it's all about enhancing, restoring, and unmasking your best self. It encourages attendees to be confident, happy, bold, and comfortable in their own skin, helping them look at themselves, love themselves, and not be afraid to go out without makeup.</p>
-
-            <p>The Renewal Luncheon is not just an event - it's a lifestyle. It's a reminder that high-powered individuals can take a moment for themselves, recharge, and prioritize their own self-care. The Renewal Aesthetics Clinic is committed to helping individuals be their best selves, and the Renewal Luncheon is just one way they do so.</p>
-
-<p>Overall, the Renewal Luncheon is the most sought-after event for powerful individuals who understand the importance of self-care. It's an exclusive experience that leaves attendees feeling refreshed, revitalized, and ready to take on the world. </p>
-
-                    </div>
                 <button class="news-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                     onclick="ModalDisplay('1')"> Read More </button>
             </div>
@@ -435,6 +473,14 @@
 
             document.getElementById("modal-img").src = img;
             document.getElementById("modal-body").innerHTML = body;
+
+            var invisibleBody = document.querySelector("#modal-body");
+            var invisible = invisibleBody.querySelectorAll(".invisible");
+            invisible.forEach((item) => {
+                item.classList.remove('invisible');
+            })
+
+
             document.getElementById("modal-date").innerHTML = date;
             document.getElementById("modal-header").innerHTML = header;
 
