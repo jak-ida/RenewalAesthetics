@@ -1372,6 +1372,13 @@ padding:0.5rem 3rem; */
 
 
   /* Treatments Page*/
+  .treat-info {
+    width:90%;
+    margin: auto;
+    text-align: justify;
+    hyphens: auto;
+    padding-bottom: 0.5rem;;
+  }
   .col-s-4 {
       grid-column: auto/span 4;
   }
@@ -1400,7 +1407,7 @@ padding:0.5rem 3rem; */
   }
 
   .treat {
-      padding: 0.5rem 0rem 0.5rem 1rem;
+      padding: 0.5rem 0rem 0.5rem 0rem;
   }
 
   .right {
@@ -1510,12 +1517,6 @@ padding:0.5rem 3rem; */
 
   }
 
-  .type p {
-      text-align: justify;
-      hyphens: auto;
-      word-spacing: -0.05em;
-  }
-
   .hr-treats hr {
       margin-top: 2rem;
       border: 2px solid tan;
@@ -1524,7 +1525,8 @@ padding:0.5rem 3rem; */
   .hr-treats-1 hr {
       border: 2px solid tan;
       width: 70%;
-      margin: auto auto;
+      margin: 1rem auto 1rem;
+     
   }
 
   .type-1 h2 {
@@ -1532,16 +1534,6 @@ padding:0.5rem 3rem; */
       padding: 1rem;
   }
 
-  .type {
-      text-align: left;
-      margin: auto;
-      padding-left: 4rem;
-  }
-
-  .type h5 {
-      padding: .5rem;
-      text-align: center;
-  }
 
   .type-1 {
       padding: 4rem 2rem;
@@ -1557,11 +1549,8 @@ padding:0.5rem 3rem; */
   }
 
   .type-2 {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-      width: auto;
-      margin: auto auto;
-      padding-left: 7vw;
+      display:grid;
+      justify-content: center;
   }
 
   .treat-btn {
@@ -1578,10 +1567,8 @@ padding:0.5rem 3rem; */
 
   .type-22 {
       margin: auto auto;
-      padding-top: 1.5rem;
       padding-bottom: 1.5rem;
       width: 85%;
-      padding-left: 6vw;
   }
 
   .type-2 h5,
@@ -2218,9 +2205,6 @@ padding:0.5rem 3rem; */
   
     }
       /* General*/
-      .type {
-          padding-left: 2rem;
-      }
 
       .treat_button {
           width: 60%;
@@ -2835,9 +2819,9 @@ padding:0.5rem 3rem; */
 
       /*Treatments Page 500px*/
 
-      .treat {
+      /*.treat {
           padding: 0.5rem;
-      }
+      }*/
 
       .col-s-6 {
           grid-column: auto/span 4;
