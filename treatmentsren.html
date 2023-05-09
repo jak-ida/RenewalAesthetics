@@ -1510,7 +1510,7 @@
                     <div class="row">
                         <div class="col-12 treat">
                             <button class="treat-mainbtn" data-bs-toggle="collapse" data-bs-target="#collapse4"
-                                aria-expanded="false" aria-controls="collapse4">
+                                aria-expanded="false" aria-controls="collapse3">
                                 <h3 id="lamelle-facials"> LAMELLE PROFESSIONAL FACIALS </h3>
                             </button>
                         </div>
@@ -3629,9 +3629,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-    <script src="Bootstrap.min.js"></script>
-    <script src="jquery-3.6.4.min.js"></script>
-
+    <script src="Bootstrap.js"></script>
     <script>
 
         //var textContent2 = document.getElementById('treatment-1-2');
@@ -3647,38 +3645,7 @@
 
     </script>
     <script>
-        $(document).ready(function () {
-            var link = window.location.href;
-            link = link.split('#')[1];
 
-          /*  var collapse = "";
-            if (link == "chemical-peels") {
-                collapse = "collapse1";
-            } 
-            else if (link == "plateletrichplasma") {
-                collapse = "collapse2";
-            } 
-            else if (link == "microneedling") {
-                collapse = "collapse3";
-            }
-            else if (link == "lamelle-facials") {
-                collapse = "collapse4";
-            }
-            else if (link == "injectables") {
-                collapse = "collapse5";
-            }
-            else if (link == "healing-earth") {
-                collapse = "collapse7";
-            }
-            else if (link == "other-skin-treatments") {
-                collapse = "collapse6";
-            }
-
-*/
-
-            document.getElementById(link).classList.add('show');
-            window.location.href = "treatmentsren.html#" + link;
-        });
 
         // Show scroll-to-top button after scrolling halfway through the page
         window.onscroll = function () {
