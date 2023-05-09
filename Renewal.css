@@ -840,7 +840,7 @@
 
   }
 
-  .vision1 {
+  .vision1, .mission1 {
       background-color: white;
       padding: 2rem 4rem 4rem;
       width: 70%;
@@ -862,15 +862,6 @@
       background-color: white;
       color: black;
       padding: 5rem 2rem 1rem;
-  }
-
-  .mission1 {
-      background-color: white;
-      padding: 2rem 4rem 4rem;
-      width: 70%;
-      margin: auto;
-      border-bottom: 3px solid black;
-      border-top: 3px solid black;
   }
 
   .vision h3,
@@ -1520,7 +1511,6 @@ padding:0.5rem 3rem; */
   .type p {
       text-align: justify;
       hyphens: auto;
-      -webkit-hyphens: auto;
       word-spacing: -0.05em;
   }
 
@@ -1543,7 +1533,7 @@ padding:0.5rem 3rem; */
   .type {
       text-align: left;
       margin: auto;
-      padding-left: 7rem;
+      padding-left: 4rem;
   }
 
   .type h5 {
@@ -1569,7 +1559,7 @@ padding:0.5rem 3rem; */
       padding-bottom: 1.5rem;
       width: auto;
       margin: auto auto;
-      padding-left: 4vw;
+      padding-left: 7vw;
   }
 
   .treat-btn {
@@ -2875,8 +2865,23 @@ padding:0.5rem 3rem; */
 
 
   }
+  @media (min-width:500px) and (max-width:780px){
+    .col-s-2 {
+        grid-column: auto/span 12;
+    }
+    .col-10 {
+        grid-column: auto/span 12;
+    }
+    .gallery-menu{
+        margin-top:0%!important;
+    }
+    .gallery-menu li{
+        padding:0.2rem 0.5rem!important;
+    }
+  }
 
   @media (min-width:500px) and (max-width:1000px) {
+
 
       /* General*/
       .end {
@@ -3117,7 +3122,9 @@ padding:0.5rem 3rem; */
           padding-top: 0rem;
       }
 
-
+.vision1, .mission1{
+    padding: 2rem 0rem 4rem;
+}
 
       /*Book Appointment Page 1000px*/
       .book-form input[type="button"] {
