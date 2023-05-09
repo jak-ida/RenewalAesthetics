@@ -1,327 +1,1890 @@
 <!doctype html>
 <html lang="en">
-<head> 
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
-	<link href="Renewal.css" rel="stylesheet" type="text/css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap" rel="stylesheet">
-	<title> Renewal Aesthetics </title>
-	 <link rel="icon" href="Renewal Logo-02.png"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head> 
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
+    <link href="Renewal.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title> Renewal Aesthetics </title>
+    <link rel="icon" href="MainImages/Renewal Logo-02.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 <body>
-    <!-- First Section-->
-    <div class="main__">
-     <header>
-         <img onclick="redirectToHome()" class="Logo" src="MainImages/Renewal%20Logo-01.png"/>
-		<div class="navbar">
-            <a href="index.html" class="active-pg">HOME</a>
-            <a href="aboutren.html">ABOUT RENEWAL</a>
-            <div class="dropdown">
-                <button class="dropbtn"><a class="no-a" href="treatmentsren.html">TREATMENTS</a>
+    <!--First Section-->
+    <div class="aboutmain__">
+        <header>
+            <img onclick="redirectToHome()" class="Logo" src="MainImages/Renewal%20Logo-01.png" />
+            <div class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="aboutren.html">ABOUT RENEWAL</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a class="no-a" href="treatmentsren.html">TREATMENTS</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
+                        <a href="treatmentsren.html#plateletrichplasma">PRP Treatment</a>
+                        <a href="treatmentsren.html#microneedling">Micro-needling</a>
+                        <a href="treatmentsren.html#lamelle-facials">Lamelle Professional Facials</a>
+                        <a href="treatmentsren.html#injectables">Injectables</a>
+                        <a href="treatmentsren.html#healing-earth">Healing Earth</a>
+                        <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="no-a active-pg" href="productsren.html">PRODUCTS</a>
+
+                    <div class="dropdown-content">
+                        <a onclick="OpenProduct(4)">Dermalogica</a>
+                        <a onclick="OpenProduct(1)">BioMedical Emporium</a>
+                        <a onclick="OpenProduct(3)">Lamelle</a>
+                        <a onclick="OpenProduct(5)">Mesoestetic</a>
+                        <a onclick="OpenProduct(6)">Skin Republic</a>
+                        <a onclick="OpenProduct(2)">Other Products</a>
+                    </div>
+                </div>
+                <a href="gallery.html">GALLERY</a>
+                <div class="dropdown">
+
+                    <a class="no-a" href="newsren.html">NEWS</a>
+                    <div class="dropdown-content">
+                        <a href="events.html">EVENTS</a>
+                    </div>
+                </div>
+
+                <a href="contactren.html">CONTACT US</a>
+
+
+                <button class="booking__btn1" onclick="redirectToBookApt()">
+                    <p>BOOK NOW</p>
+                </button>
+            </div>
+
+            <div class="dropdown-3 ">
+                <!-- Button one -->
+                <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button"
+                    aria-controls="primary-navigation" aria-expanded="false"
+                    style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
+                    <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
+                        <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+                        </rect>
+                        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+                        </rect>
+                        <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+                        </rect>
+                    </svg>
                 </button>
                 <div class="dropdown-content">
-                     <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
-                    <a href="treatmentsren.html#microneedling">Micro-needling</a>
-                    <a href="treatmentsren.html#invasive-treatments">Invasive Treatments</a>
-                    <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                    <a href="index.html">HOME</a>
+                    <a class="dropdown-content1" href="aboutren.html">ABOUT RENEWAL</a>
+
+                    <a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
+
+                    <a class="dropdown-content1 active-pg1" href="productsren.html">PRODUCTS</a>
+                    <a class="dropdown-content1" href="gallery.html">GALLERY</a>
+                    <a class="dropdown-content1" href="newsren.html">NEWS</a>
+                    <a class="dropdown-content1" href="events.html">EVENTS</a>
+                    <a href="contactren.html" class="dropdown-content1">CONTACT US</a>
+                    <a href="bookapt.html" class="dropdown-content1"> BOOK NOW</a>
                 </div>
             </div>
-            <div class="dropdown">
-                <a class="no-a" href="productsren.html">PRODUCTS</a>
-               
-                <div class="dropdown-content">
-                    <a href="productsren.html#product-4">Dermalogica</a>
-                    <a href="productsren.html#product-1">BioMedical Emporium</a>
-                    <a href="productsren.html#product-3">Lamelle</a>
-                    <a href="productsren.html#product-5">Mesoestetic</a>
-                    <a href="productsren.html#product-6">Skin Republic</a>
-                    <a href="productsren.html#product-2">Other Products</a>
-                </div>
-            </div>
-            <a href="gallery.html">GALLERY</a>
-            <div class="dropdown">
-                
-            <a class="no-a" href="newsren.html">NEWS</a>
-            <div class="dropdown-content">
-            <a href="events.html">EVENTS</a>
-        </div>
-        </div>
-
-            <a href="contactren.html">CONTACT US</a>
-            
-                        
-            <button class="booking__btn1" onclick="redirectToBookApt()"><p>BOOK NOW</p></button>
-        </div>
-  
-         <div  class="dropdown-3 ">
-            <!-- Button one -->
-            <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button" aria-controls="primary-navigation" aria-expanded="false" style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
-                <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
-                    <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
-                    </rect>
-                    <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
-                    </rect>
-                    <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
-                    </rect>
-                </svg>
-            </button>
-            <div class="dropdown-content" >
-		<a href="index.html"class="active-pg1">HOME</a>
-		<a class="dropdown-content1" href="aboutren.html">ABOUT RENEWAL</a>
-
-		<a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
-
-		<a class="dropdown-content1" href="productsren.html">PRODUCTS</a>
-		<a class="dropdown-content1" href="gallery.html">GALLERY</a>
-		<a class="dropdown-content1" href="newsren.html">NEWS</a>
-        <a class="dropdown-content1" href="events.html">EVENTS</a>
-		<a href="contactren.html" class="dropdown-content1" >CONTACT US</a>
-		    <a href="bookapt.html" class="dropdown-content1"> BOOK NOW</a>
-	</div>
-         </div>
         </header>
-    <div class="main__all">
-        <img class="logo" src="MainImages/Renewal_logo.png"/>
-        <h2 class="main__intro main-transition"> Welcome to</h2> 
-        <h2 class="main__intro1 main-transition">Renewal Aesthetics</h2>
-        <!-- Buttons Start-->
-        <button class="booking__btn2 main-transition1" onclick="redirectToBookApt()"><p>BOOK A CONSULTATION</p> </button>
-        <!-- Buttons End-->
     </div>
+    <!-- First Section-->
+    <div class="prod-1">
+        <h2> Products </h2>
+        <div class="row prod-2">
+            <div class="col-6">
+                <p>At Renewal Aesthetics, we have a wide range of skincare products available. Each product is
+                    formulated with specific ingredients, designed to target specific skin concerns like acne, aging,
+                    dryness, and sensitivity. It is important to choose skincare products that are appropriate for your
+                    skin type and needs. Regular use of skincare products can help to promote healthy skin, reduce the
+                    signs of aging, and enhance overall skin radiance and texture.</p>
+            </div>
+            <div class="col-6">
+                <img loading="lazy" src="MainImages/other-treatments.jpg" />
+            </div>
+        </div>
     </div>
     <!-- Second Section-->
-    <div class="main__quote"> 
-        <hr class="main__quotehr">
-        <h2 class="main__quote-h2"> "Enhance, restore and unmask your best self."</h2>
-        <hr class="main__quotehr">
+    <div class="prod-info2">
+        <h1 class="col-12">OUR PRODUCTS</h1>
+        <h4 class="col-12">click to view our range</h4>
     </div>
-    <!--Third Section -->   
-    <div class="fourthpg">
-              <div class="row flex fourth-pg-1"> 
-            <div class="col-6 grid"> 
-                <img class="fourthpg__img" src="MainImages/pexels-monstera-6621002.jpg"/> 
-            </div>
-            <div class="col-6 grid fourthpg__content"> 
-                <h3 class="fourthpg__h3"> Our Story </h3>
-                <p class="fourthpg__p">Welcome to Renewal Aesthetics, a luxury medical spa clinic dedicated to helping you become the best version of yourself. Our mission is to provide top-notch self-care services and treatments that enhance and restore your physical appearance, as well as your overall health and wellbeing.</p> 
-                <button type="button" class="fourthpg__button btn" onclick="redirectToAbout()"> READ MORE </button>
-            </div>
-        </div>   
-    </div>
-    <!-- Fourth Section-->
-    <div class="thirdpg1">
-        <div class="thirdpg">
-            <div class="thirdpg__div"> 
-                <h2> Featured Treatments </h2>
-                <div class="row treat-images">
-                    <div class="col-3 space"> <img src="MainImages/needle.jpg"/> </div>
-                    <div class="col-3 space"> <img src="MainImages/facial1.jpg"/> </div>
-                    <div class="col-3 space"> <img src="MainImages/chemical.jpg"/> </div>
-                    <div class="col-3 space"> <img src="MainImages/micro.jpg"/> </div>
-                </div>
-                <p class="thirdpg__p"> We offer a variety of treatments that can be a part of your new self-care routine as early as today! These treatments can help to enhance your physical appearance and cause a ripple effect of happiness and satisfaction unlike any other. It's a way for you to take time for yourself and indulge in becoming the NEW YOU!<br> Experience the difference our services can make – contact us for a consultation today.</p>
-                <button class="thirdpg__button" onclick="redirectToBookApt()"> BOOK TODAY </button>
-            </div>
+    <div class="prod-info justify-content-between">
+        <div class="col prod-info-1" onclick="OpenProduct(1)">
+            <img src="MainImages/Biomedical-Emporium-white.png" />
+            <!--<h3>BIO-MED EMPORIUM</h3>-->
+        </div>
+
+        <div class="col prod-info-1" onclick="OpenProduct(3)">
+            <img src="MainImages/Lamelle+logo_White.png" />
+            <!--<h3> LAMELLE</h3>-->
+        </div>
+
+        <div class="col prod-info-1" onclick="OpenProduct(4)">
+            <img src="MainImages/dermalogica-logo-01.png" />
+            <!--<h3> DERMALOGICA</h3>-->
+        </div>
+
+        <div class="col prod-info-1" onclick="OpenProduct(5)">
+            <img src="MainImages/mesoestetic-NMS-logo-white.png" />
+            <!--<h3> MESOESTETIC</h3>-->
+        </div>
+        <div class="col prod-info-1" onclick="OpenProduct(6)">
+            <img src="MainImages/skin-rep-logo.png" />
+            <!--<h3> SKIN REPUBLIC</h3>-->
+        </div>
+        <div class="col prod-info-1" onclick="OpenProduct(2)">
+            <img src="MainImages/products2-2.png" />
+            <h3> OTHER PRODUCTS</h3>
         </div>
     </div>
-    <!-- Fifth Section-->
-    <div class="fifthpg">
-        <div class="row ">
-            <div class="col-lg-4 products"> 
-                <img class="fifthpg__img" src="MainImages/2in1.jpg">
-                <div class="fifth_box">  
-                    <hr class="fifth_hr"> 
-                    <p> SKIN </p>
-                    <hr class="fifth_hr"> 
+    <!-- Third Section-->
+    <div class="products-grid">
+        <div id="product-2" style="display:none;">
+            <div class="row">
+                <h2 class="col-12 prod-header" id="other-prod"> OTHER PRODUCTS </h2>
+                <div class="col-3 prod-details" onclick="call('1')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Idexis Slimming Shake (450g)</h5>
+                    <p> P 300</p>
                 </div>
-            </div>
-            <div class="col-lg-4 products"> 
-                <img class="fifthpg__img" src="MainImages/bodyscrub1.jpg"/>
-                <div class="fifth_box"> 
-                    <hr class="fifth_hr"> 
-                    <p> BODY </p>  
-                    <hr class="fifth_hr">
+                <div class="col-12 invisible treatment-info" id="prod-1">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-            <div class="col-lg-4 products"> 
-                <img class="fifthpg__img" src="MainImages/mask1.jpg"/>
-                <div class="fifth_box"> 
-                    <hr class="fifth_hr">
-                    <p>HEALTH </p>
-                    <hr class="fifth_hr"> 
+                <div class="col-3 prod-details" onclick="call('2')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/sunskin-drytouch.jpg" />
+                    <h5> SunSkin Dry Touch Sunscreen</h5>
+                    <p> P 395</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('3')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> SunSkin Dark 2</h5>
+                    <p> P 395</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
         </div>
-        <button class="fifthpg__button" onclick="redirectToProducts()"> 
-            SEE OUR PRODUCTS
-        </button>
-    </div>
-    <!-- Sixth Section-->
-    <div class="mainpage__f-sect">
-        <blockquote> 
-            <hr class="hr"> 
-            <p>"Take time to make your soul happy. Sometimes we need to take a break from our routine to pamper ourselves and nurture our souls. Indulging in the things we love and taking time to care for ourselves is essential for our mental and emotional wellbeing." <br>- Audrey Hepburn</p>
-            <hr class="hr">
-        </blockquote>
+        <div id="product-1" style="display:none;">
+            <div class="row">
+                <h2 class="col-12 prod-header" id="biomedical"> BIOMEDICAL EMPORIUM </h2>
+                <div class="col-3 prod-details" onclick="call('4')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Serum_Anti-Acne copy.png" />
+                    <h5> BioMedical Emporium Anti-Acne Serum</h5>
+                    <p> P 765</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the BioMedical Emporium Anti-Acne Serum?</h2>
+                            <p> This product functions as a medium for clarification and purification, inducing a
+                                tranquil and calming sensation.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Serum_Anti-Acne copy.png">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('5')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Breakout-Control-Pack-1-1.png" />
+                    <h5> BioMedical Emporium BreakOut Control Pack</h5>
+                    <p>P 1,850</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('6')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Complextion CC copy.png" />
+                    <h5> BioMedical Emporium Complexion Corrector Cream</h5>
+                    <p> P 1,650</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('7')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Complextion Corrections Roll-on.png" />
+                    <h5> BioMedical Emporium Complexion Corrector Roll-On</h5>
+                    <p> P 550</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-7">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the BioMedical Emporium Complexion Corrector Roll-On?</h2>
+                            <p> This product evens out the complexion using a high anti-oxidant ingredient.
+                                It effectively addresses pigmented skin in the underarms and is pH-balanced for optimal
+                                results.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Complextion Corrections Roll-on.png">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('8')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Serum_Dark Spot copy.png" />
+                    <h5> BioMedical Emporium Dark Spot Serum</h5>
+                    <p> P 960</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-8">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the BioMedical Emporium Dark Spot Serum?</h2>
+                            <p> This Product aids in the
+                                enhancement of skin hyper-pigmentation. It reduces melanocyte generation, enhances skin
+                                texture, and promotes a glowing complexion. Additionally, it reduces skin pigmentation
+                                caused by UV exposure and inhibits tyrosinase activity, thereby diminishing melanin
+                                production.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Serum_Dark Spot copy.png">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('9')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Enzymatic Theraphy copy.png" />
+                    <h5> BioMedical Emporium Enzymatic Therapy</h5>
+                    <p> P 990</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-9">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the BioMedical Emporium Enzymatic Therapy?</h2>
+                            <p> This product offers enzymatic exfoliation, which supports sustainable skin maintenance
+                                and helps prevent the manifestation of harmful skin conditions.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Enzymatic Theraphy copy.png">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('10')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/BioMedical Emporium Facial Cleanser.png" />
+                    <h5> BioMedical Emporium Facial Cleanser (100ml)</h5>
+                    <p> P 495</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-10">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the BioMedical Emporium Facial Cleanser (100ml)?</h2>
+                            <p> This product gently removes impurities, deeply cleanses the skin, and ensures the
+                                integrity of the skin barrier remains undisturbed. It also desensitizes irritation and
+                                offers a gentle exfoliation effect.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/BioMedical Emporium Facial Cleanser.png">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('11')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/maternology-spf-30.png" />
+                    <h5> BioMedical Emporium Maternal Nutri-Hydro SPF 30</h5>
+                    <p> P 1,200</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-11">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('12')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> BioMedical Emporium Pigmentation Therapy</h5>
+                    <p> P 2,450</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('13')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Scalp Serum copy.png" />
+                    <h5> BioMedical Emporium Scalp Serum</h5>
+                    <p> P 695</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-13">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="col-3 prod-details" onclick="call('14')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Skin Biotic Collagen copy.png" />
+                    <h5> BioMedical Emporium Skin Biotic Collagen Supplement (Vanilla, Strawerry, Caramel, Banana)</h5>
+                    <p> P 265</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-14">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('15')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Serum_Skin repair copy.png" />
+                    <h5>BioMedical Emporium Skin Repair Serum (30ml)</h5>
+                    <p> P 679</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-15">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('16')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/SPF30 Spritz copy.png" />
+                    <h5> BioMedical Translucent Day SPF 30 Spritz</h5>
+                    <p> P 1,350</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-16">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the BioMedical Translucent Day SPF 30 Spritz?</h2>
+                            <p> This product provides nourishing vitamins and minerals for skin protection, effectively
+                                boosting hydration and restoring moisture. It also exhibits anti-inflammatory and
+                                anti-oxidant activity.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/SPF30 Spritz copy.png">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('17')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Sretchmark theraphy copy.png" />
+                    <h5> BioMedical Stretchmark and Cellulite Therapy</h5>
+                    <p> P 1,400</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-17">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the BioMedical Stretchmark and Cellulite Therap?</h2>
+                            <p> This product enhances, firms, hydrates, and improves the texture of the targeted
+                                cellulite or stretch mark area.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Sretchmark theraphy copy.png">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('18')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/SPF 30 copy.png" />
+                    <h5> BioMedical Emporium Translucent Day SPF 30</h5>
+                    <p> P 1,115</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-18">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the BioMedical Emporium Translucent Day SPF 30 ?</h2>
+                            <p> A sun protection cream that acts as a reliable broad spectrum UV filter, it provides
+                                SPF30 protection and assists in reducing the signs of photo-ageing.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/SPF 30 copy.png">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div id="product-4" style="display:none;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <div class="row">
+                <h2 class="col-12 prod-header" id="dermalogica">DERMALOGICA</h2>
+                <h4 class="col-12" style="padding-left:3rem;"> Limited Stock Available </h4>
+                <div class="col-3 prod-details" onclick="call('19')">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Dermalogica Active Clearing Kit</h5>
+                    <p>P 699</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-19">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Dermalogica Active Clearing Kit?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('20')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Dermalogica-ClearStart-FizzMask.jpg" />
+                    <h5> Dermalogica Blackhead Clearing Fizz Mask (50ml)</h5>
+                    <p> P 249</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-20">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Dermalogica Blackhead Clearing Fizz Mask (50ml)?</h2>
+                            <p> This Product, with its distinctive fizzing solution, efficiently unclogs pores and
+                                addresses blackheads. Its innovative technology initiates activation upon use, promoting
+                                pore opening, skin decongestion, and blackhead elimination. Sulfur works to maintain
+                                clear skin by combating impurities. Furthermore, Kaolin Clay absorbs surplus oil and
+                                purifies the complexion, adding to the overall efficacy of this remarkable mask.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Dermalogica-ClearStart-FizzMask.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('21')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Dermalogica-BreakoutClearing Kit.jpg" />
+                    <h5> Dermalogica BreakOut Clearing Skin Kit</h5>
+                    <p>P 399</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-21">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Dermalogica BreakOut Clearing Skin Kit?</h2>
+                            <p> This product offers all-in-one solutions to cleanse, treat
+                                breakouts, and hydrate the skin. With powerful ingredients like salicylic acid, tea tree
+                                oil, niacinamide, and hyaluronic acid, it effectively combats breakouts. Its
+                                travel-friendly sizes ensure a radiant glow anywhere you go. This kit deeply cleanses,
+                                spot treats, and refines, giving you purified, clear, and hydrated skin.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Dermalogica-BreakoutClearing Kit.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('22')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Dermalogica-BreakoutClearingBooster.jpg" />
+                    <h5> Dermalogica Breakout Clearing Booster (30ml)</h5>
+                    <p> P 249</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-22">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('23')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Dermalogica-clearStart-foamwash.jpg" />
+                    <h5> Dermalogica Breakout Clearing Foam Wash (117ml)</h5>
+                    <p> P 249</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-23">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('24')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Dermalogica-Sunscreen.jpg" />
+                    <h5>Dermalogica Protection 50 Sport (SPF 50)</h5>
+                    <p> P 489</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-24">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('25')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Dermalogica-ClearStart-hydrating.jpg" />
+                    <h5> Dermalogica Skin Smoothing Hydrating Lotion (60ml)</h5>
+                    <p> P 295</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-25">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div id="product-3" style="display:none;">
+            <div class="row">
+                <h2 class="col-12 prod-header" id="lamelle"> LAMELLE</h2>
+                <div class="col-3 prod-details" onclick="call('26')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Lamelle Brighter Serum</h5>
+                    <p> P 895</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-26">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('27')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/lamelle-clarity-treatment-pack.png" />
+                    <h5> Lamelle Clarity Treatment Pack</h5>
+                    <p> P 1,245</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-27">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Lamelle Clarity Treatment Pack?</h2>
+                            <p> The Lamelle Clarity Treatment Pack presents a comprehensive solution for
+                                addressing mild to moderate acne concerns. Tailored to assist both teenagers and adults
+                                grappling with breakouts and acne lesions, it synergizes seamlessly with LAMELLE
+                                Acnevelle for optimal results. The pack comprises three full-size products, now
+                                conveniently available in a promotional bundle, providing a complete and effective
+                                topical skincare treatment.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/lamelle-clarity-treatment-pack.png">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('28')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Lamelle-VitaCSerum.jpg" />
+                    <h5> Lamelle Correctives Vita C Lipid Serum</h5>
+                    <p> P 885</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-28">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Lamelle Correctives Vita C Lipid Serum?</h2>
+                            <p> This product offers a wide range of benefits for the skin. With its powerful antioxidant
+                                protection, it effectively shields against damage caused by free radicals. It also works
+                                to reduce signs of aging, leaving the skin looking more youthful and vibrant.
+                                Additionally, it promotes smoother skin texture and provides optimal hydration for a
+                                healthy complexion. With the inclusion of 20% Vitamin C, Jojoba seed oil, and Ginger
+                                root extract, this product enhances the skin's natural radiance, resulting in a brighter
+                                and glowing appearance.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Lamelle-VitaCSerum.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('29')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Lamelle-HelaseSunscreen.jpg" />
+                    <h5>Lamelle Helase Sunscreen SPF50 (50ml)</h5>
+                    <p> P 565</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-29">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Lamelle Helase Sunscreen SPF50 (50ml)?</h2>
+                            <p> In summary, this exceptional product surpasses your regular SPF 50, offering an
+                                unparalleled upgrade. Helase 50+ provides comprehensive protection against the entire
+                                range of sunlight, while the extraordinary super-antioxidant Pycnogenol® eradicates
+                                detrimental free radicals, diminishing the presence of harmful enzymes responsible for
+                                skin thinning and sagging. Furthermore, it reduces damaging inflammation and combats the
+                                aging effects on the skin, preserving its immune function even when exposed to sunlight.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Lamelle-HelaseSunscreen.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('30')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/LAmelle-helase-urbandefense 30.jpg" />
+                    <h5> Lamelle Helase Urban Defense SPF 30</h5>
+                    <p> P 395</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-30">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Lamelle Helase Urban Defense SPF 30?</h2>
+                            <p> Lamelle Helase Urban Defence 30 is a versatile sunblock with comprehensive coverage,
+                                guarding against the detrimental effects of urban pollution. Its robust antioxidants
+                                combat aging, inflammation, and hyperpigmentation. This formulation suits all skin
+                                types.
+
+                                Key components encompass UVA and UVB blockers that shield against radiation, including
+                                Visible Light that can induce pigmentation in darker skin tones.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/LAmelle-helase-urbandefense 30.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('31')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Lamelle-Serra-RestoreCream.jpg" />
+                    <h5> Lamelle Pigmentation 5 Pack</h5>
+                    <p> P 2,800</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-31">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('32')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/lamelle-lipid-recovery.jpg" />
+                    <h5> Lamelle Lipid Recovery Mask</h5>
+                    <p> P 550</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-32">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Lamelle Lipid Recovery Mask?</h2>
+                            <p> This Product is ideal for severely dry and impaired skin. With its velvety texture, this
+                                mask incorporates additional components that adhere to parched skin, drawing in moisture
+                                for extended durations. Moreover, it features exclusive botanical elements that pacify
+                                sensitivity and restore the skin's protective barrier.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/lamelle-lipid-recovery.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('33')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/lamelle-luminesce-treatment-pack.webp" />
+                    <h5> Lamelle Luminesce Treatment Pack</h5>
+                    <p> P 1,550</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-33">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> The Lamelle Luminesce Treatment Pack offers a complete skincare regimen for achieving a
+                                brighter and more even complexion. The pack includes the Lamelle Luminesce Brightening
+                                Cleanse 125ml,the Lamelle Luminesce Brighter Day, an active daytime moisturizer and the
+                                Lamelle Luminesce Evening Glow, a retinoid-based night cream. This pack will address
+                                issues like uneven coloration, dark spots, and dullness while targeting target stubborn
+                                pigmentation.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/lamelle-luminesce-treatment-pack.webp">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('34')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/lamelle-serra-body-lotion.jpg" />
+                    <h5> Lamelle Serra Body Lotion</h5>
+                    <p> P 395</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-34">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Lamelle Serra Body Lotion?</h2>
+                            <p> This comprehensive dry skin remedy is designed for your entire body. It harnesses the
+                                identical potency of Ceramide-P and crucial fatty acids to revive your skin's protective
+                                barrier. Tailored specifically for dry body skin, it suits all skin types, absorbs
+                                rapidly without leaving any oily traces, ensuring your garments won't adhere. Its
+                                fast-acting formula also provides swift relief to sensitive skin.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/lamelle-serra-body-lotion.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('35')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Lamelle-serra-cleasinggel.jpg" />
+                    <h5> Lamelle Serra Cleansing Gel (125ml)</h5>
+                    <p> P 295</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-35">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Lamelle Serra Cleansing Gel (125ml)?</h2>
+                            <p> This product is a preservative-free gel cleanser delicately and effectively removes
+                                impurities and makeup,
+                                leaving your skin immaculately clean. Enriched with unique anti-inflammatory properties,
+                                it safeguards the essential structures of your skin while promoting optimal pH balance.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Lamelle-serra-cleasinggel.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('36')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Lamelle-Serra-RestoreCream.jpg" />
+                    <h5> Lamelle Serra Restore Cream (50ml)</h5>
+                    <p> P 586</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-36">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the Lamelle Serra Restore Cream (50ml)?</h2>
+                            <p> This Product, a weightless and non-greasy lotion, is enriched with components that
+                                replenish the lipid bilayer constituting your skin's protective barrier. It revitalizes,
+                                moisturizes, and calms your skin. Additionally, it adjusts your skin's pH balance,
+                                enhancing its well-being and immune response, all the while alleviating dryness,
+                                itchiness, and sensitivity.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="Product Images/Lamelle-Serra-RestoreCream.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('37')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Lamelle Serra Winter Pack</h5>
+                    <p> P 1,850</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-37">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div id="product-5" style="display:none;">
+            <div class="row">
+                <h2 class="col-12 prod-header" id="mesoestetic"> MESOESTETIC</h2>
+                <div class="col-3 prod-details" onclick="call('38')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-acne one set.jpg" />
+                    <h5> Mesoestetic Acne One</h5>
+                    <p> P 990</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-38">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('39')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Mesoestetic Age Element Anti-Wrinkle Age Contour</h5>
+                    <p> P 1,560</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-39">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('40')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-brightening.jpg" />
+                    <h5> Mesoestetic Age Element Brightening Cream</h5>
+                    <p> P 1,365</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-40">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('41')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-bright-eyecontour.jpg" />
+                    <h5> Mesoestetic Age Element Brightening Eye Contour</h5>
+                    <p> NEED PRICE</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-41">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('42')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Mesoestetic Age Element Firming Cream</h5>
+                    <p> P 1,795</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-42">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('43')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-antiflash.jpg" />
+                    <h5> Mesoestetic Age Element Anti-Aging Flash Ampoules</h5>
+                    <p> P 1,600</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-43">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('44')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-brightening foam set.jpg" />
+                    <h5> Mesoestetic Brightening Foam (100ml)</h5>
+                    <p>P 875</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-44">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('45')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-brightening peel booster.jpg" />
+                    <h5> Mesoestetic Brightening Peel Booster (50ml)</h5>
+                    <p>P 1,390</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-45">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('46')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Mesoestetic Energy C Complex</h5>
+                    <p>P 1,690</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-46">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('47')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-fast skin repair.jpg" />
+                    <h5> Mesoestetic Fast Skin Repair</h5>
+                    <p>P 1,250</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-47">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('48')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-hydra-vital light.jpg" />
+                    <h5> Mesoestetic Hydra Vital Light</h5>
+                    <p> P 1,330</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-48">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('49')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-gelcream set.jpg" />
+                    <h5> Mesoestetic Melan Tran3x Gel Cream (50ml)</h5>
+                    <p> P 1,475</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-49">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('50')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-mela tran3x concentrate.jpg" />
+                    <h5> Mesoestetic Melan Tran3x Concentrate (30ml)</h5>
+                    <p> P 1,985</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-50">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('51')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-fast skin repair.jpg" />
+                    <h5> Mesoestetic Mesoprotech Melan 130 Pigment Control</h5>
+                    <p>P 1,185</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-51">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('52')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/meso-micellar biphasic.jpg" />
+                    <h5> Mesoestetic Micellar Biphasic (150ml)</h5>
+                    <p> P 760</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-52">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('53')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Mesoestetic Pigment Pack</h5>
+                    <p> P 4,325</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-53">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 prod-details" onclick="call('54')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Mesoestetic Post-Peel Crystal Fiber Mask</h5>
+                    <p> P 220</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-54">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('55')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Meso-purifying mousse.jpg" />
+                    <h5> Mesoestetic Purifying Mousse (150ml)</h5>
+                    <p> P 860</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-55">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="product-6" style="display:none;">
+            <div class="row">
+                <h2 class="col-12 prod-header" id="skinrepublic"> SKIN REPUBLIC</h2>
+                <h4 class="col-12" style="padding-left:3rem;"> Limited Stock Available </h4>
+                <div class="col-3 prod-details" onclick="call('56')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/stock image products.jpg" />
+                    <h5> Skin Republic Niacinamide</h5>
+                    <p>P 266</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-56">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('57')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Skin-Republic-Salicylic-acid.jpg" />
+                    <h5> Skin Republic Salicylic acid 2%</h5>
+                    <p>P 180</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-57">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-3 prod-details" onclick="call('58')" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img loading="lazy" src="Product Images/Skin-Republic-Salicylic-acid.jpg" />
+                    <h5> Skin Republic Retinol 0.2%</h5>
+                    <p>P 200</p>
+                </div>
+                <div class="col-12 invisible treatment-info" id="prod-58">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2> What is the INSERT NAME HERE?</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                animi?
+                                Eligendi repellat facilis, temporibus eum quibusdam tempore
+                                accusamus
+                                laborum quidem, quos numquam similique ex! Eum tempore ratione
+                                distinctio
+                                animi eligendi!
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="treat-img" src="MainImages/2in1.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Footer-->
     <footer>
-    <div class="row end">
-        <div class="col-3"> 
-            <h3> OUR LOCATION </h3>
-            <br>
-            <p> Kalafhi Executive Suite, </p>
-            <p> Plot 319 Extension 5,</p>
-            <p> Gaborone, Botswana</p>
-            <br>
-        </div>
-        <div class=" col-3">
-            <h3> WORKING HOURS</h3>
-            <br> 
-            <h4> Monday: 08:00 - 17:00</h4>
-            <h4> Tuesday: 08:00 - 17:00</h4>
-            <h4> Wednesday: 08:00 - 17:00</h4>
-            <h4> Thursday: 08:00 - 17:00</h4>
-            <h4> Friday: 08:00 - 17:00</h4>
-            <h4> Saturday: 09:00 - 13:00</h4>
-            <h4> Closed on Sundays and Public Holidays</h4>
-            <br>
-        </div>
-        <div class="col-3 quicklinks">
-            <h3> QUICK LINKS</h3>
-            <br>
+        <div class="row end">
+            <div class="col-3">
+                <h3> OUR LOCATION </h3>
+                <br>
+                <p> Kalafhi Executive Suite, </p>
+                <p> Plot 319 Extension 5,</p>
+                <p> Gaborone, Botswana</p>
+                <br>
+            </div>
+            <div class=" col-3">
+                <h3> WORKING HOURS</h3>
+                <br>
+                <h4> Monday: 08:00 - 17:00</h4>
+                <h4> Tuesday: 08:00 - 17:00</h4>
+                <h4> Wednesday: 08:00 - 17:00</h4>
+                <h4> Thursday: 08:00 - 17:00</h4>
+                <h4> Friday: 08:00 - 17:00</h4>
+                <h4> Saturday: 09:00 - 13:00</h4>
+                <h4> Closed on Sundays and Public Holidays</h4>
+                <br>
+            </div>
+            <div class="col-3 quicklinks">
+                <h3> QUICK LINKS</h3>
+                <br>
                 <p> <a onclick="redirectToHome()"> Home</a> </p>
                 <p> <a onclick="redirectToAbout()"> About Us</a> </p>
                 <p> <a onclick="redirectToTreatments()"> Treatments</a> </p>
                 <p> <a onclick="redirectToProducts()"> Products </a></p>
                 <p> <a onclick="redirectToNews()"> News</a> </p>
                 <p> <a onclick="redirectToEvents()"> Events</a> </p>
-            <br>
-        </div>
-        <div class="col-3">
-            <div class="">
-                <h3> CONTACT US </h3>
-                <br> 
-                <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
-(+267) 390 6944</p>
-                <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
-(+267) 73 275 990</p>
+                <br>
             </div>
-            <br>
-            <ul class="social-list">
-                <li class="odd-fa-f-radius">
-                    <a  target="_blank" href="https://www.facebook.com/RenewalAestheticclinic">
-                        <i class="fab fa-facebook-f" src="facebook-f.svg"></i>
-                    </a>
-                </li>
-    
-                <li class="odd-fa-insta-radius">
-                    <a target="_blank"  href="https://www.instagram.com/renewalaestheticsclinic/">
-                        <i class="fab fa-instagram" src="instagram.svg"></i>
-                    </a>
-                </li>
-    
-                <li class="odd-fa-youtube-radius"><a target="_blank" href="https://www.youtube.com/@renewalaesthetics3627">
-                    <i class="fab fa-youtube" src="youtube.svg"></i></a></li>
-            </ul>
+            <div class="col-3">
+                <div class="">
+                    <h3> CONTACT US </h3>
+                    <br>
+                    <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+                        (+267) 390 6944</p>
+                    <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+                        (+267) 73 275 990</p>
+                </div>
+                <br>
+                <ul class="social-list">
+                    <li class="odd-fa-f-radius">
+                        <a target="_blank" href="https://www.facebook.com/RenewalAestheticclinic">
+                            <i class="fab fa-facebook-f" src="facebook-f.svg"></i>
+                        </a>
+                    </li>
+
+                    <li class="odd-fa-insta-radius">
+                        <a target="_blank" href="https://www.instagram.com/renewalaestheticsclinic/">
+                            <i class="fab fa-instagram" src="instagram.svg"></i>
+                        </a>
+                    </li>
+
+                    <li class="odd-fa-youtube-radius"><a target="_blank"
+                            href="https://www.youtube.com/@renewalaesthetics3627">
+                            <i class="fab fa-youtube" src="youtube.svg"></i></a></li>
+                </ul>
+            </div>
         </div>
-    </div>
     </footer>
     <button id="scroll-to-top-btn">
-        <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top" src="up-long.svg">
+        <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top"
+            src="up-long.svg">
     </button>
+    <!-- Modal -->
+    <div class="modal Modalfade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="staticBackdropLabel">Renewal Aesthetics</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <div id="modeltreatments" class="">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="Bootstrap.js"></script>
+    <script>
+
+        //var textContent2 = document.getElementById('prod-1-2');
+        function call(a) {
+            var textContent = document.getElementById('prod-' + a);
+            //textContent2.classList.toggle('invisible');
+            textContent.classList.toggle('invisible');
+            document.getElementById('modeltreatments').innerHTML = textContent.outerHTML;
+            //document.getElementById('modeltreatments').innerHTML = textContent.outerHTML + textContent2.outerHTML;
+            //textContent2.classList.toggle('invisible');
+            textContent.classList.toggle('invisible');
+        }
+
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            var link = window.location.href;
+            link = link.split('#')[1];
+
+            document.getElementById(link).style.display = "block";
+            window.location.href = "productsren.html#" + link;
+        });
 
 
 
+        // Show scroll-to-top button after scrolling halfway through the page
+        window.onscroll = function () {
+            var btn = document.getElementById("scroll-to-top-btn");
+            if (document.body.scrollTop > (document.body.scrollHeight / 5) || document.documentElement.scrollTop > (document.documentElement.scrollHeight / 5)) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
 
+        // Scroll to top when button is clicked
+        document.getElementById("scroll-to-top-btn").addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
 
- <script>
- 
- 
-// Show scroll-to-top button after scrolling halfway through the page
-window.onscroll = function() {
-var btn = document.getElementById("scroll-to-top-btn");
-if (document.body.scrollTop > (document.body.scrollHeight / 5) || document.documentElement.scrollTop > (document.documentElement.scrollHeight / 5)) {
-btn.style.display = "block";
-} else {
-btn.style.display = "none";
-}
-};
-
-// Scroll to top when button is clicked
-document.getElementById("scroll-to-top-btn").addEventListener("click", function() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-});
 
 
         function redirectToHome() {
-    window.location.href = "index.html";
-}  
+            window.location.href = "index.html";
+        }
         function redirectToAbout() {
-    window.location.href = "aboutren.html";
-}
+            window.location.href = "aboutren.html";
+        }
         function redirectToTreatments() {
-    window.location.href = "treatmentsren.html";
-}
+            window.location.href = "treatmentsren.html";
+        }
         function redirectToProducts() {
-    window.location.href = "productsren.html";
-}
+            window.location.href = "productsren.html";
+        }
         function redirectToNews() {
-    window.location.href = "newsren.html";
-}
+            window.location.href = "newsren.html";
+        }
         function redirectToGallery() {
-    window.location.href = "galleryren.html";
-}
+            window.location.href = "galleryren.html";
+        }
         function redirectToContact() {
-    window.location.href = "contactren.html";
-}
-	 function redirectToBookApt() {
-        window.location.href = "bookapt.html";
-    }
-    function redirectToEvents() {
+            window.location.href = "contactren.html";
+        }
+        function redirectToBookApt() {
+            window.location.href = "bookapt.html";
+        }
+        function redirectToEvents() {
             window.location.href = "events.html";
         }
-    
-   //Navbar settings for mobile starts// 
-    // Get the dropdown and sub-dropdown buttons
+
+
+
+        //Navbar settings for mobile starts// 
+        // Get the dropdown and sub-dropdown buttons
         const dropdownBtn = document.querySelector('.dropdown-3 .button-one');
         const subDropdownBtns = document.querySelectorAll('.dropdown .dropbtn');
 
         // Add click event listener to the dropdown button
         dropdownBtn.addEventListener('click', () => {
-          // Toggle active class on the dropdown
-          dropdownBtn.parentNode.classList.toggle('active');
+            // Toggle active class on the dropdown
+            dropdownBtn.parentNode.classList.toggle('active');
         });
 
         // Add click event listener to the sub-dropdown buttons
         subDropdownBtns.forEach((btn) => {
-          btn.addEventListener('click', () => {
-            // Toggle active class on the sub-dropdown
-            btn.parentNode.classList.toggle('active');
-          });
+            btn.addEventListener('click', () => {
+                // Toggle active class on the sub-dropdown
+                btn.parentNode.classList.toggle('active');
+            });
         });
-        
-        
-    const buttons = document.querySelectorAll("button");
-    buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-            const currentState = button.getAttribute("data-state");
 
-            if (!currentState || currentState === "closed") {
-                button.setAttribute("data-state", "opened");
-                button.setAttribute("aria-expanded", "true");
-            } else {
-                button.setAttribute("data-state", "closed");
-                button.setAttribute("aria-expanded", "false");
-            }
+
+        const buttons = document.querySelectorAll("button");
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const currentState = button.getAttribute("data-state");
+
+                if (!currentState || currentState === "closed") {
+                    button.setAttribute("data-state", "opened");
+                    button.setAttribute("aria-expanded", "true");
+                } else {
+                    button.setAttribute("data-state", "closed");
+                    button.setAttribute("aria-expanded", "false");
+                }
+            });
         });
-    });
-        
-     //Navbar settings for mobile ends//    
+
+        //Navbar settings for mobile ends//    
+
+
+        //For Displaying The Product Sections //
+        function OpenProduct(a) {
+            // To close each product section when another opens//
+            for (var i = 1; i < 7; i++) {
+                var div1 = document.getElementById("product-" + i);
+                if (div1 == document.getElementById("product-" + a)) {
+                    var div = document.getElementById("product-" + a);
+                    if (div.style.display === "none" || div.style.display === " ") {
+                        div.style.display = "block";
+                        window.location.href = "productsren.html#product-" + a;
+
+                    } else {
+                        div.style.display = "none";
+
+                    }
+
+                } else {
+                    if (div1.style.display == "block") {
+                        div1.style.display = "none";
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
     </script>
 </body>
+
 </html>
