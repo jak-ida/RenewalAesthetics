@@ -850,23 +850,42 @@
 
   }
 
-  .vision1,
-  .mission1 {
+  .vision1{
       background-color: white;
-      padding: 2rem 4rem 4rem;
+      padding: 1rem 4rem 4rem;
       width: 70%;
       margin: auto;
       border-bottom: 3px solid black;
-      border-top: 3px solid black;
 
   }
 
+  .mission1 {
+      background-color: white;
+      padding: 2rem 4rem 1rem;
+      width: 70%;
+      margin: auto;
+      border-top: 3px solid black;
+
+  }
+  .luncheon {
+    background-color: white;
+    padding: 4rem;
+    margin: auto;
+    gap:2rem;
+    display:grid;
+    align-items: center;
+
+}
   .vision p,
-  .mission p {
+  .mission p, .luncheon p {
       font-size: large;
       padding-top: 1rem;
       text-align: justify;
       hyphens: auto;
+  }
+  .luncheon img{
+    padding:1rem;
+    height:auto;
   }
 
   .mission {
@@ -876,7 +895,7 @@
   }
 
   .vision h3,
-  .mission h3 {
+  .mission h3, .luncheon h2 {
       font-size: 1.5rem;
       padding-bottom: 0.5rem;
   }
@@ -1010,7 +1029,7 @@
   }
 
   .about_brief-img {
-      width: 90%;
+      width: 50%;
       margin: auto;
       padding: 0.5rem;
   }
@@ -1021,22 +1040,7 @@
       padding: 0.5rem;
   }
 
-  .about_brief-img1 {
-      width: 90%;
-      margin: auto;
-      padding: 0.5rem;
-      height: 110%;
-  }
-
-  .about_brief-img11 {
-      width: 90%;
-      margin: auto;
-      padding: 0.5rem;
-      height: 110%;
-  }
-
   .about_brief-img2 {
-
       margin: auto;
       padding: 0.5rem;
       height: 110%;
@@ -1122,12 +1126,11 @@
   }
 
   .about_brief1 {
-      background-image: url('BackgroundImages/backgroundddd.png');
       min-height: 25vh;
       height: auto;
       background-repeat: no-repeat;
       background-size: contain;
-      background-color: #000;
+      background-color: var(--black);
       display: grid;
       align-content: center;
       padding: 2rem;
