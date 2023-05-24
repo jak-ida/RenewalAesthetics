@@ -1,3 +1,11 @@
+  :root {
+      --white: white;
+      --tan: tan;
+      --black: black;
+
+  }
+
+
   /* CSS Reset*/
   html {
       scroll-behavior: smooth;
@@ -506,7 +514,6 @@
   }
 
   .main__intro {
-      margin-top: 6rem;
       font-size: 4.5rem;
       width: 50%;
       color: black;
@@ -514,6 +521,7 @@
       font-weight: lighter;
       font-style: italic;
       font-family: 'Times New Roman', serif;
+      padding-top: 15rem;
   }
 
   .main__intro1 {
@@ -544,14 +552,6 @@
 
   }
 
-  .logo {
-      width: 15%;
-      height: 15%;
-      position: relative;
-      top: 80px;
-      left: -50px;
-  }
-
   .main__quote {
       background-color: tan;
       color: black;
@@ -563,12 +563,13 @@
       font-size: 1.5rem;
   }
 
-  .main__quote h2 {
-      padding: 0.3rem 0rem;
+  .main__quote-h2 {
+      padding: 0.5rem 0rem;
+      font-size: 1.5rem;
   }
 
   .main__quotehr {
-      border: 2px solid black;
+      border: 1px solid black;
       width: 45%;
       margin: auto auto;
   }
@@ -591,7 +592,7 @@
 
   .thirdpg__div {
       display: grid;
-      gap: 2rem;
+      gap: 1rem;
       padding: 4rem 0;
   }
 
@@ -604,12 +605,18 @@
 
   .thirdpg__p {
       color: white;
-      padding: 1rem;
+      padding: 0rem 1rem 1rem;
       text-align: center;
   }
 
   .treat-images {
-      gap: 2rem;
+      color: var(--white);
+      text-align: center;
+
+  }
+
+  .treat-images img {
+      padding: 1rem;
   }
 
   .thirdpg__button {
@@ -708,19 +715,18 @@
   .fifth_box {
       height: 150px;
       width: 200px;
-      background-color: black;
-      color: white;
+      background-color: var(--white);
+      color: var(--black);
       position: relative;
       top: -6rem;
       left: 6rem;
       font-size: 2rem;
-      text-align: left;
+      text-align:center;
       gap: 0.75rem;
       line-height: 1.75rem;
       display: grid;
       align-content: center;
       padding: 2rem;
-      box-shadow: 5px 5px 8px tan;
   }
 
   .fifth_hr {
@@ -1853,9 +1859,9 @@ padding:0.5rem 3rem; */
   }
 
   .event-img img {
-      
-      height:250px;
-      width:auto;
+
+      height: 250px;
+      width: auto;
   }
 
   .p-4 {
@@ -2359,10 +2365,6 @@ padding:0.5rem 3rem; */
 
       .fifthpg h4 {
           font-size: 1.2rem;
-      }
-
-      .logo {
-          left: -10px;
       }
 
       .main__quote h2 {
