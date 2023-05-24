@@ -1384,6 +1384,11 @@ padding:0.5rem 3rem; */
 
 
   /* Treatments Page*/
+  .a-c{
+    display:grid;
+    align-items: center;
+    padding-bottom:5rem;
+  }
   .treat-info {
       width: 90%;
       margin: auto;
@@ -1483,11 +1488,14 @@ padding:0.5rem 3rem; */
       height: auto;
   }
 
+  .treat-11{
+    padding:3rem 2rem;
+  }
   .treat-mainbtn {
       background-color: #fff;
       border: 2px solid tan;
       border-radius: 0.5rem;
-      width: 100%;
+      padding:0rem 3rem;
       margin: auto auto;
       display: block;
   }
@@ -1646,12 +1654,13 @@ padding:0.5rem 3rem; */
   }
 
   .FAQ-header {
-      border: 2px solid black;
+      border: 1px solid var(--tan);
       color: black;
       background-color: tan;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.5rem;
       margin: 0.5rem;
       border-radius: 0.5rem;
+      text-align:center;
   }
 
   .FAQ-header:hover {
