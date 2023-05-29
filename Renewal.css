@@ -4,6 +4,8 @@
       --black: black;
 
   }
+  p{ font-size: 0.85rem!important;}
+
 
 
   /* CSS Reset*/
@@ -555,17 +557,16 @@
   .main__quote {
       background-color: tan;
       color: black;
-      min-height: 130px;
+      min-height: 200px;
       height: 130px;
       text-align: center;
       display: grid;
       align-content: center;
-      font-size: 1.5rem;
   }
 
   .main__quote-h2 {
-      padding: 0.5rem 0rem;
-      font-size: 1.5rem;
+      padding: 1rem 0rem;
+      font-size: 1.2rem;
   }
 
   .main__quotehr {
@@ -620,12 +621,12 @@
   }
 
   .thirdpg__button {
-      border: 2px solid hsl(0, 4%, 26%);
+      border: 1px solid hsl(0, 4%, 26%);
       padding: 8px 40px;
       border-radius: 1rem;
       color: white;
       background-color: transparent;
-      width: 40%;
+      width: 30%;
       margin: auto auto;
       border-radius: 1rem;
       font-weight: bold;
@@ -634,25 +635,25 @@
   .thirdpg__button:hover {
       background-color: black;
       color: tan;
-      border: 2px solid tan;
+      border: 1px solid tan;
       cursor: pointer;
   }
 
   .fourthpg {
       height: auto;
-      padding: 4rem 0;
+      padding: 10rem 2rem;
       background-color: white;
   }
 
-  .fourth-pg-1 {
+  /* .fourth-pg-1 {
       padding: 4rem;
-  }
+  } */
 
-  .fourthpg__img {
+  /* .fourthpg__img {
       max-height: 600px;
       width: 80%;
       margin: auto auto;
-  }
+  } */
 
   .fourthpg__content {
       margin: auto auto;
@@ -671,17 +672,19 @@
       hyphens: auto;
       -webkit-hyphens: auto;
       word-spacing: -0.05em;
+      font-size: 0.75rem;
   }
 
   .fourthpg__button {
-      border: 2px solid hsl(0, 4%, 26%);
+      border: 1px solid hsl(0, 4%, 26%);
       padding: 8px 40px;
       border-radius: 1rem;
       color: hsl(0, 4%, 26%);
       background-color: transparent;
       margin-top: 1.75rem;
-      width: 60%;
+      width: 50%;
       font-weight: bold;
+      font-size: 0.9rem;
   }
 
   .fourthpg__button a {
@@ -693,7 +696,7 @@
   .fourthpg__button:hover {
       background-color: black;
       color: tan;
-      border: 2px solid tan;
+      border: 1px solid tan;
       cursor: pointer;
   }
 
@@ -720,13 +723,16 @@
       position: relative;
       top: -6rem;
       left: 6rem;
-      font-size: 2rem;
+
       text-align:center;
       gap: 0.75rem;
       line-height: 1.75rem;
       display: grid;
       align-content: center;
       padding: 2rem;
+  }
+  .fifth_box p{
+    font-size: 2rem!important;
   }
 
   .fifth_hr {
@@ -804,7 +810,7 @@
   .mainpage__f-sect p {
       text-align: center;
       color: black;
-      font-size: 1.2rem;
+      font-size:0.75rem;
       width: 90%;
       margin: auto auto;
       padding: 1rem 0;
@@ -825,11 +831,15 @@
   .end h3 {
       color: darkgray;
   }
+  .end h4{
+    font-size: 0.8rem;
+  }
 
   .quicklinks p {
       display: grid;
       margin: 0px;
       text-align: left;
+      font-size: 0.75rem;;
 
   }
 
@@ -869,7 +879,7 @@
   }
   .luncheon {
     background-color: white;
-    padding: 4rem;
+    padding: 6rem 4rem;
     margin: auto;
     gap:2rem;
     display:grid;
@@ -878,10 +888,10 @@
 }
   .vision p,
   .mission p, .luncheon p {
-      font-size: large;
       padding-top: 1rem;
       text-align: justify;
       hyphens: auto;
+      font-size: 0.75rem;
   }
   .luncheon img{
     padding:1rem;
@@ -911,6 +921,7 @@
       padding-bottom: 1rem;
       width: 85%;
       margin: auto;
+      font-size: 0.75rem;
   }
 
   .services-info-img {
@@ -939,6 +950,7 @@
       text-align: justify;
       width: 80%;
       margin: auto;
+      font-size: 0.75rem;
   }
 
   .values-table {
@@ -966,6 +978,7 @@
       margin: auto;
       text-align: justify;
       hyphens: auto;
+      font-size: 0.75rem;
   }
 
   .values-table h5 {
@@ -1007,8 +1020,6 @@
       hyphens: auto;
       -webkit-hyphens: auto;
       word-spacing: -0.05em;
-
-
   }
 
   .about_brief p {
@@ -1017,6 +1028,7 @@
       margin: auto auto;
       line-height: 1.7rem;
       padding-bottom: 0.8rem;
+      font-size: 0.75rem;
   }
 
   .about_brief_p1 p {
@@ -1025,11 +1037,12 @@
       margin: auto auto;
       z-index: 2;
       padding-bottom: 0.8rem;
+      font-size: 0.75rem;
 
   }
 
   .about_brief-img {
-      width: 50%;
+      width: 60%;
       margin: auto;
       padding: 0.5rem;
   }
@@ -1039,7 +1052,9 @@
       margin: auto;
       padding: 0.5rem;
   }
-
+  .news-img-1 {
+    padding: 0.5rem;
+}
   .about_brief-img2 {
       margin: auto;
       padding: 0.5rem;
@@ -1074,13 +1089,12 @@
   }
 
   .about__background2 p {
-      font-size: 1rem;
       text-align: justify;
       hyphens: auto;
       -webkit-hyphens: auto;
       word-spacing: -0.05em;
       padding: 0.5rem;
-      line-height: 1.7rem;
+      line-height: 1.5rem;
   }
 
   .about__name1 {
@@ -1111,7 +1125,7 @@
       margin: auto auto;
       position: relative;
       right: 8rem;
-      top: rem;
+      top: 3rem;
 
 
   }
@@ -1122,6 +1136,7 @@
       position: relative;
       left: 5rem;
       top: -1rem;
+      border:8px solid var(--white)
 
   }
 
@@ -1141,7 +1156,7 @@
       color: white;
       width: 80%;
       margin: auto auto;
-      font-size: large;
+      font-size: small;
       text-align: center;
   }
 
@@ -1161,6 +1176,7 @@
   .form-row p {
       text-align: center;
       margin-bottom: 2rem;
+      font-size: 0.75rem;
   }
 
   .book-form textarea {
@@ -1191,7 +1207,7 @@
 padding:0.5rem 3rem; */
       display: block !important;
       background-color: black;
-      border: 2px solid white;
+      border: 1px solid white;
       color: white;
       padding: 0.5rem 1rem;
       text-align: center;
@@ -1201,7 +1217,7 @@ padding:0.5rem 3rem; */
       border-radius: 1rem;
       cursor: pointer;
       float: right;
-      width: 30%;
+      width: 20%;
       font-weight: bold;
 
   }
@@ -1214,6 +1230,7 @@ padding:0.5rem 3rem; */
       color: black;
       background-color: white;
       border: 1px solid black;
+      cursor: pointer;
   }
 
   .glass-effect1 {
@@ -1344,7 +1361,7 @@ padding:0.5rem 3rem; */
       border-radius: 1rem;
       cursor: pointer;
       float: right;
-      width: 30%;
+      width: 20%;
       font-weight: bold;
   }
 
@@ -1464,6 +1481,7 @@ padding:0.5rem 3rem; */
       margin: auto;
       width: 80%;
       text-align: justify;
+      font-size: 0.75rem;
       hyphens: auto;
       -webkit-hyphens: auto;
       word-spacing: -0.05em;
@@ -1518,6 +1536,7 @@ padding:0.5rem 3rem; */
       width: 80%;
       margin: auto auto;
       text-align: justify;
+      font-size: 0.75rem;
   }
 
   .treat-type {
@@ -1628,6 +1647,7 @@ padding:0.5rem 3rem; */
 
   .treatment-info p {
       padding: 1rem;
+      font-size: 0.75rem;
       text-align: justify;
       hyphens: auto;
   }
@@ -1723,6 +1743,7 @@ padding:0.5rem 3rem; */
       margin: auto auto;
       text-align: justify;
       hyphens: auto;
+      font-size: 0.75rem;
       -webkit-hyphens: auto;
       word-spacing: -0.05em;
   }
@@ -1843,6 +1864,7 @@ padding:0.5rem 3rem; */
       padding-bottom: 1rem;
       text-align: justify;
       hyphens: auto;
+      font-size: 0.75rem;
   }
 
   .partnership {
@@ -1969,6 +1991,7 @@ padding:0.5rem 3rem; */
 
   .past-events-1 p {
       padding: 0rem 0.2rem;
+      font-size: 0.75rem;
   }
 
   .past-events-1 h4 {
@@ -1989,7 +2012,8 @@ padding:0.5rem 3rem; */
 
   .past-events1 p {
       padding: 0rem 0.5rem;
-      font-size: small;
+      font-size: 0.75rem;
+
   }
 
   .hr-events {
@@ -2101,12 +2125,14 @@ padding:0.5rem 3rem; */
   /*News Page*/
   .news-body p {
       padding-bottom: 0.5rem;
+      font-size: 0.75rem;
   }
 
   .modal-body p {
       padding-bottom: 1rem;
       text-align: justify;
       hyphens: auto;
+      font-size: 0.75rem;
   }
 
   .news {
@@ -2129,10 +2155,7 @@ padding:0.5rem 3rem; */
   }
 
   .news-img {
-      height: auto;
-      width: 400px;
-      margin: auto auto;
-      padding: 1rem;
+     padding:1rem;
   }
 
   .news-modal-img {
@@ -2173,7 +2196,7 @@ padding:0.5rem 3rem; */
   }
 
   .news-sub {
-      padding: 2rem;
+      padding: 4rem 2rem;
 
   }
 
@@ -2561,6 +2584,7 @@ padding:0.5rem 3rem; */
           padding: 2rem 1rem 2rem;
           height: 100%;
       }
+      
 
       .about__name {
           font-size: 1.8rem;
@@ -3148,6 +3172,7 @@ padding:0.5rem 3rem; */
       .about_brief-img-1 {
           padding-bottom: 2rem;
       }
+      
 
       .about_brief-img11 {
           width: 80%;
