@@ -1202,7 +1202,7 @@
       color: white;
       width: 80%;
       margin: auto auto;
-      font-size: small;
+      font-size: small!important;
       text-align: center;
   }
 
@@ -2571,8 +2571,7 @@ padding:0.5rem 3rem; */
           padding: 0.5rem;
       }
 
-      .about_brief1 h2,
-      .about_brief1 h3 {
+      .about_brief1 h2{
           font-size: normal;
       }
 
