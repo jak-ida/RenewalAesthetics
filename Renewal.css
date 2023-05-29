@@ -1516,6 +1516,7 @@ padding:0.5rem 3rem; */
       background-color: black;
       border: 2px solid tan;
       cursor: pointer;
+    
   }
 
   .treat-1 h2 {
@@ -1570,6 +1571,7 @@ padding:0.5rem 3rem; */
       color: tan;
       background-color: black;
       cursor: pointer;
+      transition: 0.5s;
   }
 
   .treat h4 {
