@@ -1,239 +1,291 @@
 <!doctype html>
 <html lang="en">
-<head> 
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
-	<link href="Renewal.css" rel="stylesheet" type="text/css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap" rel="stylesheet">
-	<title> Renewal Aesthetics </title>
-	 <link rel="icon" href="Renewal Logo-02.png"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head> 
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
+    <link href="Renewal.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title> Renewal Aesthetics </title>
+    <link rel="icon" href="Renewal Logo-02.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 <body>
     <!--First Section-->
     <div class="aboutmain__">
-     <header>
-         <img  onclick="redirectToHome()" class="Logo" src="MainImages/Renewal%20Logo-01.png"/>
-		<div class="navbar">
-            <a href="index.html">HOME</a>
-            <a href="aboutren.html" class="active-pg">ABOUT RENEWAL</a>
-            <div class="dropdown">
-                <button class="dropbtn"><a class="no-a" href="treatmentsren.html">TREATMENTS</a>
+        <header>
+            <img onclick="redirectToHome()" class="Logo" src="MainImages/Renewal%20Logo-01.png" />
+            <div class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="aboutren.html" class="active-pg">ABOUT RENEWAL</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a class="no-a" href="treatmentsren.html">TREATMENTS</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
+                        <a href="treatmentsren.html#plateletrichplasma">PRP Treatment</a>
+                        <a href="treatmentsren.html#microneedling">Micro-needling</a>
+                        <a href="treatmentsren.html#lamelle-facials">Lamelle Professional Facials</a>
+                        <a href="treatmentsren.html#injectables">Injectables</a>
+                        <a href="treatmentsren.html#healing-earth">Healing Earth</a>
+                        <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="no-a" href="productsren.html">PRODUCTS</a>
+
+                    <div class="dropdown-content">
+
+                        <a href="productsren.html#product-4">Dermalogica</a>
+                        <a href="productsren.html#product-1">BioMedical Emporium</a>
+                        <a href="productsren.html#product-3">Lamelle</a>
+                        <a href="productsren.html#product-5">Mesoestetic</a>
+                        <a href="productsren.html#product-6">Skin Republic</a>
+                        <a href="productsren.html#product-2">Other Products</a>
+                    </div>
+                </div>
+                <a href="gallery.html">GALLERY</a>
+                <div class="dropdown">
+
+                    <a class="no-a" href="newsren.html">NEWS</a>
+                    <div class="dropdown-content">
+                        <a href="events.html">EVENTS</a>
+                    </div>
+                </div>
+
+                <a href="contactren.html">CONTACT US</a>
+
+
+                <button class="booking__btn1" onclick="redirectToBookApt()">
+                    <p>BOOK NOW</p>
+                </button>
+            </div>
+
+            <div class="dropdown-3 ">
+                <!-- Button one -->
+                <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button"
+                    aria-controls="primary-navigation" aria-expanded="false"
+                    style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
+                    <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
+                        <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+                        </rect>
+                        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+                        </rect>
+                        <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+                        </rect>
+                    </svg>
                 </button>
                 <div class="dropdown-content">
-                    <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
-                    <a href="treatmentsren.html#plateletrichplasma">PRP Treatment</a>
-                    <a href="treatmentsren.html#microneedling">Micro-needling</a>
-                    <a href="treatmentsren.html#lamelle-facials">Lamelle Professional Facials</a>
-                    <a href="treatmentsren.html#injectables">Injectables</a>
-                    <a href="treatmentsren.html#healing-earth">Healing Earth</a>
-                    <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                    <a href="index.html">HOME</a>
+                    <a class="dropdown-content1 active-pg1" href="aboutren.html">ABOUT RENEWAL</a>
+
+                    <a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
+
+                    <a class="dropdown-content1" href="productsren.html">PRODUCTS</a>
+                    <a class="dropdown-content1" href="gallery.html">GALLERY</a>
+                    <a class="dropdown-content1" href="newsren.html">NEWS</a>
+                    <a class="dropdown-content1" href="events.html">EVENTS</a>
+                    <a href="contactren.html" class="dropdown-content1">CONTACT US</a>
+                    <a href="bookapt.html" class="dropdown-content1"> BOOK NOW</a>
                 </div>
             </div>
-            <div class="dropdown">
-                <a class="no-a" href="productsren.html">PRODUCTS</a>
-            
-                <div class="dropdown-content">
-                    
-                   <a href="productsren.html#product-4">Dermalogica</a>
-                    <a href="productsren.html#product-1">BioMedical Emporium</a>
-                    <a href="productsren.html#product-3">Lamelle</a>
-                    <a href="productsren.html#product-5">Mesoestetic</a>
-                    <a href="productsren.html#product-6">Skin Republic</a>
-                    <a href="productsren.html#product-2">Other Products</a>
-                </div>
-            </div>
-            <a href="gallery.html">GALLERY</a>
-            <div class="dropdown">
-                
-            <a class="no-a" href="newsren.html">NEWS</a>
-            <div class="dropdown-content">
-            <a href="events.html">EVENTS</a>
-        </div>
-        </div>
-
-            <a href="contactren.html">CONTACT US</a>
-            
-                        
-            <button class="booking__btn1" onclick="redirectToBookApt()"><p>BOOK NOW</p></button>
-        </div>
-  
-         <div  class="dropdown-3 ">
-            <!-- Button one -->
-            <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button" aria-controls="primary-navigation" aria-expanded="false" style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
-                <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
-                    <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
-                    </rect>
-                    <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
-                    </rect>
-                    <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
-                    </rect>
-                </svg>
-            </button>
-    <div class="dropdown-content" >
-        <a href="index.html">HOME</a>
-        <a class="dropdown-content1 active-pg1" href="aboutren.html">ABOUT RENEWAL</a>
-       
-	    <a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
-
-		<a class="dropdown-content1" href="productsren.html">PRODUCTS</a>
-		<a class="dropdown-content1" href="gallery.html">GALLERY</a>
-		<a class="dropdown-content1" href="newsren.html">NEWS</a>
-        <a class="dropdown-content1" href="events.html">EVENTS</a>
-		<a href="contactren.html" class="dropdown-content1" >CONTACT US</a>
-	    <a href="bookapt.html" class="dropdown-content1"> BOOK NOW</a>
-    </div>
-</div>
-</header>
+        </header>
     </div>
     <!-- Second Section--->
     <div class="about-main__">
-        <div class="about-img"> 
+        <div class="about-img">
             <h2> About Renewal</h2>
         </div>
         <div class="row about_brief ">
-            <div class="col-6">
-                
-                <p>Welcome to <em>Renewal Aesthetics</em>, a luxury medical spa & clinic dedicated to helping you become the best version of yourself. Our mission is to provide top-notch self-care services and treatments that enhance and restore your physical appearance, as well as your overall health and wellbeing.</p>
-                
-                <p>At <em>Renewal Aesthetics</em>, we understand that self-care is not just a luxury but a necessity in today's fast-paced world. That's why we offer a range of services, including facials, body treatments, injectables, and more, all designed to help you look and feel your best.</p>
-                
-                <p>In addition to our traditional services, we also offer exclusive self-care luncheons and retreats that provide the ultimate luxury indulgence. Our luncheons and retreats are designed to provide a full sensory experience, from the ambiance and welcome rituals to the exquisite culinary experiences. We believe that true self-care should encompass both the mind and the body, and our self-care retreats are designed to provide you with the ultimate luxury indulgence.</p>
-                    
-                <p>Our experienced and knowledgeable staff is dedicated to providing you with the highest level of care and attention, ensuring that your experience at Renewal Aesthetics is nothing short of exceptional.</p>
-                    
-                <p>We believe that true beauty comes from within, and our goal is to help you cultivate a sense of inner peace and confidence that radiates outward. Whether you're looking for a quick pick-me-up or a full day of pampering, we invite you to experience the Renewal Aesthetics difference.</p>
-                
-            
+            <div class="col-5">
+
+                <p>Welcome to <em>Renewal Aesthetics</em>, a luxury medical spa & clinic dedicated to helping you become
+                    the best version of yourself. Our mission is to provide top-notch self-care services and treatments
+                    that enhance and restore your physical appearance, as well as your overall health and wellbeing.
+                </p>
+
+                <p>At <em>Renewal Aesthetics</em>, we understand that self-care is not just a luxury but a necessity in
+                    today's fast-paced world. That's why we offer a range of services, including facials, body
+                    treatments, injectables, and more, all designed to help you look and feel your best. In addition to
+                    our traditional services, we also offer exclusive self-care luncheons and retreats that provide the
+                    ultimate luxury indulgence.</p>
+
+                <p>We believe that true beauty comes from within, and our goal is to help you cultivate a sense of inner
+                    peace and confidence that radiates outward. Whether you're looking for a quick pick-me-up or a full
+                    day of pampering, we invite you to experience the Renewal Aesthetics difference.</p>
+
+
             </div>
-            <div class="col-6">
-                    <img loading="lazy"class="about_brief-img" src="MainImages/Exec.jpg"/> 
-                    <img loading="lazy"class="about_brief-img" src="MainImages/exec1.jpg"/> 
-                    <img loading="lazy"class="about_brief-img" src="MainImages/Event.jpg"/>
-              </div>
+            <div class="col-7">
+                <img loading="lazy" class="about_brief-img" src="MainImages/Exec.jpg" />
+                <img loading="lazy" class="about_brief-img" src="MainImages/exec1.jpg" />
+
+            </div>
         </div>
         <div class="luncheon row">
             <div class="col-6">
-                <img src="MainImages/event.jpg">
+                <img loading="lazy" class="about_brief-img1" src="MainImages/Event.jpg" />
             </div>
-          <div class="col-6">
-            <h2> Lorem ipsum dolor sit</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quae blanditiis rem facere totam sint, fugiat nesciunt quasi odio corporis voluptatum ipsum? Eos ipsa iure dignissimos nesciunt adipisci et at.
-            Libero deleniti sequi quae asperiores quia autem cumque eveniet officiis maxime ipsam similique dolores quis tempore pariatur obcaecati, illum excepturi, consectetur ipsum consequuntur molestias magni. Neque vitae totam error explicabo!</p>
-          </div>
-           
+            <div class="col-6">
+                <h2> Our Luncheons</h2>
+                <p> Our luncheons and retreats are designed to provide a full sensory experience, from the ambiance and
+                    welcome rituals to the exquisite culinary experiences. We believe that true self-care should
+                    encompass both the mind and the body, and our self-care retreats are designed to provide you with
+                    the ultimate luxury indulgence. Our experienced and knowledgeable staff is dedicated to providing
+                    you with the highest level of care and attention, ensuring that your experience at Renewal
+                    Aesthetics is nothing short of exceptional.</p>
+            </div>
+
         </div>
         <div class="mission">
             <div class="mission1">
                 <h3>Mission</h3>
-                <p>Our mission is to provide exceptional self-care services and treatments that enhance and restore the physical appearance and overall health of our clients, empowering them to become the best versions of themselves.</p>
+                <p>Our mission is to provide exceptional self-care services and treatments that enhance and restore the
+                    physical appearance and overall health of our clients, empowering them to become the best versions
+                    of themselves.</p>
             </div>
         </div>
         <div class="vision">
             <div class="vision1">
-            <h3>Vision</h3>
-            <p>Our vision is to be a leading luxury medical spa clinic that provides personalized and top-notch self-care services, creating a welcoming and inclusive environment that promotes overall wellness, empowerment, and confidence in our clients. We aspire to continuously innovate and enhance our services to meet the evolving needs and expectations of our clients.</p>
-         </div>
+                <h3>Vision</h3>
+                <p>Our vision is to be a leading luxury medical spa clinic that provides personalized and top-notch
+                    self-care services, creating a welcoming and inclusive environment that promotes overall wellness,
+                    empowerment, and confidence in our clients. We aspire to continuously innovate and enhance our
+                    services to meet the evolving needs and expectations of our clients.</p>
+            </div>
         </div>
         <div class="values-table1">
             <div class="values-table row">
                 <h3 class="col-12"> Our Values</h3>
                 <div class="col-6">
-                        <h5>Excellence </h5>
-                        <p>We are committed to providing exceptional services that exceed our clients' expectations.</p>
-                    
-                        <h5>Sophistication</h5> 
-                        <p>We strive to create a sophisticated and elegant atmosphere that exudes luxury and exclusivity.</p>
-            
-                       <h5> Attention to Detail </h5>
-                        <p>We pay meticulous attention to detail, ensuring that every aspect of the client experience is of the highest quality.</p>
-                    
-                        <h5>Comfort </h5>
-                        <p>We prioritize the comfort and relaxation of our clients, ensuring that they feel pampered and indulged throughout their visit.</p>
-                    
-                        <h5>High-Quality </h5>
-                        <p>We use only the highest quality products and materials, ensuring that every service and treatment delivers exceptional results.</p>
+                    <h5>Excellence </h5>
+                    <p>We are committed to providing exceptional services that exceed our clients' expectations.</p>
+
+                    <h5>Sophistication</h5>
+                    <p>We strive to create a sophisticated and elegant atmosphere that exudes luxury and exclusivity.
+                    </p>
+
+                    <h5> Attention to Detail </h5>
+                    <p>We pay meticulous attention to detail, ensuring that every aspect of the client experience is of
+                        the highest quality.</p>
+
+                    <h5>Comfort </h5>
+                    <p>We prioritize the comfort and relaxation of our clients, ensuring that they feel pampered and
+                        indulged throughout their visit.</p>
+
+                    <h5>High-Quality </h5>
+                    <p>We use only the highest quality products and materials, ensuring that every service and treatment
+                        delivers exceptional results.</p>
                 </div>
-                        
-                      
-                    <div class="col-6"> 
-                        <h5>Exclusivity </h5>
-                        <p>We offer exclusive services and experiences that are not available elsewhere, ensuring that our clients feel special and valued</p>
-            
-                        <h5>Personalized Service</h5>
-                        <p>We provide personalized, one-on-one service, ensuring that each client's needs and desires are met with precision and care.</p>
-                    
-                        <h5>Luxurious Amenities </h5>
-                        <p>We provide luxurious amenities, such as soft robes, plush towels, and soothing music, to enhance the overall client experience.</p>
-                     
-                        <h5>Safety </h5>
-                        <p>We prioritize the safety and well-being of our clients and adhere to the highest standards of safety in all our services.</p>
-                        <h5>
-                            Professionalism
-                        </h5>
-                        <p> We maintain the utmost professionalism in all our interactions, ensuring that clients feel confident and assured in our expertise and capabilities.
-                        </p>
-                    </div>
-                       
-                  
-              </div>
+
+
+                <div class="col-6">
+                    <h5>Exclusivity </h5>
+                    <p>We offer exclusive services and experiences that are not available elsewhere, ensuring that our
+                        clients feel special and valued</p>
+
+                    <h5>Personalized Service</h5>
+                    <p>We provide personalized, one-on-one service, ensuring that each client's needs and desires are
+                        met with precision and care.</p>
+
+                    <h5>Luxurious Amenities </h5>
+                    <p>We provide luxurious amenities, such as soft robes, plush towels, and soothing music, to enhance
+                        the overall client experience.</p>
+
+                    <h5>Safety </h5>
+                    <p>We prioritize the safety and well-being of our clients and adhere to the highest standards of
+                        safety in all our services.</p>
+                    <h5>
+                        Professionalism
+                    </h5>
+                    <p> We maintain the utmost professionalism in all our interactions, ensuring that clients feel
+                        confident and assured in our expertise and capabilities.
+                    </p>
+                </div>
+
+
+            </div>
         </div>
 
-<div class="services-info1">
-    <h3> Our Services</h3>
-    <p>At Renewal Aesthetics, we offer a wide range of services to help you achieve your desired look and feel your best. Our services include:</p>
-<div class="services-info row">
-    <div class="col-6 services-info-img">
-        
-        <img loading="lazy"class="about_brief-img2" src="MainImages/microneedles.jpg"/> 
-    </div>
-    <div class="col-6">
-        
-        <p><strong>Chemical Peels:</strong> A chemical peel is a skin-resurfacing procedure that uses a chemical solution to remove the outer layers of damaged skin, revealing smoother, more radiant skin underneath.</p>
-        <p><strong>Microneedling:</strong> Microneedling is a minimally invasive skin rejuvenation treatment that uses tiny needles to create controlled micro-injuries in the skin, stimulating the body's natural healing process and collagen production.</p>
-        <p><strong>Medical Grade Facials:</strong> Our medical grade facials are designed to target specific skin concerns and deliver real results. We use only the highest quality products and techniques to help you achieve healthier, more youthful-looking skin.</p>
-        <p><strong>Hair Restoration:</strong> Our hair restoration services are designed to help you regain confidence and restore your natural hairline. We offer both surgical a variety of options to meet your individual needs.</p>
-    </div>
-</div>
+        <div class="services-info1">
+            <h3> Our Services</h3>
+            <p>At Renewal Aesthetics, we offer a wide range of services to help you achieve your desired look and feel
+                your best. Our services include:</p>
+            <div class="services-info row">
+                <div class="col-6 services-info-img">
 
-<div class="services-info row">
-<div class="col-6">
-    <p><strong>Anti-Aging Treatments:</strong> We offer a variety of anti-aging treatments, including anti-wrinkle injections, fillers, vampire facials and many more to help you look and feel younger.</p>
-    <p><strong>Sexual Rejuvenation:</strong> Our sexual rejuvenation services are designed to improve sexual function, enhance pleasure, and boost confidence. We offer a variety of options to help you achieve your goals.</p>
-    <p><strong>Body Contouring:</strong> Our body contouring services are designed to sculpt and tone your body, helping you achieve the look you desire.</p>
-    <p><strong>Cosmetic Surgeries:</strong> Through partnerships with leading plastic surgeons, we are able to offer a range of cosmetic surgeries to help you achieve your desired look.</p>
-    
-</div>
-<div class="col-6 services-info-img">
-    <img loading="lazy"class="about_brief-img-1" src="MainImages/leg.jpg"/> 
-</div>
-</div>
-<p>At Renewal Aesthetics, we are passionate about helping you become the best version of yourself. We believe that everyone deserves to feel confident and beautiful, and we are committed to helping you achieve your desired look and feel your best. Contact us today to schedule your appointment or to learn more about our services and exclusive self-care luncheons and retreats.</p>
-</div>
+                    <img loading="lazy" class="about_brief-img2" src="MainImages/microneedles.jpg" />
+                </div>
+                <div class="col-6">
+
+                    <p><strong>Chemical Peels:</strong> A chemical peel is a skin-resurfacing procedure that uses a
+                        chemical solution to remove the outer layers of damaged skin, revealing smoother, more radiant
+                        skin underneath.</p>
+                    <p><strong>Microneedling:</strong> Microneedling is a minimally invasive skin rejuvenation treatment
+                        that uses tiny needles to create controlled micro-injuries in the skin, stimulating the body's
+                        natural healing process and collagen production.</p>
+                    <p><strong>Medical Grade Facials:</strong> Our medical grade facials are designed to target specific
+                        skin concerns and deliver real results. We use only the highest quality products and techniques
+                        to help you achieve healthier, more youthful-looking skin.</p>
+                    <p><strong>Hair Restoration:</strong> Our hair restoration services are designed to help you regain
+                        confidence and restore your natural hairline. We offer both surgical a variety of options to
+                        meet your individual needs.</p>
+                </div>
+            </div>
+
+            <div class="services-info row">
+                <div class="col-6">
+                    <p><strong>Anti-Aging Treatments:</strong> We offer a variety of anti-aging treatments, including
+                        anti-wrinkle injections, fillers, vampire facials and many more to help you look and feel
+                        younger.</p>
+                    <p><strong>Sexual Rejuvenation:</strong> Our sexual rejuvenation services are designed to improve
+                        sexual function, enhance pleasure, and boost confidence. We offer a variety of options to help
+                        you achieve your goals.</p>
+                    <p><strong>Body Contouring:</strong> Our body contouring services are designed to sculpt and tone
+                        your body, helping you achieve the look you desire.</p>
+                    <p><strong>Cosmetic Surgeries:</strong> Through partnerships with leading plastic surgeons, we are
+                        able to offer a range of cosmetic surgeries to help you achieve your desired look.</p>
+
+                </div>
+                <div class="col-6 services-info-img">
+                    <img loading="lazy" class="about_brief-img-1" src="MainImages/leg.jpg" />
+                </div>
+            </div>
+            <p>At Renewal Aesthetics, we are passionate about helping you become the best version of yourself. We
+                believe that everyone deserves to feel confident and beautiful, and we are committed to helping you
+                achieve your desired look and feel your best. Contact us today to schedule your appointment or to learn
+                more about our services and exclusive self-care luncheons and retreats.</p>
+        </div>
 
 
 
-    <!-- Third Section--->
+        <!-- Third Section--->
         <div class="row">
             <div class="col-6  about__background1">
-                <img loading="lazy"class="about__image1" src="MainImages/Dr_M_08.jpg"/>
+                <img loading="lazy" class="about__image1" src="MainImages/Dr_M_08.jpg" />
             </div>
             <div class="col-6 about__background2">
                 <hr class="hr_about">
-                <h2 class="about__name"> Dr. Matlhogonolo Mongwa-Mouwane</h2> 
-                <h6 class="about__name1">Managing Director and Esthetician</h6> 
+                <h2 class="about__name"> Dr. Matlhogonolo Mongwa-Mouwane</h2>
+                <h6 class="about__name1">Managing Director and Esthetician</h6>
                 <p>Dr. Mongwa-Mouwane, a medical professional with nine years of experience, embarked on a
-		journey of self-discovery and healing after neglecting her own well-being while starting her business
-		in 2018. Through this experience, she learned the importance of self-care and was inspired to create
-		Renewal Aesthetics, a medical spa that prioritizes holistic approaches to beauty and wellness.</p>
-		    
-		<p> Driven by her lifelong mission to transform Botswana’s healthcare and wellness system, Dr.
-		Mongwa-Mouwane strives to promote a culture of self-care and wellness. Her story serves as a
-		powerful reminder that success should not come at the cost of our well-being and that taking care of
-		our mental and emotional health is just as important as physical health.</p>
-                
+                    journey of self-discovery and healing after neglecting her own well-being while starting her
+                    business
+                    in 2018. Through this experience, she learned the importance of self-care and was inspired to create
+                    Renewal Aesthetics, a medical spa that prioritizes holistic approaches to beauty and wellness.</p>
+
+                <p> Driven by her lifelong mission to transform Botswana’s healthcare and wellness system, Dr.
+                    Mongwa-Mouwane strives to promote a culture of self-care and wellness. Her story serves as a
+                    powerful reminder that success should not come at the cost of our well-being and that taking care of
+                    our mental and emotional health is just as important as physical health.</p>
+
                 <hr class="hr_about">
             </div>
         </div>
@@ -241,183 +293,190 @@
             <div class="col-6 about__background2">
                 <hr class="hr_about">
                 <p>Through Renewal Aesthetics and Kalafhi Medical Centre, Dr. Mongwa-Mouwane is paving the way
-for a new era of healthcare that puts individuals&#39; well-being at the center of everything. Clients can
-expect a personalized approach to their medical and skincare needs, ensuring that they receive the
-highest quality care.</p>
+                    for a new era of healthcare that puts individuals&#39; well-being at the center of everything.
+                    Clients can
+                    expect a personalized approach to their medical and skincare needs, ensuring that they receive the
+                    highest quality care.</p>
                 <hr class="hr_about">
             </div>
             <div class="col-6  about__background">
-                <img loading="lazy"class="about__image3" src="MainImages/Dr%20M%203.jpg"/>   
-                <img loading="lazy"class="about__image4" src="MainImages/DrM2.jpg"/>
+                <img loading="lazy" class="about__image3" src="MainImages/Dr%20M%203.jpg" />
+                <img loading="lazy" class="about__image4" src="MainImages/DrM2.jpg" />
             </div>
         </div>
-    <!-- Fourth Section--->
-        <div class="about_brief1"> 
-            <h2> "Success is not just about what you accomplish in your life, it's about what you inspire others to do. And in order to inspire, you must take care of yourself first. Nourish your mind, body, and soul so you can be the best version of yourself for not only your own success but for those around you as well."</h2> 
+        <!-- Fourth Section--->
+        <div class="about_brief1">
+            <h2> "Success is not just about what you accomplish in your life, it's about what you inspire others to do.
+                And in order to inspire, you must take care of yourself first. Nourish your mind, body, and soul so you
+                can be the best version of yourself for not only your own success but for those around you as well."
+            </h2>
             <h3> - Unknown</h3>
         </div>
     </div>
-     <!-- Footer-->
+    <!-- Footer-->
     <footer>
-    <div class="row end">
-        <div class="col-3"> 
-            <h3> OUR LOCATION </h3>
-            <br>
-            <p> Kalafhi Executive Suite, </p>
-            <p> Plot 319 Extension 5,</p>
-            <p> Gaborone, Botswana</p>
-            <br>
-        </div>
-        <div class=" col-3">
-            <h3> WORKING HOURS</h3>
-            <br> 
-            <h4> Monday: 08:00 - 17:00</h4>
-            <h4> Tuesday: 08:00 - 17:00</h4>
-            <h4> Wednesday: 08:00 - 17:00</h4>
-            <h4> Thursday: 08:00 - 17:00</h4>
-            <h4> Friday: 08:00 - 17:00</h4>
-            <h4> Saturday: 09:00 - 13:00</h4>
-            <h4> Closed on Sundays and Public Holidays</h4>
-            <br>
-        </div>
-        <div class="col-3 quicklinks">
-            <h3> QUICK LINKS</h3>
-            <br>
+        <div class="row end">
+            <div class="col-3">
+                <h3> OUR LOCATION </h3>
+                <br>
+                <p> Kalafhi Executive Suite, </p>
+                <p> Plot 319 Extension 5,</p>
+                <p> Gaborone, Botswana</p>
+                <br>
+            </div>
+            <div class=" col-3">
+                <h3> WORKING HOURS</h3>
+                <br>
+                <h4> Monday: 08:00 - 17:00</h4>
+                <h4> Tuesday: 08:00 - 17:00</h4>
+                <h4> Wednesday: 08:00 - 17:00</h4>
+                <h4> Thursday: 08:00 - 17:00</h4>
+                <h4> Friday: 08:00 - 17:00</h4>
+                <h4> Saturday: 09:00 - 13:00</h4>
+                <h4> Closed on Sundays and Public Holidays</h4>
+                <br>
+            </div>
+            <div class="col-3 quicklinks">
+                <h3> QUICK LINKS</h3>
+                <br>
                 <p> <a onclick="redirectToHome()"> Home</a> </p>
                 <p> <a onclick="redirectToAbout()"> About Us</a> </p>
                 <p> <a onclick="redirectToTreatments()"> Treatments</a> </p>
                 <p> <a onclick="redirectToProducts()"> Products </a></p>
                 <p> <a onclick="redirectToNews()"> News</a> </p>
                 <p> <a onclick="redirectToEvents()"> Events</a> </p>
-            <br>
-        </div>
-        <div class="col-3">
-            <div class="">
-                <h3> CONTACT US </h3>
-                <br> 
-                <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
-(+267) 390 6944</p>
-                <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
-(+267) 73 275 990</p>
+                <br>
             </div>
-            <br>
-            <ul class="social-list">
-                <li class="odd-fa-f-radius">
-                    <a  target="_blank" href="https://www.facebook.com/RenewalAestheticclinic">
-                        <i class="fab fa-facebook-f" src="facebook-f.svg"></i>
-                    </a>
-                </li>
-    
-                <li class="odd-fa-insta-radius">
-                    <a target="_blank"  href="https://www.instagram.com/renewalaestheticsclinic/">
-                        <i class="fab fa-instagram" src="instagram.svg"></i>
-                    </a>
-                </li>
-    
-                <li class="odd-fa-youtube-radius">
-                    <a target="_blank" href="https://www.youtube.com/@renewalaesthetics3627">
-                    <i class="fab fa-youtube" src="youtube.svg"></i></a></li>
-            </ul>
+            <div class="col-3">
+                <div class="">
+                    <h3> CONTACT US </h3>
+                    <br>
+                    <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+                        (+267) 390 6944</p>
+                    <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+                        (+267) 73 275 990</p>
+                </div>
+                <br>
+                <ul class="social-list">
+                    <li class="odd-fa-f-radius">
+                        <a target="_blank" href="https://www.facebook.com/RenewalAestheticclinic">
+                            <i class="fab fa-facebook-f" src="facebook-f.svg"></i>
+                        </a>
+                    </li>
+
+                    <li class="odd-fa-insta-radius">
+                        <a target="_blank" href="https://www.instagram.com/renewalaestheticsclinic/">
+                            <i class="fab fa-instagram" src="instagram.svg"></i>
+                        </a>
+                    </li>
+
+                    <li class="odd-fa-youtube-radius">
+                        <a target="_blank" href="https://www.youtube.com/@renewalaesthetics3627">
+                            <i class="fab fa-youtube" src="youtube.svg"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
     </footer>
     <button id="scroll-to-top-btn">
-        <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top" src="up-long.svg">
+        <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top"
+            src="up-long.svg">
     </button>
 
 
 
 
 
- <script>
- 
- 
-// Show scroll-to-top button after scrolling halfway through the page
-window.onscroll = function() {
-var btn = document.getElementById("scroll-to-top-btn");
-if (document.body.scrollTop > (document.body.scrollHeight / 5) || document.documentElement.scrollTop > (document.documentElement.scrollHeight / 5)) {
-btn.style.display = "block";
-} else {
-btn.style.display = "none";
-}
-};
-
-// Scroll to top when button is clicked
-document.getElementById("scroll-to-top-btn").addEventListener("click", function() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-});
+    <script>
 
 
-    function redirectToHome() {
-    window.location.href = "index.html";
-}  
+        // Show scroll-to-top button after scrolling halfway through the page
+        window.onscroll = function () {
+            var btn = document.getElementById("scroll-to-top-btn");
+            if (document.body.scrollTop > (document.body.scrollHeight / 5) || document.documentElement.scrollTop > (document.documentElement.scrollHeight / 5)) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Scroll to top when button is clicked
+        document.getElementById("scroll-to-top-btn").addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+
+
+        function redirectToHome() {
+            window.location.href = "index.html";
+        }
         function redirectToAbout() {
-    window.location.href = "aboutren.html";
-}
+            window.location.href = "aboutren.html";
+        }
         function redirectToTreatments() {
-    window.location.href = "treatmentsren.html";
-}
+            window.location.href = "treatmentsren.html";
+        }
         function redirectToProducts() {
-    window.location.href = "productsren.html";
-}
+            window.location.href = "productsren.html";
+        }
         function redirectToNews() {
-    window.location.href = "newsren.html";
-}
+            window.location.href = "newsren.html";
+        }
         function redirectToGallery() {
-    window.location.href = "galleryren.html";
-}
+            window.location.href = "galleryren.html";
+        }
         function redirectToContact() {
-    window.location.href = "contactren.html";
-}
-	 function redirectToBookApt() {
-        window.location.href = "bookapt.html";
-    } function redirectToEvents() {
+            window.location.href = "contactren.html";
+        }
+        function redirectToBookApt() {
+            window.location.href = "bookapt.html";
+        } function redirectToEvents() {
             window.location.href = "events.html";
         }
-    
-        
-        
-   //Navbar settings for mobile starts// 
-                // Get the dropdown and sub-dropdown buttons
+
+
+
+        //Navbar settings for mobile starts// 
+        // Get the dropdown and sub-dropdown buttons
         const dropdownBtn = document.querySelector('.dropdown-3 .button-one');
         const subDropdownBtns = document.querySelectorAll('.dropdown .dropbtn');
 
         // Add click event listener to the dropdown button
         dropdownBtn.addEventListener('click', () => {
-          // Toggle active class on the dropdown
-          dropdownBtn.parentNode.classList.toggle('active');
+            // Toggle active class on the dropdown
+            dropdownBtn.parentNode.classList.toggle('active');
         });
 
         // Add click event listener to the sub-dropdown buttons
         subDropdownBtns.forEach((btn) => {
-          btn.addEventListener('click', () => {
-            // Toggle active class on the sub-dropdown
-            btn.parentNode.classList.toggle('active');
-          });
+            btn.addEventListener('click', () => {
+                // Toggle active class on the sub-dropdown
+                btn.parentNode.classList.toggle('active');
+            });
         });
-        
-        
+
+
         const buttons = document.querySelectorAll("button");
 
-    buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-            const currentState = button.getAttribute("data-state");
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const currentState = button.getAttribute("data-state");
 
-            if (!currentState || currentState === "closed") {
-                button.setAttribute("data-state", "opened");
-                button.setAttribute("aria-expanded", "true");
-            } else {
-                button.setAttribute("data-state", "closed");
-                button.setAttribute("aria-expanded", "false");
-            }
+                if (!currentState || currentState === "closed") {
+                    button.setAttribute("data-state", "opened");
+                    button.setAttribute("aria-expanded", "true");
+                } else {
+                    button.setAttribute("data-state", "closed");
+                    button.setAttribute("aria-expanded", "false");
+                }
+            });
         });
-    });
-        
+
      //Navbar settings for mobile ends//    
-            
-        
-        
+
+
+
     </script>
 </body>
+
 </html>
