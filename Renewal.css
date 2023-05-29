@@ -1611,6 +1611,7 @@ padding:0.5rem 3rem; */
   .hr-treats hr {
       margin-top: 2rem;
       border: 2px solid tan;
+      margin-bottom:0.5rem
   }
 
   .hr-treats-1 hr {
@@ -2861,6 +2862,7 @@ padding:0.5rem 3rem; */
 
       .hr-treats hr {
           margin-top: 1rem;
+          margin-bottom:0.5rem
       }
 
       .news-button {
