@@ -232,6 +232,9 @@
       grid-column: auto/span 6;
 
   }
+  .col---6 {
+    grid-column: auto/span 6;
+}
 
   .col--6 {
       grid-column: auto/span 6;
@@ -2378,6 +2381,9 @@ padding:0.5rem 3rem; */
           grid-column: auto/span 12;
           margin-left: 2rem;
       }
+      .col---6 {
+        grid-column: auto/span 12;
+    }
 
       .col-7 {
           grid-column: auto/span 12;
@@ -3125,6 +3131,9 @@ padding:0.5rem 3rem; */
       .col-6 {
           grid-column: auto/span 12;
       }
+      .col---6 {
+        grid-column: auto/span 6;
+    }
 
       .col-7 {
           grid-column: auto/span 12;
@@ -3341,10 +3350,25 @@ padding:0.5rem 3rem; */
           padding-top: 0rem;
       }
 
-      .vision1,
       .mission1 {
-          padding: 2rem 0rem 4rem;
+          padding: 1.5rem 0rem 1rem;
       }
+      .vision1{
+        padding: 1rem 0rem 2rem;
+      }
+      .vision{
+        padding-top: 0.5rem;
+      }
+      .mission{
+        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+      }
+     .reverse-wrap{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+     }
+     
 
       /*Book Appointment Page 1000px*/
       .book-form input[type="button"] {
@@ -3416,6 +3440,7 @@ padding:0.5rem 3rem; */
 
       .upcoming-event h3 {
           padding-bottom: 1rem;
+          font-size: 1.5rem;;
       }
 
       .upcoming-event p {
@@ -3424,11 +3449,15 @@ padding:0.5rem 3rem; */
 
       .event-img {
           padding: 0.5rem 1rem;
+          margin: auto;
       }
-
+      .event-img img {
+        padding: 0rem;
+        margin: auto;
+    }
 
       .col--2 {
-          grid-column: auto/span 2;
+          grid-column: auto/span 4;
       }
 
       .form1-btn {
@@ -3475,6 +3504,8 @@ padding:0.5rem 3rem; */
 
           text-align: center;
       }
+   
+    
 
       /*Products Page 1000px*/
       .prod-info {
