@@ -80,11 +80,13 @@
       font-size: 2rem!important;
   } */
 
-  h4, h5 {
+  h4,
+  h5 {
       font-size: 1rem !important;
   }
-  .h6{
-    font-size: 0.8rem !important;
+
+  .h6 {
+      font-size: 0.8rem !important;
   }
 
   p {
@@ -553,7 +555,7 @@
   }
 
   .main__intro {
-      font-size: 4.5rem!important;
+      font-size: 4.5rem !important;
       width: 50%;
       color: black;
       line-height: 4rem;
@@ -564,7 +566,7 @@
   }
 
   .main__intro1 {
-      font-size: 4.5rem!important;
+      font-size: 4.5rem !important;
       width: 50%;
       color: tan;
       font-weight: bolder;
@@ -603,7 +605,7 @@
 
   .main__quote-h2 {
       padding: 1rem 0rem;
-      font-size: 1.2rem!important;
+      font-size: 1.2rem !important;
   }
 
   .main__quotehr {
@@ -1053,7 +1055,6 @@
   }
 
   .about_brief {
-      min-height: 30vh;
       height: auto;
       background-color: black;
       display: grid;
@@ -1202,7 +1203,7 @@
       color: white;
       width: 80%;
       margin: auto auto;
-      font-size: 1rem!important;
+      font-size: 1rem !important;
       text-align: center;
   }
 
@@ -1516,7 +1517,7 @@ padding:0.5rem 3rem; */
       background-color: black;
       border: 2px solid tan;
       cursor: pointer;
-    
+
   }
 
   .treat-1 h2 {
@@ -1611,7 +1612,7 @@ padding:0.5rem 3rem; */
   .hr-treats hr {
       margin-top: 2rem;
       border: 2px solid tan;
-      margin-bottom:0.5rem
+      margin-bottom: 0.5rem
   }
 
   .hr-treats-1 hr {
@@ -2023,7 +2024,7 @@ padding:0.5rem 3rem; */
 
   .past-events-1 {
       padding: 2rem;
-      border: 2px solid goldenrod;
+      border: 1px solid tan;
       margin: 0rem 1rem 1rem;
       background-color: tan;
       color: white;
@@ -2225,8 +2226,8 @@ padding:0.5rem 3rem; */
   }
 
   .news-info h3 {
-      font-size: 3rem!important;
-      line-height:2.8rem
+      font-size: 3rem !important;
+      line-height: 2.8rem
   }
 
   .news-button {
@@ -2455,8 +2456,8 @@ padding:0.5rem 3rem; */
       }
 
       .main__quote h2 {
-          font-size: 90%;
-          padding: 0.2rem 0rem;
+          font-size: 90% !important;
+          padding: 0.6rem 0rem;
       }
 
       @keyframes myAnimation {
@@ -2485,7 +2486,7 @@ padding:0.5rem 3rem; */
 
       .main__intro,
       .main__intro1 {
-          font-size: 3rem;
+          font-size: 3rem !important;
           width: 80%;
       }
 
@@ -2497,6 +2498,10 @@ padding:0.5rem 3rem; */
       .booking__btn2 {
           background-color: black;
           color: white;
+      }
+
+      .fourthpg {
+          padding: 2rem;
       }
 
       .fourthpg__img {
@@ -2519,13 +2524,23 @@ padding:0.5rem 3rem; */
           width: auto;
       }
 
+      .thirdpg__div {
+          padding: 2rem 1rem;
+      }
+
+      .thirdpg__p {
+          padding: 1rem;
+          text-align: justify;
+          hyphens: auto;
+      }
+
       .thirdpg {
           width: 80%;
           ;
       }
 
       .fifth_box {
-          left: 20%;
+          left: 15%;
       }
 
       .fifthpg__img {
@@ -2550,9 +2565,15 @@ padding:0.5rem 3rem; */
       }
 
       /*About Page 500px*/
+
       .about__image3 {
           right: 2rem;
-          width: 60%;
+          width: 70%;
+      }
+
+      .about__image4 {
+          width: 50%;
+          left: 4rem;
       }
 
       .about__background2 {
@@ -2574,7 +2595,7 @@ padding:0.5rem 3rem; */
           padding: 0.5rem;
       }
 
-      .about_brief1 h2{
+      .about_brief1 h2 {
           font-size: normal;
       }
 
@@ -2587,7 +2608,7 @@ padding:0.5rem 3rem; */
       }
 
       .about_brief-img1 {
-          height: 100%;
+          height: auto;
       }
 
       .about_brief-img11 {
@@ -2601,9 +2622,14 @@ padding:0.5rem 3rem; */
           margin: auto;
       }
 
-      .mission,
+      .mission {
+          padding: 0rem 1rem;
+          width: 100%;
+          margin: auto;
+      }
+
       .vision {
-          padding: 1.5rem 1rem;
+          padding: 0rem 1rem 1.5rem;
           width: 100%;
           margin: auto;
       }
@@ -2627,8 +2653,8 @@ padding:0.5rem 3rem; */
       }
 
       .about_brief-img {
-          padding: 2rem 1rem 2rem;
-          height: 100%;
+          width: auto;
+          height: auto;
       }
 
       .about_brief-img-1 {
@@ -2640,7 +2666,27 @@ padding:0.5rem 3rem; */
       .about__name {
           font-size: 1.8rem;
           padding-bottom: 0.5rem;
+          text-align: center;
       }
+
+      .about__name1 {
+          text-align: center;
+      }
+
+      .luncheon {
+          padding: 2rem;
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .luncheon h2 {
+          text-align: center;
+      }
+
+      .luncheon img {
+          padding: 0rem;
+      }
+
 
       /*Book Appointment Page 500px*/
       .bookapt {
@@ -2726,6 +2772,7 @@ padding:0.5rem 3rem; */
       .upcoming-event h2 {
           margin: 0.5rem;
           padding: 1rem 0rem;
+          font-size: 1.5rem!important;
       }
 
       .upcoming-event h3 {
@@ -2739,8 +2786,11 @@ padding:0.5rem 3rem; */
       }
 
       .main-event img {
-          padding: 1rem;
+          padding: 1rem 0.5rem;
       }
+      .col--2 {
+        grid-column: auto/span 6;
+    }
 
       .partnership h3 {
           font-size: 1.5rem;
@@ -2785,11 +2835,22 @@ padding:0.5rem 3rem; */
           padding: 1rem 0rem;
 
       }
+      .past-events-1 h2 {
+        font-size: 1.8rem!important;
+    }
 
       .event-btn {
           margin-top: 0rem;
           margin-right: 0rem;
       }
+      .past-events-1 {
+        padding: 1rem;
+        
+        margin: 0rem 0.5rem 1rem;
+    }
+    .glass-effect .p-4 {
+        padding: 3rem 2rem;
+    }
 
       /*Gallery Page 500px*/
       .gallery {
@@ -2862,7 +2923,7 @@ padding:0.5rem 3rem; */
 
       .hr-treats hr {
           margin-top: 1rem;
-          margin-bottom:0.5rem
+          margin-bottom: 0.5rem
       }
 
       .news-button {
@@ -2870,7 +2931,7 @@ padding:0.5rem 3rem; */
       }
 
       .news-img img {
-          padding-top: 2rem;
+          padding-top: 1rem;
       }
 
       .news h4 {
@@ -2987,6 +3048,19 @@ padding:0.5rem 3rem; */
           padding: 0.5rem;
       }
 
+      .reverse-wrap {
+          display: flex;
+          flex-wrap: wrap-reverse;
+          justify-content: center;
+      }
+
+      .treat-mainbtn {
+          padding: 0rem 1rem;
+      }
+
+      .treat {
+          margin: auto auto;
+      }
 
 
 
@@ -3021,7 +3095,7 @@ padding:0.5rem 3rem; */
 
       /* General*/
       .end {
-          padding: 2rem;
+          padding: 2rem 4rem;
           gap: 0rem;
       }
 
@@ -3212,25 +3286,33 @@ padding:0.5rem 3rem; */
           right: 4rem;
           width: 50%;
       }
+      .luncheon {
+        width:80%;
+        margin:auto;
+      }
+      .luncheon img {
+        padding: 1rem;
+        height: auto;
+    }
 
       .about_brief-img,
       .about_brief-img-1,
-      .about_brief-img1,
       .about_brief-img2 {
           width: 80%;
           margin: auto;
       }
+    
 
       .about_brief-img-1 {
           padding-bottom: 2rem;
       }
 
 
-      .about_brief-img11 {
+      /* .about_brief-img11 {
           width: 80%;
           margin: auto;
           padding-top: 3.5rem;
-      }
+      } */
 
       .about_brief_p1 p {
           font-size: normal;
