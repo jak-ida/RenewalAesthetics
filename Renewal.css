@@ -714,7 +714,7 @@
       hyphens: auto;
       -webkit-hyphens: auto;
       word-spacing: -0.05em;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .fourthpg__button {
@@ -853,7 +853,7 @@
   .mainpage__f-sect p {
       text-align: center;
       color: black;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       width: 90%;
       margin: auto auto;
       padding: 1rem 0;
@@ -883,7 +883,7 @@
       display: grid;
       margin: 0px;
       text-align: left;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       ;
 
   }
@@ -939,7 +939,7 @@
       padding-top: 1rem;
       text-align: justify;
       hyphens: auto;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .luncheon img {
@@ -971,7 +971,7 @@
       padding-bottom: 1rem;
       width: 85%;
       margin: auto;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .services-info-img {
@@ -1000,7 +1000,7 @@
       text-align: justify;
       width: 80%;
       margin: auto;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .values-table {
@@ -1028,7 +1028,7 @@
       margin: auto;
       text-align: justify;
       hyphens: auto;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .values-table h5 {
@@ -1077,7 +1077,7 @@
       margin: auto auto;
       line-height: 1.7rem;
       padding-bottom: 0.8rem;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .about_brief_p1 p {
@@ -1086,7 +1086,7 @@
       margin: auto auto;
       z-index: 2;
       padding-bottom: 0.8rem;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
 
   }
 
@@ -1226,7 +1226,7 @@
   .form-row p {
       text-align: center;
       margin-bottom: 2rem;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .book-form textarea {
@@ -1533,7 +1533,7 @@ padding:0.5rem 3rem; */
       margin: auto;
       width: 80%;
       text-align: justify;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       hyphens: auto;
       -webkit-hyphens: auto;
       word-spacing: -0.05em;
@@ -1590,7 +1590,7 @@ padding:0.5rem 3rem; */
       width: 80%;
       margin: auto auto;
       text-align: justify;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .treat-type {
@@ -1702,7 +1702,7 @@ padding:0.5rem 3rem; */
 
   .treatment-info p {
       padding: 1rem;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       text-align: justify;
       hyphens: auto;
   }
@@ -1798,7 +1798,7 @@ padding:0.5rem 3rem; */
       margin: auto auto;
       text-align: justify;
       hyphens: auto;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       -webkit-hyphens: auto;
       word-spacing: -0.05em;
   }
@@ -1919,7 +1919,7 @@ padding:0.5rem 3rem; */
       padding-bottom: 1rem;
       text-align: justify;
       hyphens: auto;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .partnership {
@@ -2046,7 +2046,7 @@ padding:0.5rem 3rem; */
 
   .past-events-1 p {
       padding: 0rem 0.2rem;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .past-events-1 h4 {
@@ -2067,7 +2067,7 @@ padding:0.5rem 3rem; */
 
   .past-events1 p {
       padding: 0rem 0.5rem;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
 
   }
 
@@ -2180,14 +2180,14 @@ padding:0.5rem 3rem; */
   /*News Page*/
   .news-body p {
       padding-bottom: 0.5rem;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .modal-body p {
       padding-bottom: 1rem;
       text-align: justify;
       hyphens: auto;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
   }
 
   .news {
