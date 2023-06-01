@@ -181,12 +181,12 @@
   }
 
   .active-pg {
-      color: tan !important;
+      color: var(--tan) !important;
   }
 
   .active-pg1 {
-      color: black !important;
-      background-color: tan !important;
+      color: var(--black) !important;
+      background-color: var(--tan) !important;
   }
 
   .col-1 {
@@ -301,7 +301,7 @@
   .navbar a {
       display: inline-flex;
       flex-direction: row;
-      color: white;
+      color: var(--white);
       font-size: 1rem;
       text-align: center;
       padding: 1rem;
@@ -309,7 +309,7 @@
   }
 
   .navbar a:hover {
-      color: tan;
+      color: var(--tan);
   }
 
   button a {
@@ -351,7 +351,7 @@
   }
 
   i {
-      color: black;
+      color: var(--black);
   }
 
   .hide {
@@ -384,7 +384,7 @@
   .dropdown {
       float: left;
       overflow: hidden;
-      color: black;
+      color: var(--black);
   }
 
   /* Dropdown button */
@@ -402,7 +402,7 @@
   }
 
   .dropdown:hover .dropbtn {
-      color: black;
+      color: var(--black);
       text-decoration: none;
   }
 
@@ -419,7 +419,7 @@
   /* Links inside the dropdown */
   .dropdown-content a {
       float: none;
-      color: white;
+      color: var(--white);
       padding: 1rem;
       text-decoration: none;
       display: block;
@@ -428,8 +428,8 @@
 
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
-      background-color: tan;
-      color: black;
+      background-color: var(--tan);
+      color: var(--black);
   }
 
   /* Show the dropdown menu on hover */
@@ -525,7 +525,7 @@
 
   .booking__btn1:hover {
       border: 2px solid tan;
-      color: tan;
+      color: var(--tan);
       cursor: pointer;
       background-color: hsla(0, 4%, 26%, 0.4);
 
@@ -552,15 +552,15 @@
 
   .booking__btn2:hover {
       border: 2px solid tan;
-      color: tan;
+      color: var(--tan);
       cursor: pointer;
-      background-color: black;
+      background-color: var(--black);
   }
 
   .main__intro {
       font-size: 4.5rem !important;
       width: 50%;
-      color: black;
+      color: var(--black);
       line-height: 4rem;
       font-weight: lighter;
       font-style: italic;
@@ -571,7 +571,7 @@
   .main__intro1 {
       font-size: 4.5rem !important;
       width: 50%;
-      color: tan;
+      color: var(--tan);
       font-weight: bolder;
       line-height: 4rem;
       font-weight: lighter;
@@ -586,7 +586,7 @@
       padding: 5px;
       height: 60px;
       width: 100%;
-      background-color: black;
+      background-color: var(--black);
       display: inline-flex;
       justify-content: space-between;
       align-items: center;
@@ -597,8 +597,8 @@
   }
 
   .main__quote {
-      background-color: tan;
-      color: black;
+      background-color: var(--tan);
+      color: var(--black);
       min-height: 200px;
       height: 130px;
       text-align: center;
@@ -630,7 +630,7 @@
   }
 
   .thirdpg1 {
-      background-color: black;
+      background-color: var(--black);
   }
 
   .thirdpg__div {
@@ -641,13 +641,13 @@
 
   .thirdpg h2 {
       font-size: 2.3rem;
-      color: white;
+      color: var(--white);
       text-align: center;
       padding-top: 1rem;
   }
 
   .thirdpg__p {
-      color: white;
+      color: var(--white);
       padding: 0rem 1rem 1rem;
       text-align: center;
   }
@@ -666,7 +666,7 @@
       border: 1px solid hsl(0, 4%, 26%);
       padding: 8px 40px;
       border-radius: 1rem;
-      color: white;
+      color: var(--white);
       background-color: transparent;
       width: 30%;
       margin: auto auto;
@@ -675,8 +675,8 @@
   }
 
   .thirdpg__button:hover {
-      background-color: black;
-      color: tan;
+      background-color: var(--black);
+      color: var(--tan);
       border: 1px solid tan;
       cursor: pointer;
   }
@@ -684,7 +684,7 @@
   .fourthpg {
       height: auto;
       padding: 10rem 2rem;
-      background-color: white;
+      background-color: var(--white);
   }
 
   /* .fourth-pg-1 {
@@ -704,7 +704,7 @@
 
   .fourthpg__h3 {
       font-size: 2rem;
-      color: black;
+      color: var(--black);
       margin-bottom: 2%;
   }
 
@@ -731,20 +731,20 @@
 
   .fourthpg__button a {
       text-decoration: none;
-      color: black;
+      color: var(--black);
 
   }
 
   .fourthpg__button:hover {
-      background-color: black;
-      color: tan;
+      background-color: var(--black);
+      color: var(--tan);
       border: 1px solid tan;
       cursor: pointer;
   }
 
 
   .fifthpg {
-      background-color: black;
+      background-color: var(--black);
       height: auto;
       display: flex;
       flex-direction: column;
@@ -753,7 +753,7 @@
       text-align: center;
       align-content: center;
       gap: 1rem;
-      color: white;
+      color: var(--white);
       padding: 2.5rem 2rem 2rem;
   }
 
@@ -786,7 +786,7 @@
   .fifthpg__h3 {
       margin-top: 1.5rem;
       margin-bottom: 1rem;
-      color: black;
+      color: var(--black);
       font-size: 2.5rem;
   }
 
@@ -794,7 +794,7 @@
       margin-top: 1.5rem;
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: black;
+      color: var(--black);
   }
 
   .products {
@@ -811,19 +811,19 @@
       border: 2px solid hsl(0, 4%, 26%);
       padding: 8px 40px;
       border-radius: 1rem;
-      color: white;
+      color: var(--white);
       margin-top: -6rem;
       margin-bottom: 2rem;
       width: 20rem;
       margin-left: auto;
       margin-right: auto;
-      background-color: black;
+      background-color: var(--black);
       font-weight: bold;
   }
 
   .fifthpg__button:hover {
-      background-color: black;
-      color: tan;
+      background-color: var(--black);
+      color: var(--tan);
       border: 2px solid tan;
       cursor: pointer;
   }
@@ -852,7 +852,7 @@
 
   .mainpage__f-sect p {
       text-align: center;
-      color: black;
+      color: var(--black);
       font-size: 0.85rem;
       width: 90%;
       margin: auto auto;
@@ -948,7 +948,7 @@
 
   .quicklinks a:hover {
       text-decoration: underline;
-      color: tan;
+      color: var(--tan);
       font-weight: bold;
       cursor: pointer;
 
@@ -957,14 +957,14 @@
 
   /* About Page */
   .vision {
-      background-color: white;
-      color: black;
+      background-color: var(--white);
+      color: var(--black);
       padding: 1rem 2rem 5rem;
 
   }
 
   .vision1 {
-      background-color: white;
+      background-color: var(--white);
       padding: 1rem 4rem 4rem;
       width: 70%;
       margin: auto;
@@ -973,7 +973,7 @@
   }
 
   .mission1 {
-      background-color: white;
+      background-color: var(--white);
       padding: 2rem 4rem 1rem;
       width: 70%;
       margin: auto;
@@ -982,7 +982,7 @@
   }
 
   .luncheon {
-      background-color: white;
+      background-color: var(--white);
       padding: 6rem 4rem;
       margin: auto;
       gap: 2rem;
@@ -1006,8 +1006,8 @@
   }
 
   .mission {
-      background-color: white;
-      color: black;
+      background-color: var(--white);
+      color: var(--black);
       padding: 5rem 2rem 1rem;
   }
 
@@ -1064,24 +1064,24 @@
   .values-table {
       display: grid;
       align-items: center;
-      background-color: tan;
+      background-color: var(--tan);
   }
 
   .values-table1 {
       padding: 3rem 6rem 7rem;
-      background-color: tan;
+      background-color: var(--tan);
   }
 
   .values-table h3 {
       font-size: 2rem;
       padding-bottom: 1rem;
       text-align: center;
-      color: white;
+      color: var(--white);
   }
 
   .values-table p {
       padding-top: 1rem;
-      color: black;
+      color: var(--black);
       width: 85%;
       margin: auto;
       text-align: justify;
@@ -1092,36 +1092,36 @@
   .values-table h5 {
       text-align: center;
       font-size: 1rem;
-      color: white;
+      color: var(--white);
       padding-top: 1.5rem;
   }
 
 
   .aboutmain__ {
       height: 3.8rem;
-      background-color: black;
+      background-color: var(--black);
       z-index: -2;
   }
 
   .about-img h2 {
       font-size: 2rem;
-      color: white;
+      color: var(--white);
       padding: 1vh 0vw 1vh 10vw;
   }
 
   .about-img {
-      background-color: black;
+      background-color: var(--black);
       font-size: 2rem;
-      color: white;
+      color: var(--white);
   }
 
   .about_brief {
       height: auto;
-      background-color: black;
+      background-color: var(--black);
       display: grid;
       align-content: center;
       border: 5px solid black;
-      border-top-color: white;
+      border-top-color: var(--white);
       padding: 2rem;
       text-align: justify;
       hyphens: auto;
@@ -1130,7 +1130,7 @@
   }
 
   .about_brief p {
-      color: white;
+      color: var(--white);
       width: 80%;
       margin: auto auto;
       line-height: 1.7rem;
@@ -1139,7 +1139,7 @@
   }
 
   .about_brief_p1 p {
-      color: white;
+      color: var(--white);
       width: 95%;
       margin: auto auto;
       z-index: 2;
@@ -1171,15 +1171,15 @@
   }
 
   .about__background1 {
-      background-color: tan;
-      color: black;
+      background-color: var(--tan);
+      color: var(--black);
       display: grid;
       align-content: center;
       padding: 1.5rem;
   }
 
   .about__background {
-      color: black;
+      color: var(--black);
       display: grid;
       align-content: center;
       padding: 1.5rem;
@@ -1261,7 +1261,7 @@
 
   .about_brief1 h2,
   .about_brief1 h3 {
-      color: white;
+      color: var(--white);
       width: 80%;
       margin: auto auto;
       font-size: 1rem !important;
@@ -1275,10 +1275,10 @@
       display: grid;
       grid-auto-flow: dense;
       grid-gap: 2px;
-      background-color: white;
+      background-color: var(--white);
       background-position: center;
       background-size: cover;
-      color: black;
+      color: var(--black);
   }
 
   .form-row p {
@@ -1314,9 +1314,9 @@
     font-weight: bold;
 padding:0.5rem 3rem; */
       display: block !important;
-      background-color: black;
+      background-color: var(--black);
       border: 1px solid white;
-      color: white;
+      color: var(--white);
       padding: 0.5rem 1rem;
       text-align: center;
       text-decoration: none;
@@ -1335,8 +1335,8 @@ padding:0.5rem 3rem; */
     color:tan;
     border:2px solid tan;
     cursor:pointer; */
-      color: black;
-      background-color: white;
+      color: var(--black);
+      background-color: var(--white);
       border: 1px solid black;
       cursor: pointer;
   }
@@ -1366,13 +1366,13 @@ padding:0.5rem 3rem; */
 
   /* Contact Us Page*/
   .contact-1 {
-      background-color: white;
+      background-color: var(--white);
       border-top: 5px solid tan;
   }
 
   .map-background-bleed {
-      background-color: tan;
-      color: white;
+      background-color: var(--tan);
+      color: var(--white);
       padding: 4rem;
   }
 
@@ -1387,13 +1387,13 @@ padding:0.5rem 3rem; */
   }*/
   .contact-img h2 {
       font-size: 2rem;
-      color: tan;
+      color: var(--tan);
       padding: 1vh 0vw 1vh 10vw;
   }
 
   .contact_pg {
       /* background-image:url('BackgroundImages/contback2.png'); */
-      background-color: white;
+      background-color: var(--white);
       height: auto;
       background-position: center;
       background-repeat: no-repeat;
@@ -1458,9 +1458,9 @@ padding:0.5rem 3rem; */
 
   .form button {
       display: block !important;
-      background-color: black;
+      background-color: var(--black);
       border: 2px solid white;
-      color: white;
+      color: var(--white);
       padding: 0.5rem 1rem;
       text-align: center;
       text-decoration: none;
@@ -1474,8 +1474,8 @@ padding:0.5rem 3rem; */
   }
 
   .form button:hover {
-      background-color: white;
-      color: black;
+      background-color: var(--white);
+      color: var(--black);
       border: 2px solid black;
       cursor: pointer;
   }
@@ -1569,13 +1569,13 @@ padding:0.5rem 3rem; */
       margin-bottom: 2rem;
       width: 50%;
       margin: auto;
-      background-color: white;
+      background-color: var(--white);
       font-weight: bold;
   }
 
   .treat_button:hover {
-      color: tan;
-      background-color: black;
+      color: var(--tan);
+      background-color: var(--black);
       border: 2px solid tan;
       cursor: pointer;
 
@@ -1593,8 +1593,8 @@ padding:0.5rem 3rem; */
 }
 
 .treat_button1:hover {
-    color: tan;
-    background-color: black;
+    color: var(--tan);
+    background-color: var(--black);
     border: 2px solid tan;
     cursor: pointer;
 
@@ -1618,7 +1618,7 @@ padding:0.5rem 3rem; */
   .treat-1 h2 {
       padding: 1vh 0vw 1vh 10vw;
       font-size: 2rem;
-      color: tan;
+      color: var(--tan);
   }
 
   .treat-1 p {
@@ -1633,7 +1633,7 @@ padding:0.5rem 3rem; */
 
   .treat-2 {
       border: 5px solid white;
-      border-top-color: tan;
+      border-top-color: var(--tan);
       padding: 4rem 2rem 2rem;
   }
 
@@ -1664,8 +1664,8 @@ padding:0.5rem 3rem; */
   }
 
   .treat-mainbtn:hover {
-      color: tan;
-      background-color: black;
+      color: var(--tan);
+      background-color: var(--black);
       cursor: pointer;
       transition: 0.5s;
   }
@@ -1688,8 +1688,8 @@ padding:0.5rem 3rem; */
   .treat-type {
       max-height: 10rem;
       height: 8rem;
-      background-color: white;
-      color: white;
+      background-color: var(--white);
+      color: var(--white);
       width: 85%;
       margin: 1rem;
       border: 2px solid white;
@@ -1718,7 +1718,7 @@ padding:0.5rem 3rem; */
   }
 
   .type-1 h2 {
-      color: tan;
+      color: var(--tan);
       padding: 1rem;
   }
 
@@ -1743,13 +1743,13 @@ padding:0.5rem 3rem; */
 
   .treat-btn {
       border: none;
-      background-color: tan;
+      background-color: var(--tan);
       margin: 0.3rem;
       border-radius: 0.2rem;
   }
 
   .treat-btn:hover {
-      color: white;
+      color: var(--white);
       cursor: pointer;
   }
 
@@ -1810,7 +1810,7 @@ padding:0.5rem 3rem; */
 
   .FAQ_section {
       background-color: #d2b48c;
-      color: white;
+      color: var(--white);
       text-align: center;
       padding: 1rem 0rem;
       font-size: 1.5rem;
@@ -1822,8 +1822,8 @@ padding:0.5rem 3rem; */
 
   .FAQ-header {
       border: 1px solid var(--tan);
-      color: black;
-      background-color: tan;
+      color: var(--black);
+      background-color: var(--tan);
       padding: 0.5rem 0.5rem;
       margin: 0.5rem;
       border-radius: 0.5rem;
@@ -1831,7 +1831,7 @@ padding:0.5rem 3rem; */
   }
 
   .FAQ-header:hover {
-      background-color: white;
+      background-color: var(--white);
       cursor: pointer;
   }
 
@@ -1842,7 +1842,7 @@ padding:0.5rem 3rem; */
 
   .FAQ-sub-head {
       border-radius: 0.5rem;
-      color: tan;
+      color: var(--tan);
       padding: 0.5rem;
       margin: 0.5rem;
       border: 1px solid tan;
@@ -1856,8 +1856,8 @@ padding:0.5rem 3rem; */
   }
 
   .FAQ-sub-head:hover {
-      background-color: tan;
-      color: white;
+      background-color: var(--tan);
+      color: var(--white);
       cursor: pointer;
   }
 
@@ -1866,7 +1866,7 @@ padding:0.5rem 3rem; */
   .prod-1 h2 {
       padding: 1vh 0vw 1vh 10vw;
       font-size: 2rem;
-      color: black;
+      color: var(--black);
   }
 
   .prod-2 {
@@ -1874,7 +1874,7 @@ padding:0.5rem 3rem; */
       justify-content: center;
       align-items: center;
       border: 5px solid white;
-      border-top-color: black;
+      border-top-color: var(--black);
       height: auto;
       padding: 2rem;
   }
@@ -1898,8 +1898,8 @@ padding:0.5rem 3rem; */
   .prod-info {
       display: flex;
       justify-content: space-between;
-      background-color: black;
-      color: white;
+      background-color: var(--black);
+      color: var(--white);
       min-height: 100px;
       padding: 0.5rem 1rem 2rem;
   }
@@ -1915,15 +1915,15 @@ padding:0.5rem 3rem; */
   .prod-info2 h2 {
       text-align: center !important;
       padding-top: 3rem;
-      color: white;
-      background-color: black
+      color: var(--white);
+      background-color: var(--black)
   }
 
   .prod-info2 h4 {
       text-align: center !important;
       padding: 0.2rem 0.3rem;
-      color: white;
-      background-color: black
+      color: var(--white);
+      background-color: var(--black)
   }
 
   .prod-info-1 h3 {
@@ -2016,7 +2016,7 @@ padding:0.5rem 3rem; */
 
   .partnership {
       padding: 2rem 3rem;
-      background-color: tan;
+      background-color: var(--tan);
       display: grid;
       align-items: center;
   }
@@ -2064,9 +2064,9 @@ padding:0.5rem 3rem; */
 
   .form1-btn {
       display: block !important;
-      background-color: black;
+      background-color: var(--black);
       border: 2px solid black;
-      color: white;
+      color: var(--white);
       padding: 0.5rem 0.5rem;
       text-align: center;
       text-decoration: none;
@@ -2083,8 +2083,8 @@ padding:0.5rem 3rem; */
 
   .form1-btn:hover {
       cursor: pointer;
-      color: black;
-      background-color: white;
+      color: var(--black);
+      background-color: var(--white);
       border: 2px solid black;
   }
 
@@ -2100,8 +2100,8 @@ padding:0.5rem 3rem; */
       outline: white !important;
       box-sizing: border-box;
       margin-bottom: 0.2rem;
-      background-color: tan;
-      color: white;
+      background-color: var(--tan);
+      color: var(--white);
       font-weight: bold;
   }
 
@@ -2121,8 +2121,8 @@ padding:0.5rem 3rem; */
       padding: 2rem;
       border: 1px solid tan;
       margin: 0rem 1rem 1rem;
-      background-color: tan;
-      color: white;
+      background-color: var(--tan);
+      color: var(--white);
       border-radius: 1rem;
       box-shadow: 2px 2px 8px rgb(165, 97, 42);
   }
@@ -2180,9 +2180,9 @@ padding:0.5rem 3rem; */
 
   .event-btn {
       display: block !important;
-      background-color: tan;
+      background-color: var(--tan);
       border: 2px solid tan;
-      color: white;
+      color: var(--white);
       padding: 0.2rem 0.8rem;
       text-align: center;
       text-decoration: none;
@@ -2194,8 +2194,8 @@ padding:0.5rem 3rem; */
 
   .event-btn:hover {
       cursor: pointer;
-      color: black;
-      background-color: white;
+      color: var(--black);
+      background-color: var(--white);
       border: 2px solid black;
   }
 
@@ -2214,7 +2214,7 @@ padding:0.5rem 3rem; */
       background-position: center;
       background-size: cover;
       height: auto;
-      color: tan;
+      color: var(--tan);
       display: grid;
       align-items: center;
       padding: 2rem;
@@ -2224,7 +2224,7 @@ padding:0.5rem 3rem; */
 
   .gal-title h2 {
       font-size: 2rem;
-      color: tan;
+      color: var(--tan);
       padding: 1vh 0vw 1vh 10vw;
   }
 
@@ -2296,9 +2296,9 @@ padding:0.5rem 3rem; */
 
   .news-title h2 {
       font-size: 2rem;
-      color: white;
+      color: var(--white);
       padding: 1vh 0vw 1vh 10vw;
-      background-color: black;
+      background-color: var(--black);
   }
 
   .news-img {
@@ -2358,7 +2358,7 @@ padding:0.5rem 3rem; */
       border: none;
       outline: none;
       background-color: rgb(221, 157, 72);
-      color: white;
+      color: var(--white);
       cursor: pointer;
       padding: 0.5rem;
       border-radius: 0.5rem;
@@ -2366,7 +2366,7 @@ padding:0.5rem 3rem; */
   }
 
   #scroll-to-top-btn:hover {
-      background-color: tan;
+      background-color: var(--tan);
   }
 
 
@@ -2594,8 +2594,8 @@ padding:0.5rem 3rem; */
       }
 
       .booking__btn2 {
-          background-color: black;
-          color: white;
+          background-color: var(--black);
+          color: var(--white);
       }
 
       .fourthpg {
@@ -3575,10 +3575,10 @@ padding:0.5rem 3rem; */
       .gallery-menu li {
           display: inline-flex;
           flex-wrap: wrap;
-          background-color: tan;
+          background-color: var(--tan);
           padding: 0.2rem 0.5rem;
           margin: 0.2rem;
-          color: white;
+          color: var(--white);
           line-height: 1.75rem;
           ;
       }
@@ -3835,15 +3835,15 @@ padding:0.5rem 3rem; */
   .gallery-menu li {
       display: flex;
       gap: 0.5rem;
-      background-color: tan;
+      background-color: var(--tan);
       padding: 0.2rem 0.5rem;
       margin: 0.2rem;
-      color: white;
+      color: var(--white);
   }
 
   li:hover {
-      color: black !important;
-      background-color: tan !important;
+      color: var(--black) !important;
+      background-color: var(--tan) !important;
       cursor: pointer;
   }
 
@@ -3852,7 +3852,7 @@ padding:0.5rem 3rem; */
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      background-color: tan;
+      background-color: var(--tan);
       box-shadow: 0 0 3px 0 rgba(44, 44, 44, 0.3);
       width: 95%;
       margin: 0 auto;
