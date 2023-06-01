@@ -869,10 +869,55 @@
     margin:auto;
     padding:0.5rem 0.5rem 1rem;
 }
-.inline{
-    display: inline-flex
+
+
+.flex-1 {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+.newsletter {
+    display: grid;
+    align-items: center;
+    padding: 3rem 7rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1rem;
+    ;
+}
+.newsletter input[type="email"]{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    margin-bottom: 0.2rem;
+    box-shadow: 2px 2px 8px lightgray;
 }
 
+.news-btn {
+    padding: 0.6rem 2.5rem;
+    background-color: var(--tan);
+    color: var(--white);
+    border: 1px solid var(--tan);
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    float: right;
+    margin-bottom: 0.2rem;
+    box-shadow: 2px 2px 8px var(--tan);
+}
+
+.newsletter input[type="email"] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.news-btn:hover {
+    background-color: var(--white);
+    color: var(--tan);
+    cursor: pointer;
+}
 
   /* Footer */
   .end {
@@ -1711,7 +1756,7 @@ padding:0.5rem 3rem; */
   .type-22 {
       margin: auto auto;
       padding-bottom: 1.5rem;
-      width: 85%;
+      width: 90%;
   }
 
   .type-2 h5,
@@ -1764,7 +1809,7 @@ padding:0.5rem 3rem; */
   }
 
   .FAQ_section {
-      background-color: tan;
+      background-color: #d2b48c;
       color: white;
       text-align: center;
       padding: 1rem 0rem;
