@@ -2393,10 +2393,42 @@ padding:0.5rem 3rem; */
 
   }
 
-
-
-
-
+/*Payment Page*/
+.payment {
+    background-color: var(--tan);
+    height:80vh;
+}
+.payment-text{
+    padding:2rem;
+}
+.payment-text p{
+    padding:0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.payment-btn:hover{
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid black;
+    cursor: pointer;
+}
+.payment-btn{
+    display: block !important;
+    background-color: var(--black);
+    border: 1px solid white;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 0.75rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    float: right;
+    width: 60%;
+    font-weight: bold;
+}
 
 
 
