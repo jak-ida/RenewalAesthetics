@@ -275,7 +275,7 @@
     
         <div>
 		<br/>
-		<p class="form-row-p"> NB: To secure your Consultation, there is a <b>P 100</b> non-refundable payment that will be required to finalised the online booking. </p>
+		<p class="form-row-p"> NB: To secure your Consultation, there is a <b>P 100</b> non-refundable payment that will be required to finalize the online booking. </p>
 
         </div>
 		<div class="FAQ_questions row">
@@ -310,7 +310,7 @@
     
 		<div >
 		<br/>
-		<p class="form-row-p"> NB: To secure your appointment, there is a <b>50%</b> non-refundable payment that will be required to finalised the online booking. </p>
+		<p class="form-row-p"> NB: To secure your appointment, there is a <b>50% non-refundable payment</b> that will be required to finalize the online booking. </p>
         </div>
       
 		<div class="FAQ_questions row">
@@ -619,7 +619,7 @@
     $(document).ready(function() {
         document.getElementById("ModalButton").click();
 		document.getElementById("Reference").value = generate_uuidv4();
-		alert(window.localStorage.getItem('UserObject'))
+		
       
     });
 
@@ -640,7 +640,7 @@
 	
 		PatientReqestStorage = instance;
 		localStorage.setItem('UserObject', PatientReqestStorage);
-
+        //alert(localStorage.setItem('UserObject', PatientReqestStorage));
 		document.getElementById("Price").value = Payment;
 		document.getElementById("Procedure").value = instance;
 		document.getElementById("MakePayment").click();
@@ -685,8 +685,8 @@
             document.getElementById("BackgroundControl").style.display = "none";
         }
         else {
-            alert("Atleast one opption must be chosen");
-            //document.getElementById("ModalButton").click();
+            alert("Atleast one option must be chosen");
+            document.getElementById("ModalButton").click();
 
         }
     }
