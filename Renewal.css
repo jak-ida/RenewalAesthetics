@@ -3741,7 +3741,7 @@ padding:0.5rem 3rem; */
       /* Padding */
       position: fixed;
       /* Sit on top of the screen */
-      z-index: 1;
+      z-index: 1000000000;
       /* Add a z-index if needed */
       right: 1%;
       /* Center the snackbar */
@@ -3781,7 +3781,7 @@ padding:0.5rem 3rem; */
       /* Padding */
       position: fixed;
       /* Sit on top of the screen */
-      z-index: 1;
+      z-index: 1000000000;
       /* Add a z-index if needed */
       right: 1%;
       /* Center the snackbar */
