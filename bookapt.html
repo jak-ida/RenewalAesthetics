@@ -625,7 +625,7 @@
 
 
 	function generate_uuidv4() {
-	   return 'xxxxxxxx-xxxx-xx-renewal'.replace(/[x]/g,
+	   return 'renewal-xxxxxxxx-xxxx-xx'.replace(/[x]/g,
 	    function(c) {
 		  var uuid = Math.random() * 16 | 0, v = c == 'x' ? uuid : (uuid & 0x3 | 0x8);
 		  return uuid.toString(16);
@@ -651,25 +651,6 @@
 	const checkbox = document.getElementById("Returning");
 	const checkbox2 = document.getElementById("New");
 	const checkbox3 = document.getElementById("Review");
-
-	checkbox.addEventListener('change', (event) => {
-	  if (event.currentTarget.checked) {
-		//alert('checked');
-		PatientReqestStorage = "Returning";
-	  } 
-	});
-	checkbox2.addEventListener('change', (event) => {
-	  if (event.currentTarget.checked) {
-		//alert('checked');
-		PatientReqestStorage = "New";
-	  } 
-	});
-	checkbox3.addEventListener('change', (event) => {
-	  if (event.currentTarget.checked) {
-		//alert('checked');
-		PatientReqestStorage = "Review";
-	  } 
-	});
 
     function Category(){
         if(document.getElementById("Returning").checked){
