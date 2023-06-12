@@ -2441,6 +2441,9 @@ padding:0.5rem 3rem; */
           grid-column: auto/span 12;
 
       }
+      .payment-btn{
+        width:auto;
+      }
 
       /* General*/
 
@@ -3218,6 +3221,9 @@ padding:0.5rem 3rem; */
   }
 
   @media (min-width:500px) and (max-width:1000px) {
+    .payment-btn{
+        width:auto;
+      }
 
       .col-1 {
           grid-column: auto/span 12;
