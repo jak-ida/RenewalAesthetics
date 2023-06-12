@@ -779,8 +779,6 @@
                             <img class="treat-img" src="Product Images/Dermalogica-Sunscreen.jpg">
                         </div>
                     </div>
-
-
                 </div>
                 <div class="col-3 prod-details" onclick="call('25')" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">
@@ -1729,7 +1727,14 @@
                     if (div.style.display === "none" || div.style.display === " ") {
                         div.style.display = "block";
                         window.location.href = "productsren.html#product-" + a;
+                        var section = document.getElementById("product-" + a);
+                            var offset = 100; // Adjust this value to scroll up a bit more or less
 
+                            //Scroll to the section's top position minus the offset
+                            window.scrollTo({
+                                top: section.offsetTop - offset,
+                                behavior: "smooth" // Use "auto" for instant scrolling
+                            });
                     } else {
                         div.style.display = "none";
 
