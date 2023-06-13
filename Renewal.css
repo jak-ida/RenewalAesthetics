@@ -3197,11 +3197,45 @@ padding:0.5rem 3rem; */
       }
 
 
+      .home-credit{
+        padding:2rem;
+      }
+      .home-credit h2{
+        text-align: center;
+      }
+      .treat_button1{
+        width:auto;
+      }
+      .newsletter{
+        padding:2rem;
+      }
+      .newsletter .col-7{
+        padding-bottom:1.5rem;
+      }
+      .credit img{
+        padding:1rem;
+       height:auto;
+       width:90%;
+       margin: auto;
+      }
+      .credit p{
+        margin:auto;
+        width:90%;
+        text-align: justify;
+        hyphens: auto;
+      }
+      .credit h2{
+        margin-left:8%;
+      }
+      .credit{
+        padding:1rem;
+      }
 
 
   }
 
   @media (min-width:500px) and (max-width:780px) {
+    
       .col-s-2 {
           grid-column: auto/span 12;
       }
@@ -3218,11 +3252,45 @@ padding:0.5rem 3rem; */
       .gallery-menu li {
           padding: 0.5rem 0.5rem !important;
       }
+
+      .newsletter .col-5{
+        grid-column: auto/span 12!important;
+      }
+      .newsletter .col-7{
+        grid-column: auto/span 12!important;
+      } 
   }
 
   @media (min-width:500px) and (max-width:1000px) {
     .payment-btn{
         width:auto;
+      }
+      .newsletter .col-7{
+        padding-bottom:1.5rem;
+      }
+      .newsletter{
+        padding:2rem 3rem;
+      }
+      .newsletter .col-5{
+        grid-column: auto/span 5;
+      }
+      .newsletter .col-7{
+        grid-column: auto/span 7;
+      }
+      .credit img{
+        padding:2rem;
+       height:auto;
+       width:70%;
+       margin: auto;
+      }
+      .credit p{
+        margin:auto;
+      }
+      .credit h2{
+        margin-left:12%;
+      }
+      .credit{
+        padding:2rem;
       }
 
       .col-1 {
