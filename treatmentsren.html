@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <title> Renewal Aesthetics </title>
-     <link rel="icon" href="MainImages/Renewal Logo-02.png" />
+    <link rel="icon" href="MainImages/Renewal Logo-02.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -3280,7 +3280,7 @@
     </div>
     <script src="jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-    <script>
+  <script>
 
         //var textContent2 = document.getElementById('treatment-1-2');
         function call(a) {
@@ -3303,6 +3303,16 @@
 
             document.getElementById(link).click();
             window.location.href = "treatmentsren.html#" + link;
+            var section = document.getElementById(link);
+            
+                            var offset = 500; // Adjust this value to scroll up a bit more or less
+                            
+                            //Scroll to the section's top position minus the offset
+                            window.scrollTo({
+                                top: section.offsetTop - offset,
+                                behavior: "smooth" // Use "auto" for instant scrolling
+                               
+                            });
         });
 
 
