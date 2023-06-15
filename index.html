@@ -215,7 +215,7 @@
             <form class="">
                 <input type="email" id="newsletter-email" name="email" placeholder="Enter Your Email Here" required>
             </form>
-            <button class="news-btn" onclick="SendComment()">
+            <button id="NewsletterButton"class="news-btn" onclick="SendComment()">
                 <a> SUBSCRIBE</a>
             </button>
         </div>
@@ -416,21 +416,11 @@
 
         }
         else {
-//PLEASE CHECK THIS ONE
-            document.getElementById("ContactSubmit").disabled = true;
+
+            document.getElementById("NewsletterButton").disabled = true;
 
            var key = CryptoJS.enc.Utf8.parse('8080808080808080');
             var iv = CryptoJS.enc.Utf8.parse('8080808080808080');
-
-           
-
-            var encryptedemail = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(email), key,
-                {
-                    keySize: 128,
-                    iv: iv,
-                    mode: CryptoJS.mode.CBC,
-                    //padding: CryptoJS.pad.Pkcs7 
-                });
 
            
             var xhttp = new XMLHttpRequest();
@@ -443,7 +433,7 @@
                 }
             };
 
-            xhttp.open("GET", "https://kalafhi-web-as.duckdns.org:224/Renewalserv/SendEmailKalafhi?Firstname=" + "&Email=" + encryptedemail, true);
+            xhttp.open("GET", "https://kalafhi-web-as.duckdns.org:224/Renewalserv/AddToEmailStorage?Email=" + email, true);
             xhttp.send();
             
 
@@ -459,7 +449,7 @@
             // After 3 seconds, remove the show class from DIV
             setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
             
-            document.getElementById("ContactSubmit").disabled = false;
+            document.getElementById("NewsletterButton").disabled = false;
             
         }
     }
