@@ -29,13 +29,13 @@
                     <button class="dropbtn"><a class="no-a active-pg" href="treatmentsren.html">TREATMENTS</a>
                     </button>
                     <div class="dropdown-content">
-                        <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
-                        <a href="treatmentsren.html#plateletrichplasma">PRP Treatment</a>
-                        <a href="treatmentsren.html#microneedling">Micro-needling</a>
-                        <a href="treatmentsren.html#lamelle-facials">Lamelle Professional Facials</a>
-                        <a href="treatmentsren.html#injectables">Injectables</a>
-                        <a href="treatmentsren.html#healing-earth">Healing Earth</a>
-                        <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                        <a href="treatmentsren.html#chemical-peels-picture">Chemical Peel</a>
+                        <a href="treatmentsren.html#plateletrichplasma-picture">PRP Treatment</a>
+                        <a href="treatmentsren.html#microneedling-picture">Micro-needling</a>
+                        <a href="treatmentsren.html#lamelle-facials-picture">Lamelle Professional Facials</a>
+                        <a href="treatmentsren.html#injectables-picture">Injectables</a>
+                        <a href="treatmentsren.html#healing-earth-picture">Healing Earth</a>
+                        <a href="treatmentsren.html#other-skin-treatments-picture">Other Skin Treatments</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -646,12 +646,12 @@
                 </div>
             </div>
             <div class="col-6 a-c">
-                <img class="about_brief-img-1" src="MainImages/chemical-peel1.jpg" />
+                <img class="about_brief-img-1" id="chemical-peels-picture" src="MainImages/chemical-peel1.jpg" />
             </div>
         </div>
         <div class="row a-c ">
             <div class="col-6 a-c">
-                <img class="about_brief-img-1" src="MainImages/prp-image.jpg">
+                <img class="about_brief-img-1" id="plateletrichplasma-picture" src="MainImages/prp-image.jpg">
             </div>
             <div class="col-6">
                 <div class="row">
@@ -1027,11 +1027,11 @@
                 </div>
             </div>
             <div class="col-6 a-c">
-                <img class="about_brief-img-1" src="MainImages/microneedles.jpg" />
+                <img class="about_brief-img-1" id="microneedling-picture" src="MainImages/microneedles.jpg" />
             </div>
         </div>
         <div class="row a-c ">
-            <div class="col-6"><img class="about_brief-img" src="MainImages/lamelle-facial2.jpg" /></div>
+            <div class="col-6"><img class="about_brief-img" id="lamelle-facials-picture"src="MainImages/lamelle-facial2.jpg" /></div>
             <div class="col-6">
                 <div class="row">
                     <div class="col-12 grid-2">
@@ -1488,12 +1488,12 @@
                 </div>
             </div>
             <div class="col-6 a-c">
-                <img class="about_brief-img-1" src="MainImages/needle.jpg">
+                <img class="about_brief-img-1" id="injectables-picture"src="MainImages/needle.jpg">
             </div>
         </div>
         <div class="row a-c">
             <div class="col-6">
-                <img class="about_brief-img-1" src="MainImages/other-treats.jpg" />
+                <img class="about_brief-img-1" id="other-skin-treatments-picture" src="MainImages/other-treats.jpg" />
             </div>
             <div class="col-6">
                 <div class="row">
@@ -1883,7 +1883,7 @@
                 </div>
             </div>
             <div class="col-6">
-                <img class="about_brief-img-1" src="MainImages/Healing Earth Content V1-04.jpg">
+                <img class="about_brief-img-1" id="healing-earth-picture"src="MainImages/Healing Earth Content V1-04.jpg">
             </div>
         </div>
     </div>
@@ -3306,17 +3306,17 @@
             link = link.split('#')[1];
 
             document.getElementById(link).click();
-            window.location.href = "treatmentsren.html#" + link;
-            var section = document.getElementById(link);
+            window.location.href = "treatmentsren.html#" + link +"-picture";
+            var section = document.getElementById(link+"-picture");
             
-                            var offset = 500; // Adjust this value to scroll up a bit more or less
-                            
-                            //Scroll to the section's top position minus the offset
-                            window.scrollTo({
-                                top: section.offsetTop - offset,
-                                behavior: "smooth" // Use "auto" for instant scrolling
-                               
-                            });
+            var offset = 500; // Adjust this value to scroll up a bit more or less
+            
+            //Scroll to the section's top position minus the offset
+            window.scrollTo({
+                top: section.offsetHeight- offset,
+                behavior: "smooth" // Use "auto" for instant scrolling
+                
+            });
         });
 
 
