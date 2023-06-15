@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <title> Renewal Aesthetics </title>
-     <link rel="icon" href="MainImages/Renewal Logo-02.png" />
+    <link rel="icon" href="MainImages/Renewal Logo-02.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -215,7 +215,7 @@
             <form class="">
                 <input type="email" id="newsletter-email" name="email" placeholder="Enter Your Email Here" required>
             </form>
-            <button class="news-btn">
+            <button class="news-btn" onclick="SendComment()">
                 <a> SUBSCRIBE</a>
             </button>
         </div>
@@ -288,11 +288,29 @@
         <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top"
             src="up-long.svg">
     </button>
+    <div id="snackbar">
+        <div class="">
+            <i class="fas fa-circle-check" style="padding:4px 10px;color:white;"></i>
+            <span id="snackmessage">
+                Some text some message..
+            </span>
+        </div>
+    </div>
+
+    <div id="Negative-snackbar" style=" background-color: red;">
+        <div class="">
+            <i class="fas fa-circle-xmark" style="padding:4px 10px; color:white;"></i>
+            <span id="snackmessage">
+                Please Fill All Details
+            </span>
+        </div>
+    </div>
 
 
 
 
-
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="crypto-js.js"></script>
     <script>
 
 
@@ -378,6 +396,73 @@
         });
 
      //Navbar settings for mobile ends//    
+    </script>
+     <script> function SendComment() {
+
+        var email = document.getElementById("newsletter-email").value;
+       
+        if (email == "") {
+
+            document.getElementById("snackmessage").innerHTML = "Please Fill All Details And Try Again";
+
+            // Get the snackbar DIV
+            var x = document.getElementById("Negative-snackbar");
+
+            // Add the "show" class to DIV
+            x.className = "show";
+
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
+
+        }
+        else {
+//PLEASE CHECK THIS ONE
+            document.getElementById("ContactSubmit").disabled = true;
+
+           var key = CryptoJS.enc.Utf8.parse('8080808080808080');
+            var iv = CryptoJS.enc.Utf8.parse('8080808080808080');
+
+           
+
+            var encryptedemail = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(email), key,
+                {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7 
+                });
+
+           
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    // Typical action to be performed when the document is ready:
+                    var res = JSON.parse(xhttp.responseText);
+
+                    //alert(res[0].emailStatus);
+                }
+            };
+
+            xhttp.open("GET", "https://kalafhi-web-as.duckdns.org:224/Renewalserv/SendEmailKalafhi?Firstname=" + "&Email=" + encryptedemail, true);
+            xhttp.send();
+            
+
+            
+            document.getElementById("snackmessage").innerHTML = "Message Successfully Sent";
+            
+            // Get the snackbar DIV
+            var x = document.getElementById("snackbar");
+            
+            // Add the "show" class to DIV
+            x.className = "show";
+            
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
+            
+            document.getElementById("ContactSubmit").disabled = false;
+            
+        }
+    }
     </script>
 </body>
 
