@@ -263,7 +263,14 @@
       justify-content: center;
       align-content: center;
   }
-
+.center{
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+.flex-2{
+    display: flex;
+}
   /*Home Page, Header, Footer*/
   .Logo {
       width: auto;
@@ -1221,6 +1228,26 @@
   }
 
   /*Book An Appointment Page*/
+  .background-booking{
+    height:80vh;
+    background-color: var(--tan);
+    background-image: url(BackgroundImages/comingsoonbackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:grid;
+    align-items: center;
+  }
+  .background-booking-h2{
+    background-color: var(--white);
+    width:100%;
+    opacity:0.7;
+  }
+  .background-booking h2{
+    color:var(--tan);
+    font-size: 5rem!important;
+    text-align: center;
+  }
   .bookapt {
       padding: 1.5rem 2rem 3rem;
       display: grid;
@@ -1343,12 +1370,29 @@
       padding: 2rem 7rem;
       width: 100%;
   }
+  .form-2 {
+    padding: 2rem 2rem;
+    width: 100%;
+}
+.gap-1{
+    gap: 1.5rem;
+}
+.form-group-2 {
+    display: inline-block;
+    width: 100%;
+    margin-top: .5rem;
+}
 
   .form-group label {
       display: block;
       margin-bottom: 0.2rem;
 
   }
+  .form-group-2 label {
+    display: block;
+    margin-bottom: 0.2rem;
+
+}
 
   input[type="date"],
   input[type="time"],
@@ -1388,6 +1432,54 @@
       border: 2px solid var(--black);
       cursor: pointer;
   }
+  .form-2 button {
+    display: block !important;
+    background-color: var(--black);
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    float: right;
+    width: 20%;
+    font-weight: bold;
+}
+
+.form-2 button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+    cursor: pointer;
+}
+.form2-btn {
+    display: block !important;
+    background-color: var(--black);
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: -2rem;
+    margin-bottom: .75rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    float: right;
+    width: 40%;
+    font-weight: bold;
+}
+
+.form2-btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+    cursor: pointer;
+}
 
   #map {
       height: 400px;
@@ -2304,6 +2396,12 @@
   }
 
   @media screen and (max-width:500px) {
+    .gap-1{
+        gap:0rem !important
+    }
+    .background-booking h2{
+        font-size: 3rem!important;
+    }
       .col-1 {
           grid-column: auto/span 12;
       }
@@ -3118,6 +3216,9 @@
   }
 
   @media (min-width:500px) and (max-width:1000px) {
+    .gap-1{
+        gap:0rem !important
+    }
       .payment-btn {
           width: auto;
       }
