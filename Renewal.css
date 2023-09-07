@@ -201,6 +201,13 @@
   .col-3 {
       grid-column: auto/span 3;
   }
+  .col--3 {
+    grid-column: auto/span 3;
+}
+  .col-s-3 {
+    grid-column: auto/span 3;
+}
+
 
   .col-s-2 {
       grid-column: auto/span 2;
@@ -244,6 +251,9 @@
 
   .col-9 {
       grid-column: auto/span 9;
+  }
+  .col---9{
+    grid-column: auto/span 9;
   }
 
   .col-10 {
@@ -341,6 +351,7 @@
   i {
       color: var(--black);
   }
+  
 
   .hide {
       display: none !important;
@@ -1970,6 +1981,13 @@
   }
 
   /*Events Page*/
+  .poster{
+padding:2rem;
+height:auto;
+width:auto;
+    display: grid;
+    justify-content: center;
+  }
   .upcoming-event {
       padding: 2rem 4rem;
   }
@@ -1978,6 +1996,10 @@
       font-size: 1.5rem;
       text-align: center;
       margin: 2rem;
+  }
+  .upcoming-event h3{
+    line-height: 2rem;
+    padding-bottom:1rem
   }
 
   .upcoming-event h3,
@@ -2055,7 +2077,6 @@
       text-decoration: none;
       font-size: 1rem;
       margin-top: .75rem;
-      margin-right: 3rem;
       border-radius: 0.5rem;
       cursor: pointer;
       float: right;
@@ -2396,6 +2417,10 @@
   }
 
   @media screen and (max-width:500px) {
+    .poster{
+        height:auto;
+        width: auto;
+    }
     .gap-1{
         gap:0rem !important
     }
@@ -2444,6 +2469,9 @@
       .col-3 {
           grid-column: auto/span 12;
       }
+      .col--3 {
+        grid-column: auto/span 12;
+    }
 
       .col-s-3 {
           grid-column: auto/span 12;
@@ -2491,6 +2519,9 @@
 
       .col-9 {
           grid-column: auto/span 12;
+      }
+      .col---9{
+        grid-column: auto/span 12;
       }
 
       .dropdown-content {
@@ -2884,7 +2915,7 @@
 
       .partnership h3 {
           font-size: 1.5rem;
-          text-align: left;
+          text-align: center;
       }
 
       .partnership {
@@ -2905,10 +2936,10 @@
       }
 
       .form1-btn {
-          width: 60%;
+          width: 100%;
           justify-content: center;
           display: grid !important;
-          margin-right: 4rem;
+          margin: 0.5rem auto;
       }
 
       .past-head {
@@ -3216,6 +3247,11 @@
   }
 
   @media (min-width:500px) and (max-width:1000px) {
+    .poster{
+        height:auto;
+        width: auto;
+        padding-bottom:1.5rem
+    }
     .gap-1{
         gap:0rem !important
     }
@@ -3275,6 +3311,9 @@
       .col-3 {
           grid-column: auto/span 6;
       }
+      .col--3 {
+        grid-column: auto/span 12;
+    }
 
       .col-s-3 {
           grid-column: auto/span 12;
@@ -3306,6 +3345,9 @@
 
       .col-9 {
           grid-column: auto/span 12;
+      }
+      .col---9{
+        grid-column: auto/span 12;
       }
 
       .flex {
@@ -3591,6 +3633,7 @@
       .upcoming-event h3 {
           padding-bottom: 1rem;
           font-size: 1.5rem;
+          
       }
 
       .upcoming-event p {
@@ -3613,7 +3656,7 @@
 
       .form1-btn {
           margin-top: 2rem;
-          margin-right: 1rem;
+          width: 100%;
       }
 
       .past-events1 h5 {
