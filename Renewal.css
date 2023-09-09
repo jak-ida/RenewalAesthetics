@@ -1244,6 +1244,15 @@
       text-align: center;
   }
 
+  /*Redirect Page*/
+
+  .background-booking-1 {
+    height: 80vh;
+    background-color: var(--tan);
+    
+    display: grid;
+    align-items: center;
+}
   /*Book An Appointment Page*/
   .background-booking {
       height: 80vh;
