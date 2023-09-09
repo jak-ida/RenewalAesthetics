@@ -83,9 +83,7 @@
                 <div class="dropdown-content">
                     <a href="index.html">HOME</a>
                     <a class="dropdown-content1 " href="aboutren.html">ABOUT RENEWAL</a>
-
                     <a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
-
                     <a class="dropdown-content1" href="productsren.html">PRODUCTS</a>
                     <a class="dropdown-content1" href="gallery.html">GALLERY</a>
                     <a class="dropdown-content1" href="newsren.html">NEWS</a>
@@ -109,7 +107,7 @@
         <div class="main-event">
             <div class="row">
                 <div class="col-5 poster">
-                    <img src="MainImages/3.jpg">
+                    <img style="padding:2rem;"src="MainImages/3.jpg">
                 </div>
                 <div class="col-7">
                     <h2>RENEWAL AESTHETICS BEAUTY AND WELLNESS CONVENTION</h2>
@@ -153,10 +151,10 @@
         </div>
     </div>
     <div class="row partnership">
-        <div class="col--3">
+        <div class="col-3">
             <h3>Are You Interested??</h3>
         </div>
-        <div class="col---9 center">
+        <div class="col-9 center">
             <form class="form1">
                 <div class="row center">
                     <div class="col-4">
@@ -205,31 +203,37 @@
                 <form class="form-2">
                     <div class="row gap-1">
                         <div class="col-6 form-group-2">
-                            <label for="first-name">First Name:</label>
-                            <input type="text" id="first-name" name="first-name" required>
+                            <label for="first-name">First Name :</label>
+                            <input type="text" id="firstName" name="first-name" required>
                         </div>
                         <div class="col-6 form-group-2">
-                            <label for="last-name">Last Name:</label>
-                            <input type="text" id="last-name" name="last-name" required>
+                            <label for="last-name">Last Name :</label>
+                            <input type="text" id="lastName" name="last-name" required>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ID">ID :</label>
+                        <input type="number" id="ID" name="ID" required>
                     </div>
                     <div class="row gap-1">
                         <div class="form-group col-6">
-                            <label for="ID">ID:</label>
-                            <input type="number" id="ID" name="phone" required>
+                            <label for="ID"></label>
+                            <div class="flex-2">
+                                <input type="checkbox" id="moreThanOne" name="moreThanOne" required>
+                                <br>
+                                <label for="moreThanOne"> &nbsp; I want more than one ticket</label><br>
+                            </div>
                         </div>
                         <div class="form-group col-6">
-                            <label for="phone">Phone:</label>
-                            <input type="number" id="phone" name="phone" required>
+                            <label for="ticketNumber"> How many tickets would you like?</label>
+                            <input type="number" id="ticketNumber" name="ticketNumber">
                         </div>
                     </div>
     
                     <br>
-                    <br>
-                    
                 </form>
-                <button id="ContactSubmit" class="btn form2-btn col-12" type="button" onclick="">
-                    SUBMIT & BUY TICKET
+                <button id="ContactSubmit" class="btn form2-btn col-12" type="button" onclick="TicketPurchase()">
+                    PROCEED TO PAY
                 </button>
             </div>
     </div>
@@ -306,7 +310,7 @@
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="number" id="email" name="phone" required>
+                    <input type="text" id="email" name="phone" required>
                 </div>
                 <div class="form-group full-width">
                     <label for="companyDescription">Brief Description of Company:</label>
