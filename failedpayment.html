@@ -1,0 +1,617 @@
+
+<!doctype html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
+	<link href="Renewal.css" rel="stylesheet" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<title> Renewal Aesthetics </title>
+    <link rel="icon" href="MainImages/Renewal Logo-02.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+	
+		
+        .wrapper .icon {
+        position: relative;
+        }
+        
+        .wrapper .tooltip {
+        position: absolute;
+        text-align:center;
+        top: 0;
+        z-index:10000000000000;
+        width:290%;
+        font-size: 14px;
+        background: #fff;
+        color: #ffffff;
+        padding: 5px 8px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        border-radius: 4px;
+        background: #000;
+        color: #fff;
+        margin-left:-5rem;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -moz-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -ms-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -o-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        }
+        
+        .wrapper .tooltip::before {
+        position: absolute;
+        z-index:10000000000000;
+        content: "";
+        height: 8px;
+        width: 8px;
+        background: #000;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transform: translate(-50%) rotate(45deg);
+        -moz-transform: translate(-50%) rotate(45deg);
+        -ms-transform: translate(-50%) rotate(45deg);
+        -o-transform: translate(-50%) rotate(45deg);
+        -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -moz-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -ms-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -o-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .wrapper .icon:hover .tooltip {
+        top: -60px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        }
+        
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip {
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.01);
+        }
+        
+        
+        
+        
+          .background-tan{
+        
+            background-color: tan;
+        
+          }
+          .background-white{
+        
+            background-color: white;
+        
+          }
+          .color-white{
+            color:white;
+          }
+          .vh-100{
+        
+            height: 70vh;
+        
+          }
+          .ml-1{
+            margin-left: 1rem;
+          }
+          .ml-2{
+            margin-left: 2rem;
+          }
+          .p-1{
+            padding: 1rem;
+          }
+          .p-2{
+            padding: 2rem;
+          }
+          .p-2-1{
+            padding: 2rem 1rem;
+          }
+          input[type='radio'] {
+            accent-color: black;
+        }
+        
+        .Categorybutton{
+            border: 2px solid black;
+            padding: 2px 25px;
+            border-radius: 0.75rem;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            cursor:pointer;
+            align-items: center;
+        }
+        .Categorybutton:hover {
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+        }
+        .Categorybutton:hover > i {
+            color: black;
+        }
+        .ta-center{
+    text-align: center;
+    display: grid;
+    align-items: center;
+    
+  }
+
+  .ta-center h2{
+    font-size: 3rem !important;
+  }
+  .ta-center p{
+    font-size: 1rem !important;
+  }
+        
+        .col-s-3 {
+                  grid-column: auto/span 3;
+              }
+        @media (min-width:500px) and (max-width:1000px) {
+                .p-2-1{
+                    padding: 2rem;
+                  }
+            
+              .col-s-4 {
+                  grid-column: auto/span 12;
+              }
+              .col-s-3 {
+                  grid-column: auto/span 12;
+              }
+            }
+            
+            @media (max-width: 500px) {
+             .col-s-3 {
+                  grid-column: auto/span 12;
+              }
+              .p-2-1{
+                    padding: 2rem;
+                  }
+            
+            }
+            
+            .vh-90{
+                height:90vh!important;
+            }
+        
+            .remove-padding{
+                padding:0!important;
+            }
+            
+            .form-row-p {
+            
+            text-align: center;
+            font-size: 0.85rem;
+            
+            }
+                </style>
+                </head> 
+<body>
+    <!--First Section-->
+    <div class="aboutmain__">
+     <header>
+         <img  onclick="redirectToHome()" class="Logo" src="MainImages/Renewal%20Logo-01.png"/>
+		<div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="aboutren.html" >ABOUT RENEWAL</a>
+            <div class="dropdown">
+                <button class="dropbtn"><a class="no-a" href="treatmentsren.html">TREATMENTS</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="treatmentsren.html#chemical-peels">Chemical Peel</a>
+                    <a href="treatmentsren.html#plateletrichplasma">PRP Treatment</a>
+                    <a href="treatmentsren.html#microneedling">Micro-needling</a>
+                    <a href="treatmentsren.html#lamelle-facials">Lamelle Professional Facials</a>
+                    <a href="treatmentsren.html#injectables">Injectables</a>
+                    <a href="treatmentsren.html#healing-earth">Healing Earth</a>
+                    <a href="treatmentsren.html#other-skin-treatments">Other Skin Treatments</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="no-a" href="productsren.html">PRODUCTS</a>
+            
+                <div class="dropdown-content">
+                    
+                   <a href="productsren.html#product-4">Dermalogica</a>
+                    <a href="productsren.html#product-1">BioMedical Emporium</a>
+                    <a href="productsren.html#product-3">Lamelle</a>
+                    <a href="productsren.html#product-5">Mesoestetic</a>
+                    <a href="productsren.html#product-2">Other Products</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a>RESOURCES</a>
+                <div class="dropdown-content">
+                    <a href="events.html">EVENTS</a>
+                    <a href="gallery.html">GALLERY</a>
+                    <a class="no-a" href="newsren.html">NEWS</a>
+                </div>
+            </div>
+            <a href="contactren.html">CONTACT US</a>
+            
+                        
+            <button class="booking__btn1 active-pg" onclick="redirectToBookApt()"><p>BOOK NOW</p></button>
+        </div>
+  
+         <div  class="dropdown-3 ">
+            <!-- Button one -->
+            <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button" aria-controls="primary-navigation" aria-expanded="false" style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
+                <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
+                    <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+                    </rect>
+                    <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+                    </rect>
+                    <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+                    </rect>
+                </svg>
+            </button>
+    <div class="dropdown-content" >
+        <a href="index.html">HOME</a>
+        <a class="dropdown-content1" href="aboutren.html">ABOUT RENEWAL</a>
+       
+	    <a class="no-a hamburger dropdown-content1" href="treatmentsren.html">TREATMENTS</a>
+
+		<a class="dropdown-content1" href="productsren.html">PRODUCTS</a>
+		<a class="dropdown-content1" href="gallery.html">GALLERY</a>
+		<a class="dropdown-content1" href="newsren.html">NEWS</a>
+        <a class="dropdown-content1" href="events.html">EVENTS</a>
+		<a href="contactren.html" class="dropdown-content1" >CONTACT US</a>
+	    <a href="bookapt.html" class="dropdown-content1 active-pg1"> BOOK NOW</a>
+    </div>
+</div>
+</header>
+    </div>
+    
+    <div class="background-tan vh-100 ta-center" >
+        <div>
+
+          <h2> Your payment has failed.</h2>
+          <p> Kindly contact Renewal Customer Service on <strong> (+267) 390 6944 </strong> or <strong> (+267) 73 275 990 </strong> <br>or send an email to <strong> executive@kalafhi.co.bw </strong> for assistance.</p>
+       
+        </div>
+    </div>
+ <!-- Footer-->
+ <footer>
+    <div class="row end">
+        <div class="col-3">
+            <h3> OUR LOCATION </h3>
+            <br>
+            <p> Kalafhi Executive Suite, </p>
+            <p> Plot 319 Extension 5,</p>
+            <p> Gaborone, Botswana</p>
+            <br>
+        </div>
+        <div class=" col-3">
+            <h3> WORKING HOURS</h3>
+            <br>
+            <h4> Monday: 08:00 - 17:00</h4>
+            <h4> Tuesday: 08:00 - 17:00</h4>
+            <h4> Wednesday: 08:00 - 17:00</h4>
+            <h4> Thursday: 08:00 - 17:00</h4>
+            <h4> Friday: 08:00 - 17:00</h4>
+            <h4> Saturday: 09:00 - 13:00</h4>
+            <h4> Closed on Sundays and Public Holidays</h4>
+            <br>
+        </div>
+        <div class="col-3 quicklinks">
+            <h3> QUICK LINKS</h3>
+            <br>
+            <p> <a onclick="redirectToHome()"> Home</a> </p>
+            <p> <a onclick="redirectToAbout()"> About Us</a> </p>
+            <p> <a onclick="redirectToTreatments()"> Treatments</a> </p>
+            <p> <a onclick="redirectToProducts()"> Products </a></p>
+            <p> <a onclick="redirectToNews()"> News</a> </p>
+            <p> <a onclick="redirectToEvents()"> Events</a> </p>
+            <br>
+        </div>
+        <div class="col-3">
+            <div class="">
+                <h3> CONTACT US </h3>
+                <br>
+                <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+                    (+267) 390 6944</p>
+                <p><i class="fas fa-phone"></i>&nbsp;&nbsp;
+                    (+267) 73 275 990</p>
+            </div>
+            <br>
+            <ul class="social-list">
+                <li class="odd-fa-f-radius">
+                    <a target="_blank" href="https://www.facebook.com/RenewalAestheticclinic">
+                        <i class="fab fa-facebook-f" src="facebook-f.svg"></i>
+                    </a>
+                </li>
+
+                <li class="odd-fa-insta-radius">
+                    <a target="_blank" href="https://www.instagram.com/renewalaestheticsclinic/">
+                        <i class="fab fa-instagram" src="instagram.svg"></i>
+                    </a>
+                </li>
+
+                <li class="odd-fa-youtube-radius">
+                    <a target="_blank" href="https://www.youtube.com/@renewalaesthetics3627">
+                        <i class="fab fa-youtube" src="youtube.svg"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<button id="scroll-to-top-btn">
+    <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="up-long.svg" alt="Back to top"
+        src="up-long.svg">
+</button>
+<div id="snackbar">
+    <div class="">
+        <i class="fas fa-circle-check" style="padding:4px 10px;color:white;"></i>
+        <span id="snackmessage">
+            Some text some message..
+        </span>
+    </div>
+</div>
+
+<div id="Negative-snackbar" style=" background-color: red;">
+    <div class="">
+        <i class="fas fa-circle-xmark" style="padding:4px 10px; color:white;"></i>
+        <span id="Negative-snackmessage">
+            Please Fill All Details
+        </span>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal Modalfade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="staticBackdropLabel">Renewal Aesthetics Events</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+                <div id="modeltreatments" class="">
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="jquery-3.6.4.min.js"></script>
+<script src="crypto-js.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="Bootstrap.min.js"></script>
+<script>
+
+    //var textContent2 = document.getElementById('event-1-2');
+    function call(a) {
+        var textContent = document.getElementById('event-' + a);
+        //textContent2.classList.toggle('invisible');
+        textContent.classList.toggle('invisible');
+        document.getElementById('modeltreatments').innerHTML = textContent.outerHTML;
+        //document.getElementById('modeltreatments').innerHTML = textContent.outerHTML + textContent2.outerHTML;
+        //textContent2.classList.toggle('invisible');
+        textContent.classList.toggle('invisible');
+    }
+
+</script>
+
+
+
+<script>
+
+
+    // Show scroll-to-top button after scrolling halfway through the page
+    window.onscroll = function () {
+        var btn = document.getElementById("scroll-to-top-btn");
+        if (document.body.scrollTop > (document.body.scrollHeight / 5) || document.documentElement.scrollTop > (document.documentElement.scrollHeight / 5)) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    // Scroll to top when button is clicked
+    document.getElementById("scroll-to-top-btn").addEventListener("click", function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+
+
+    function redirectToHome() {
+        window.location.href = "index.html";
+    }
+    function redirectToAbout() {
+        window.location.href = "aboutren.html";
+    }
+    function redirectToTreatments() {
+        window.location.href = "treatmentsren.html";
+    }
+    function redirectToProducts() {
+        window.location.href = "productsren.html";
+    }
+    function redirectToNews() {
+        window.location.href = "newsren.html";
+    }
+    function redirectToEvents() {
+        window.location.href = "events.html";
+    }
+    function redirectToGallery() {
+        window.location.href = "galleryren.html";
+    }
+    function redirectToContact() {
+        window.location.href = "contactren.html";
+    }
+    function redirectToBookApt() {
+        window.location.href = "bookapt.html";
+    }
+
+
+
+    //Navbar settings for mobile starts// 
+    // Get the dropdown and sub-dropdown buttons
+    const dropdownBtn = document.querySelector('.dropdown-3 .button-one');
+    const subDropdownBtns = document.querySelectorAll('.dropdown .dropbtn');
+
+    // Add click event listener to the dropdown button
+    dropdownBtn.addEventListener('click', () => {
+        // Toggle active class on the dropdown
+        dropdownBtn.parentNode.classList.toggle('active');
+    });
+
+    // Add click event listener to the sub-dropdown buttons
+    subDropdownBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            // Toggle active class on the sub-dropdown
+            btn.parentNode.classList.toggle('active');
+        });
+    });
+
+
+    const buttons = document.querySelectorAll("button");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const currentState = button.getAttribute("data-state");
+
+            if (!currentState || currentState === "closed") {
+                button.setAttribute("data-state", "opened");
+                button.setAttribute("aria-expanded", "true");
+            } else {
+                button.setAttribute("data-state", "closed");
+                button.setAttribute("aria-expanded", "false");
+            }
+        });
+    });
+
+    //Navbar settings for mobile ends//    
+
+    function SendApplication() {
+        var fileInput = document.getElementById('fileInput');
+        var companyname = document.getElementById('CompanyNameId').value;
+        var representative = document.getElementById('RepresentativeId').value;
+        var emailaddress = document.getElementById('EmailId').value;
+
+        var email = emailaddress + "<br/><br/> This supplier request is for Renewal Aesthetics";
+
+        var phone = document.getElementById('PhoneId').value;
+        if (companyname == "" || representative == "" || email == "" || phone == "" || fileInput.files.length == 0) {
+
+            document.getElementById("Negative-snackmessage").innerHTML = "Please Fill All Details And Try Again";
+
+            // Get the snackbar DIV
+            var x = document.getElementById("Negative-snackbar");
+
+            // Add the "show" class to DIV
+            x.className = "show";
+
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
+
+        }
+        else {
+
+            var files = fileInput.files;
+
+            var formData = new FormData();
+
+            for (var i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+
+            var key = CryptoJS.enc.Utf8.parse('8080808080808080');
+            var iv = CryptoJS.enc.Utf8.parse('8080808080808080');
+
+            var encryptedCompanyName = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(companyname), key,
+                {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7  
+                });
+
+            var encryptedRepresentative = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(representative), key,
+                {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7  
+                });
+
+            var encryptedemail = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(email), key,
+                {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7  
+                });
+
+            var encryptedphone = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(phone), key,
+                {
+                    keySize: 128,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    //padding: CryptoJS.pad.Pkcs7  
+                });
+
+            fetch('https://kalafhi-web-as.duckdns.org:224/Renewalserv/SendEmailKalafhiSupplier?CompanyName=' + encryptedCompanyName + '&Representative=' + encryptedRepresentative + '&Email=' + encryptedemail + '&Phone=' + encryptedphone, {
+                method: 'POST',
+                body: formData
+            })
+                .then(function (response) {
+                    if (response.ok) {
+                        document.getElementById("snackmessage").innerHTML = "Application uploaded successfully!";
+
+                        // Get the snackbar DIV
+                        var x = document.getElementById("snackbar");
+
+                        // Add the "show" class to DIV
+                        x.className = "show";
+
+                        // After 3 seconds, remove the show class from DIV
+                        setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
+                    } else {
+                        document.getElementById("snackmessage").innerHTML = "Application upload failed. Try Uploading smaller files if there are any.";
+
+                        // Get the snackbar DIV
+                        var x = document.getElementById("Negative-snackbar");
+
+                        // Add the "show" class to DIV
+                        x.className = "show";
+
+                        // After 3 seconds, remove the show class from DIV
+                        setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
+                    }
+                })
+                .catch(function (error) {
+                    document.getElementById("snackmessage").innerHTML = "An error occurred during the files upload:" + error;
+
+                    // Get the snackbar DIV
+                    var x = document.getElementById("Negative-snackbar");
+
+                    // Add the "show" class to DIV
+                    x.className = "show";
+
+                    // After 3 seconds, remove the show class from DIV
+                    setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
+                });
+
+        }
+
+    }
+</script>
+
+</body>
+
+</html>
